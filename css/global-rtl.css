@@ -1,0 +1,484 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+
+/*------------Admin Menu RTL Fix---------*/
+
+#admin-menu .dropdown li ul {
+  right: auto;
+}
+#admin-menu .dropdown li li.expandable ul {
+margin: -20px 160px 0 0 !important;
+}
+
+/*----------------------------Global----------------------*/
+
+h1 {
+   font: normal 2.125em/0.9 'almoni', 'alef', Arial, Helvetica, sans-serif;
+}
+
+.float-start { float: right; } .float-end { float: left; }
+
+blockquote { 
+	border-left: none;
+	border-right: dotted 1px #060018;
+	padding: 0 10px 0 0;
+	margin: 0 25px 0 0;
+}
+
+blockquote::before{
+  content: "\201D"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  left: auto;
+  right: -25px;
+}
+
+.minute-field:after { content: " דקות"; }
+
+.star-block:after {
+   right: auto;
+   left: 0;
+}
+.star-block:hover:after {
+    background-position-x: -60px !important;
+}
+
+em, i {
+    font-style: normal;
+}
+
+.bottom-more-link {
+	text-align: left;
+}
+
+.number { unicode-bidi: plaintext; }
+
+.block-margin-end { margin: 0 0 0 20px; }
+.block-small-margin-end { margin: 0 0 20px 24px; }
+.block-small-margin-end.first { margin: 0 0 20px 25px; }
+
+.node ol, .node ul {
+    padding:  0 1.2em 0 0;
+}
+
+.logo-item { padding: 0 0 30px 30px; }
+
+/*------------------- Exposed Filter formalize -----------------------*/
+	
+.views-exposed-form .views-exposed-widget {
+	margin: 0 0 0 17px;
+}
+
+.views-exposed-form select {
+	padding: 0 0 0 30px;
+    background-position: -30px -190px;
+}
+
+
+.views-exposed-form select:active, .views-exposed-form select:focus,.views-exposed-form select:hover {
+    background-position: -30px -220px;
+}
+
+input[type="checkbox"] + label {
+	margin: 0 0 0 5px;
+}
+
+#edit-field-performance-age-hakaron-tid-i18n-1-wrapper, #edit-field-performance-category-tid-i18n-1-wrapper, .page-festival-repertoire #edit-field-show-date-fesival-value-selective-eng-wrapper, .page-festival-repertoire #edit-field-performance-range-festival-tid-i18n-wrapper { display: none; }
+#edit-field-performance-age-hakaron-tid-i18n-wrapper, #edit-field-performance-category-tid-i18n-wrapper, .page-festival-repertoire #edit-field-show-date-fesival-value-selective-wrapper, .page-festival-repertoire #edit-field-performance-range-festival-tid-wrapper { display: block; }
+
+/*------------------- field collection formalize -----------------------*/
+
+.field-collection-view-links { right: auto; left: 0; }
+
+.field-collection-container ul.action-links-field-collection-add {
+    float: left;
+}
+
+
+/*-------------------Table formalize-----------------------*/
+
+td.country-performance .performance-country {
+    right: auto;
+    left: -132px;
+    transform: rotate(-30deg);
+}
+
+
+/*-------------------Footable formalize-----------------------*/
+
+.footable.breakpoint>tbody>tr>td>span.footable-toggle { 
+	float: left;
+    padding: 0 10px 0 0;
+}
+
+
+/*---------GRIDS-----------*/
+
+.column-2 { padding: 0 0 0 50px; }
+
+/*
+.round-grid-item a:after { 
+    content: " ←";
+}
+*/
+
+.grid-item a:after { 
+	background-position: 0 -700px;
+}
+
+.grid-item {
+	font-size: 16px;
+}
+
+.grid-item a:after {
+	right: auto;
+    left: 100%;
+}
+
+.grid-item a:hover:after { 
+	right: auto;
+    left: 0;
+}
+
+.grid-view .grey-block {
+    line-height: 1;
+}
+
+/*----------------------------Layout----------------------*/
+
+/*------------------Header-----------------*/
+
+#region-branding {
+   left: auto;
+   right: 5px;
+}
+
+ul.nice-menu-down ul {
+  left: auto;
+  right: -1px;
+}
+
+/*------newsletter-------*/
+
+.newsletter-block button { color: #ffc699; letter-spacing: 0.05em; }
+
+#newsletter-wrapper { right: auto; left: 0; }
+
+#close-signup { right: auto; left: 0; }
+
+/*-------sidebar------------*/
+
+.title-side-block {
+    right: auto;
+    left: 0;
+}
+
+.title-side-block.download-kit-text {
+    right: auto;
+    left: 0;
+    width: 110px;
+}
+
+#region-sidebar-first ul.menu li ul.menu a {
+    margin: 0 30px 0 0;
+}
+
+/*----------------FOOTER-------------------*/
+
+/*-----------footer----------*/
+
+#zone-footer-wrapper ul.menu li { padding: 0 0 0 15px; float: right; }
+
+#region-footer-second { text-align: left; }
+
+.footer-icons a { margin: 0 13px 3px 0; }
+
+/*----------------Responsive Menu Mobile-------------------*/
+
+.mean-container a.meanmenu-reveal {
+  left: 0 !important;
+  right: auto !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  text-align: left;
+  right: auto;
+  left: 0;
+}
+
+/*----------------Responsive Sideshow-------------------*/
+
+.views-slideshow-controls-top {
+  right: auto;
+  left: 0;
+}
+.view-image-galleries .image-field-caption {
+	left: auto;
+    right: 0;
+}
+
+.views-slideshow-controls-top .views-slideshow-pager-field-item { 
+	float: right; 
+}
+
+/*--------------PAGES----------------------*/
+
+.ds-2col > .group-left {
+    padding: 0 0 0 70px;
+}
+
+/*---------Main Template---------------*/
+
+#region-content a:link.file-link, .context-marketing #region-content a:link.file-link {
+   padding: 0 55px 0 0;
+}
+
+#region-content a:link.file-link.header-file-link, .context-marketing #region-content a:link.file-link.header-file-link {
+   padding: 0 0 0 55px;
+   right: auto;
+   left: 0;
+}
+
+/*---------artists page---------------*/
+
+.profile-header { right: auto; left: 0; }
+.node-type-artist #page-title { margin: 0 0 0 80px; }
+
+.block-views-navigation ul.links li.next a:before { 
+	content: "הבא/ה";
+}
+
+.block-views-navigation ul.links li.previous a:after { 
+    content: "הקודם/ת";
+}
+
+/*---------Performance page---------------*/
+
+.info-block { 
+	font-size: 16px;
+}
+
+.info-block .info-item { 
+	border-right: none;
+	border-left: dotted 1px #7a7584;
+	padding: 0 20px;
+}
+
+.star-block {
+    padding: 10px 20px 10px 50px;
+}
+
+.block-views-navigation ul.links li.previous a:before {
+    content: "";
+    display: inline-block;
+    height: 11px;
+    width: 6px;
+    background-image: url('../images/sprite.png');
+    background-position: -80px -190px;
+    padding: 0 10px 0 0;
+}
+
+.block-views-navigation ul.links li.next a:after {
+    content: "";
+    display: inline-block;
+    height: 11px;
+    width: 6px;
+    background-image: url('../images/sprite.png');
+    background-position: -70px -190px;
+    padding: 0 0 0 10px;
+}
+
+.node-type-performance .block-views-navigation ul.links li.next a:before { 
+	content: "ההצגה הבאה";
+}
+
+.node-type-performance .block-views-navigation ul.links li.previous a:after { 
+    content: "ההצגה הקודמת";
+}
+
+.star-block.greenhouse-block:after { background-position: 0 -350px;}
+
+.star-block.residency-block:after { background-position: 0 -420px;}
+
+.star-block.story-block:after { background-position: 0 -490px;}
+
+.new-performance {
+	background-position: -170px -200px;
+	right: auto;
+	right: auto;
+	left: 0;
+}
+
+.title-side-block.download-kit-text .blue-title {
+    float: left;
+    padding: 0;
+}
+
+.youtube-link-arrow {
+	background-position: -140px 0;
+}
+
+.file-link:before, .download-kit a:before {
+   left: auto;
+   right: 0;
+}
+
+.file-link.header-file-link:before {
+   right: auto;
+   left: 0;
+}
+
+/*-------------------Calendar-----------------------*/
+
+.date-nav-wrapper .date-prev {
+    right: 0;
+    left: auto;
+}
+
+.date-nav-wrapper .date-next {
+    left: 0;
+    right: auto;
+}
+
+#region-content .view-header .pager li.date-prev a:link {
+	background-position: 0 -260px;
+}
+
+#region-content .view-header .pager li.date-next a:link {
+	background-position: -80px -260px;
+}
+
+.fc-content table th { 
+   direction: rtl;
+}
+
+/*-------------Home------------*/
+
+/*---------Mini Calendar---------------*/
+
+.fc-header-left {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
+.fc-header-right {
+    position: absolute;
+    left: 0;
+    text-align: left;
+}
+
+.fc-button { background-position: 0 -300px; }
+.fc-header-left .fc-button { background-position: -95px -300px; }
+
+.flyout-item {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 0;
+}
+
+/*-------- pager ----------*/
+
+.pager li.pager-last, .pager li.pager-next.last {
+    right: auto;
+    left: 0;
+}
+
+#region-content ul.pager li.pager-next {
+	right: auto;
+    left: 100px;
+}
+
+#region-content ul.pager li.pager-first, .pager li.pager-first.first {
+    left: auto;
+    right: 0;
+}
+
+#region-content ul.pager li.pager-previous {
+	left: auto;
+    right: 100px;
+}
+
+.pager .pager-next a:before {
+	right:auto;
+    left: -100px;
+    background-position: 0 -560px;;
+}
+
+.pager .pager-previous a:before {
+    left: auto;
+    right: -100px;
+    background-position: -100px -560px;;
+}
+
+/*---------navigation view pager----------*/
+
+.block-views-navigation ul.links li.previous { float: right; }
+.block-views-navigation ul.links li.next { float: left; }
+
+/*---------selectric----------*/
+
+.selectric .button {
+  right: auto;
+  left: 0;
+}
+
+.selectric .button {
+  background-position: 0 -60px;
+}
+
+.selectric-open .selectric .button {
+  background-position: 0 -90px;
+}
+
+/*---------youtube link----------*/
+
+.video-link-text {
+	float: right;
+}
+
+.video-icon {
+	float: right;
+}
+
+/*----------------------------Festival Program-----------------------*/
+
+.form-checkboxes .form-item, .form-radios .form-item {
+	padding: 0 0 0 20px;
+}
+
+.page-festival-program #edit-field-show-date-fesival-value-selective-wrapper {
+	clear: both;
+    width: 100%;
+    margin: 0;
+}
+
+.page-festival-program #edit-field-show-date-fesival-value-selective-wrapper .form-type-bef-link {
+    float: right;
+	border-left: 1px solid #b4b5bb;
+	border-right: none;
+}
+
+input[type=radio]:not(old) + label {
+  margin: 0 -28px 0 0;
+  padding: 0 28px 0 0;
+  background-position: right 0;
+}
+
+.international-performance .performance-name {
+	background-image: url('../images/international-he.png');
+	background-position: left top;
+}
+
+.חינם .performance-name {
+	background-image: url('../images/free-he.png');
+	background-position: left top;
+}
+
+.view-filters form #edit-field-performance-range-festival-tid-wrapper > label  { float: right; }
+
+.schedule-view .views-exposed-widget > label { float: right; margin: 0 0 0 5px; }
+
+/*------------------------------Back to Top-------------------------*/
+
+#back-top { right: auto; left: 20px; }

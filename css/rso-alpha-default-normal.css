@@ -1,0 +1,35 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+ 
+#zone-header { height: 110px; }
+#region-user-first { padding-top: 38px; }
+
+#mc_embed_signup.open {  top: 25px; }
+
+/*----------------Footer-------------------*/
+
+#region-footer-first, .footer-icons { display: block; }
+
+#region-footer-second .region-inner {
+   text-align: inherit;	
+}
+.container-12 .grid-3.region-footer-second {
+    width: 220px;
+}
+
+/*-------------Grids---------------*/
+
+.grid-view { width: 642px; }
+
+.grid-item {
+	width: 195px;
+	margin: 0 17px 20px 0;
+}
+
+.grid-item.grid-item-4 {
+	width: 142px;
+	margin: 0 17px 20px 0;
+}
+
+.heb .grid-item { margin: 0 0 10px 17px; }

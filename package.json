@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npm-run-all --parallel styles styles-rtl",
-    "styles": "node-sass sass/custom.scss -o css --watch",
-    "styles-rtl": "node-sass sass/custom-rtl.scss -o css --watch"
+    "styles": "node-sass sass/global.scss -o css --watch",
+    "styles-rtl": "node-sass sass/global-rtl.scss -o css --watch"
   },
   "devDependencies": {
     "node-sass": "^3.13.0",

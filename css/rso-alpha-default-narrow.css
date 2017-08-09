@@ -1,0 +1,41 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+ 
+#zone-header { height: 80px; }
+#region-user-first { padding: 10px 0; }
+
+#mc_embed_signup.open {  top: 10px; }
+
+/*----------------Footer-------------------*/
+
+#region-footer-first, .footer-icons { display: none; }
+
+#region-footer-second .region-inner {
+   text-align: center;
+}
+
+.container-12 .grid-3.region-footer-second {
+    width: 100%;
+}
+
+/*----------------Responsive Slideshow-------------------*/
+
+/*.view-image-galleries:not(.festival-image-galleries) .view-content { height: 297px; }*/
+ 
+/*-------------Grids---------------*/
+
+.grid-view { width: 676px; }
+
+.grid-item {
+	width: 200px;
+	margin: 0 58px 0 0;
+}
+
+.heb .grid-item { margin: 0 0 0 58px; }
+
+/*---------Performance page---------------*/
+
+.full_page_content .group-left { width: 100%; }
+.full_page_content .group-right { width: 100%; }
