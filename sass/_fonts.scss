@@ -1,0 +1,35 @@
+/*----------  Alef Font  ----------*/
+
+@font-face {
+    font-family: 'Alef_Bold';
+    src: url('../fonts/Alef-Bold.eot');
+    src: url('../fonts/Alef-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Alef-Bold.woff') format('woff'),
+         url('../fonts/Alef-Bold.ttf') format('truetype'),
+         url('../fonts/Alef-Bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alef';
+    src: url('../fonts/Alef-regular.eot');
+    src: url('../fonts/Alef-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Alef-regular.woff') format('woff'),
+         url('../fonts/Alef-regular.ttf') format('truetype'),
+         url('../fonts/Alef-regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PauzaFOT-Book';
+    src: url('../fonts/pauzafot-book-webfont.eot');
+    src: url('../fonts/pauzafot-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pauzafot-book-webfont.woff') format('woff'),
+         url('../fonts/pauzafot-book-webfont.ttf') format('truetype'),
+         url('../fonts/pauzafot-book-webfont.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

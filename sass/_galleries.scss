@@ -1,0 +1,57 @@
+/*----------------Slick Gallery-----------------*/
+
+.slick {
+    direction: ltr;
+}
+
+.slick-slider {
+    margin-bottom: 20px;
+}
+
+.slick-arrow, .slick-down {
+    height: 65px;
+    width: 65px;
+}
+
+.slick-arrow::before {
+    content: "";
+    display: block;
+    height: 65px;
+    width: 65px;
+    
+    background: url(../images/gallery-arrows-sprite.png);
+    background-position: 0 -65px;
+}
+
+.slick-next::before {
+    background-position: -65px -65px;
+}
+
+/*-----------------Scrolling Gallery--------------------*/
+
+.scrolling-gallery img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*-----------------Masonry--------------------*/
+
+.masonry-item {
+    width: 33.333%;
+    @include for-narrow-layout {
+        width: 50%;
+    }
+    // @include for-mobile-layout {
+    //     width: 100%;
+    // }
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    > div {
+        margin: 0 30px 30px 0;
+        @include for-mobile-layout {
+            margin: 0 5px 30px 5px;
+        }
+    } 
+}

@@ -1,0 +1,11 @@
+.region-content-info {
+  font-size: $font-small;
+  @include for-mobile-layout {
+      text-align: center;
+      padding: 0;
+  }
+}
+
+.winner a:before {
+  content: "Winner ";
+}

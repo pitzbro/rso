@@ -1,0 +1,78 @@
+/*-----------------Main Teasers Preview-----------------------*/
+
+.teaser-row {
+    width: 100%;
+    font-size: $font-small;
+    line-height: $line-height-small;
+    color: $light-color !important;
+    margin-bottom: 30px;
+    @include for-mobile-layout {
+        text-align: center;
+    }
+    .teaser-image {
+        width: 170px;
+        margin-bottom: 20px;
+        text-align: center;
+        @include for-mobile-layout {
+            width: 100%;
+        }
+    }
+    .teaser-info {
+        width: calc(100% - 150px);
+        padding: 0 0 0 20px;
+        max-width: 470px;
+        @include for-mobile-layout {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.main-teaser-view {
+    @include for-mobile-layout {
+        flex-direction: column;
+    }   
+}
+
+/*-----------------Small Teasers Thumbnails Preview-----------------------*/
+
+.small-thumbs-block > .view-content {
+    width: 755px;
+    margin-bottom: 30px;
+    @include for-narrow-layout {
+        width: 540px;
+    }
+    @include for-mobile-layout {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.small-thumbs-row {
+    width: 136px;
+    margin: 0 15px 10px 0;
+    filter: grayscale(100%);
+    color: $light-color !important;
+    &:hover {
+        a {
+        color: $curr-text-color !important;
+        text-decoration: none !important;
+        }
+
+        filter: grayscale(0%);
+    }
+    .image-text-block {
+        padding-top: 10px;
+        font-size: $font-small;
+        line-height: $line-height-small;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 136px;
+    }
+    @include for-mobile-layout {
+        margin: 0 5px 10px 5px;
+    }
+}

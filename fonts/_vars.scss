@@ -1,0 +1,20 @@
+$container-width: 960px;
+$mobile-breakpoint: 620px;
+$narrow-breakpoint: 730px;
+
+:root {
+  /* Layout */
+  --container-width: $container-width;
+  --inner-container-width: 900px;
+  --header-height: 125px;
+  /* Fonts */
+  --primary-font: Open Sans;
+  --number-font: PauzaFOT-Book;
+  --font-small: rem(12px);
+  
+  /* Colors */
+  --main-color: #000;
+  --light-color: #4b4b4b;
+}
+
+

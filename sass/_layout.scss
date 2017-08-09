@@ -1,0 +1,72 @@
+/*----------  Containers  ----------*/
+
+.zone {
+  background: #fff;
+}
+
+.region-content, .region-content-info {
+    padding: 0 $side-padding 0 0;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    margin-bottom: 40px;
+    img {
+        border: 0;
+        height: auto;
+        max-width: 100%;
+    }
+    a {
+        color: $curr-text-color;
+          &:hover {
+            text-decoration: underline;
+        }
+    }
+    p {
+        max-width: 600px;
+        margin-bottom: 1em;
+    }
+}
+
+.region-content-inner {
+  padding: 0 0 0 $side-padding;
+}
+
+@include for-narrow-layout {
+  .container-12 .grid-2.region-content-menu {
+      margin: 0 0 0 10px;
+      width: 120px;
+  }
+
+  .container-12 .grid-7.region-content {
+      margin: 0 10px 0 0;
+      padding: 0;
+  }
+  .container-12 .grid-10.region-content {
+      margin: 0 10px 0 0;
+  }
+}
+
+@include for-mobile-layout {
+  .container-12 .grid-2.region-content-menu {
+      margin: 0 10px;
+      width: inherit;
+      .region-content-menu-inner {
+        padding: 0;
+      }
+  }
+  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+      margin: 0 10px;
+      padding: 0;
+      .region-content-inner {
+        padding: 0;
+      }
+  }
+  .zone-content {
+      display: flex;
+      flex-direction: column;
+      .region-content-menu {
+          order: 3;
+          padding-top: 20px;
+          border-top: solid 1px $light-color;
+      }
+  }
+}

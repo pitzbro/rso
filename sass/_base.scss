@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  outline: none;
+}
+
+html {
+  color: $main-color;
+  font-family: $primary-font;
+  // @include for-narrow-layout {
+  //   font-size: 14px;
+  // }
+}
+
+body {
+	background-color: #f9eff3;
+	background: url('../images/background/003.jpg') no-repeat center center fixed;
+  background-size: cover;
+  &.context-art-fair { background-image: url('../images//background/002.jpg'); }
+  &.context-family { background-image: url('../images//background/001.jpg'); }
+  &.context-archive { background-image: url('../images//background/004.jpg'); }
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: $curr-text-color;
+}
+
+::selection {
+    color: #fff;
+    background: $curr-text-color;
+}
+
+a {
+  cursor: pointer;
+  color: currentColor;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    color: #000;
+  }
+}
+
+h1, .bulletin-main-title, .main-title {
+  border-top: solid 3px #231f20;
+  border-bottom: solid 3px #231f20;
+  line-height: 36px;
+  padding: 10px 0;
+  font-size: 1.5625rem;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+h2 {
+  border-top: solid 2px #231f20;
+  border-bottom: solid 2px #231f20;
+  line-height: 30px;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+h3, h2.block-title {
+  border-top: solid 1px #231f20;
+  border-bottom: solid 1px #231f20;
+  line-height: 25px;
+  padding: 5px 0;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+h2.block-title {
+  font-size: 0.9rem;
+}
+
+h4 {
+    font-size: rem(16px);
+    margin-bottom: 5px;
+}
+
+.linked-heading {
+  border-color: $curr-text-color;
+}
+
+.colored-heading {
+    line-height: 25px;
+    padding: 5px 0;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    background: $active-color;
+    color: #fff;
+    text-align: center;
+}
+
+.region-content .colored-btn a {
+    background: $curr-bg-color;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    &:hover {
+      background: lighten($curr-bg-color, 15%);
+      text-decoration: none;
+    }
+}
+
+ul,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+abbr[title], acronym[title] {
+    text-decoration: none;
+}
+
+.time-default {
+  direction: ltr;
+}
