@@ -94,7 +94,6 @@ textarea {
   text-align: center;
   line-height: 1.3;
   display: block;
-  background: $curr-bg-color;
   padding: 6px;
   color: #fff;
   max-width: 120px;
@@ -149,45 +148,6 @@ textarea {
 
 .full-height {
   height: 100%;
-}
-
-.round-button-center {
-  width: $round-button-size;
-  margin: 0 auto;
-}
-
-a.round-button {
-    border-radius: 50%;
-    color: #fff;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    line-height: 18px;
-    background: #EE944B;
-    font-size: 16px;
-    width: $round-button-size;
-    height: $round-button-size;
-    -ms-transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-    background-image: -webkit-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: -o-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: -moz-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: linear-gradient(5deg, #F0594C, #F0964C);
-    transition: all 0.7s;
-    z-index: 1;
-    position: relative;
-    &:hover {
-      color: #fff;
-      // -ms-transform: rotate(0deg);
-      // -webkit-transform: rotate(0deg);
-      background-image: -webkit-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: -o-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: linear-gradient(5deg, #F0964C, #F0594C); 
-    }
 }
 
 .view-filters {

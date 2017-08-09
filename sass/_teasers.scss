@@ -3,8 +3,6 @@
 .teaser-row {
     width: 100%;
     font-size: $font-small;
-    line-height: $line-height-small;
-    color: $light-color !important;
     margin-bottom: 30px;
     @include for-mobile-layout {
         text-align: center;
@@ -53,10 +51,9 @@
     width: 136px;
     margin: 0 15px 10px 0;
     filter: grayscale(100%);
-    color: $light-color !important;
     &:hover {
         a {
-        color: $curr-text-color !important;
+        color: $main-text-color !important;
         text-decoration: none !important;
         }
 
@@ -65,7 +62,6 @@
     .image-text-block {
         padding-top: 10px;
         font-size: $font-small;
-        line-height: $line-height-small;
         display: block;
         overflow: hidden;
         text-overflow: ellipsis;

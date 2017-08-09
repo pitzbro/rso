@@ -6,31 +6,26 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   outline: none;
 }
 
-html {
-  color: $main-color;
-  font-family: $primary-font;
+html { 
   // @include for-narrow-layout {
   //   font-size: 14px;
   // }
 }
 
 body {
-	background-color: #f9eff3;
-	background: url('../images/background/003.jpg') no-repeat center center fixed;
-  background-size: cover;
-  &.context-art-fair { background-image: url('../images//background/002.jpg'); }
-  &.context-family { background-image: url('../images//background/001.jpg'); }
-  &.context-archive { background-image: url('../images//background/004.jpg'); }
+  font: 1rem/1.5 $primary-font, Arial, Helvetica, sans-serif;
+  color: $main-text-color;
+	background-color: $main-color;
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: $curr-text-color;
+    background: $secondary-text-color;
 }
 
 ::selection {
     color: #fff;
-    background: $curr-text-color;
+    background: $secondary-text-color;
 }
 
 a {
@@ -80,34 +75,6 @@ h2.block-title {
 h4 {
     font-size: rem(16px);
     margin-bottom: 5px;
-}
-
-.linked-heading {
-  border-color: $curr-text-color;
-}
-
-.colored-heading {
-    line-height: 25px;
-    padding: 5px 0;
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-    font-weight: normal;
-    background: $active-color;
-    color: #fff;
-    text-align: center;
-}
-
-.region-content .colored-btn a {
-    background: $curr-bg-color;
-    display: inline-block;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    &:hover {
-      background: lighten($curr-bg-color, 15%);
-      text-decoration: none;
-    }
 }
 
 ul,

@@ -1,42 +1,18 @@
-// :root {
-//   /* Layout */
-// //   --container-width: $container-width;
-//   --inner-container-width: 900px;
-//   --header-height: 125px;
-//   --side-padding: rem(20px);
-//   /* Fonts */
-//   --primary-font: Open Sans;
-//   --hebrew-font: Alef;
-//   --number-font: PauzaFOT-Book;
-//   --font-small: rem(12px); 
-//   --line-height-small: rem(18px); 
-//   /* Colors */
-//   --main-color: #000;
-//   --light-color: #4B4B4B;
-//   --active-color: #FF9800;
-
-//   --curr-text-color: #ec1c24;
-//   --curr-bg-color: #ec1c24;
-// }
-
 /* Layout */
 $header-height: 125px;
 $side-padding: em(20px);
+
+/* Background Colors */
+$main-color: #ece9e3;
+$secondary-color: #c0c1c2;
+$highlite-color-1: #47206e;
+$highlite-color-2: #ff6600;
+
 /* Fonts */
-$primary-font: Open Sans;
-$hebrew-font: Alef;
-$number-font: PauzaFOT-Book;
-$font-small: rem(12px); 
-$line-height-small: rem(18px); 
-/* Colors */
-$main-color: #000;
-$light-color: #4B4B4B;
-$active-color: #FF9800;
+$primary-font: Miriam;
+$font-small: rem(12px);
 
-$curr-text-color: #ec1c24;
-$curr-bg-color: #ec1c24;
-
-/* Buttons */
-
-$round-button-size: 98px;
+/* Text Colors*/
+$main-text-color: #545555;
+$secondary-text-color: #0097d7;
 
