@@ -182,17 +182,7 @@ body {
   color: #fff;
   background: #0097d7; }
 
-a {
-  cursor: pointer;
-  color: currentColor;
-  text-decoration: none;
-  display: inline-block; }
-  a:hover {
-    color: #000; }
-
 h1, .bulletin-main-title, .main-title {
-  border-top: solid 3px #231f20;
-  border-bottom: solid 3px #231f20;
   line-height: 36px;
   padding: 10px 0;
   font-size: 1.5625rem;
