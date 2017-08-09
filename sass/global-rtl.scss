@@ -3,10 +3,10 @@
 
 /*------------Admin Menu RTL Fix---------*/
 
-#admin-menu .dropdown li ul {
-  right: auto;
+.admin-menu-processed .dropdown li ul {
+  right: auto !important;;
 }
-#admin-menu .dropdown li li.expandable ul {
+.admin-menu-processed .dropdown li li.expandable ul {
     margin: -20px 160px 0 0 !important;
 }
 

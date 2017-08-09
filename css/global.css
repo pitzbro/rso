@@ -152,9 +152,15 @@ a.more-link {
       text-decoration: none;
       background: #000; }
 
+/*------------Admin Menu---------*/
+.admin-menu-processed {
+  font-size: 12px !important; }
+
+/*-------------Frame---------------------*/
 .site-frame {
   display: block;
   position: fixed;
+  z-index: 900;
   width: 100%;
   height: 100%;
   left: 0;
