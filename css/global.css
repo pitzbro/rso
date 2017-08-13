@@ -23,9 +23,6 @@
   .comma-list .comma-item:last-child:after {
     content: ""; }
 
-button, select {
-  cursor: pointer; }
-
 textarea {
   resize: none; }
 
@@ -238,6 +235,18 @@ h4 {
   font-size: 1rem;
   margin-bottom: 5px; }
 
+button, select {
+  cursor: pointer; }
+
+button {
+  background: #47206e;
+  color: #ff6600;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: unset;
+  border: none;
+  text-shadow: none; }
+
 ul,
 fieldset {
   padding: 0;
@@ -398,7 +407,7 @@ ul.custom-pager .next a:after {
 
 /* Components */
 .section-content {
-  padding-top: 135px; }
+  padding-top: 125px; }
 
 header {
   position: fixed;
@@ -409,13 +418,19 @@ header {
   border-top: 10px solid #47206e;
   border-left: 10px solid #47206e;
   border-right: 10px solid #47206e;
-  height: 135px;
+  font-size: 1.25rem;
   background: pink; }
   header .container-12, header .container-12 .grid-12 {
     margin: 0;
     width: 100%; }
   header .region-menu-inner {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    padding: 20px; }
     header .region-menu-inner .main-menu-block {
-      flex-grow: 2; }
+      flex-grow: 1; }
+  header .subscription-signup button {
+    width: 300px;
+    height: 85px; }

@@ -80,6 +80,20 @@ h4 {
     margin-bottom: 5px;
 }
 
+button, select {
+  cursor: pointer;
+}
+
+button {
+  background: $highlite-color-1;
+  color: $highlite-color-2;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: unset;
+  border: none;
+  text-shadow: none;
+}
+
 ul,
 fieldset {
   padding: 0;

@@ -7,7 +7,7 @@ header {
     border-top: 10px solid $highlite-color-1;
     border-left: 10px solid $highlite-color-1;
     border-right: 10px solid $highlite-color-1;
-    height: $header-height;
+    font-size: rem(20px);
     background: pink; 
 
     .container-12, .container-12 .grid-12 {
@@ -18,10 +18,19 @@ header {
     .region-menu-inner {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: $header-height;
+        padding: 20px;
 
         .main-menu-block {
-            // width: 100%;
-            flex-grow: 2;
+            flex-grow: 1;
         }
+    }
+
+    // Subscription Signup Button
+
+    .subscription-signup button {
+        width: 300px;
+        height: 85px;
     }
 }
