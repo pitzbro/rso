@@ -128,6 +128,9 @@ textarea {
 .full-height {
   height: 100%; }
 
+.full-width {
+  width: 100%; }
+
 .view-filters {
   clear: both; }
 
@@ -182,7 +185,14 @@ body {
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none; }
 
+html {
+  height: 100%; }
+
 body {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px 0;
   font: 1rem/1.5 Miriam, Arial, Helvetica, sans-serif;
   color: #545555;
   background-color: #ece9e3; }
@@ -387,8 +397,25 @@ ul.custom-pager .next a:after {
   color: #000; }
 
 /* Components */
-a#main-content {
-  display: none; }
+.section-content {
+  padding-top: 135px; }
 
-.main-text {
-  margin-bottom: 40px; }
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 10px solid #47206e;
+  border-left: 10px solid #47206e;
+  border-right: 10px solid #47206e;
+  height: 135px;
+  background: pink; }
+  header .container-12, header .container-12 .grid-12 {
+    margin: 0;
+    width: 100%; }
+  header .region-menu-inner {
+    display: flex;
+    justify-content: space-between; }
+    header .region-menu-inner .main-menu-block {
+      flex-grow: 2; }

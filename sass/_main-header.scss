@@ -1,0 +1,27 @@
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 10px solid $highlite-color-1;
+    border-left: 10px solid $highlite-color-1;
+    border-right: 10px solid $highlite-color-1;
+    height: $header-height;
+    background: pink; 
+
+    .container-12, .container-12 .grid-12 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .region-menu-inner {
+        display: flex;
+        justify-content: space-between;
+
+        .main-menu-block {
+            // width: 100%;
+            flex-grow: 2;
+        }
+    }
+}
