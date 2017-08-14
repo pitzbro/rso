@@ -25,12 +25,12 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: $secondary-text-color;
+    background: $highlite-color-3;
 }
 
 ::selection {
     color: #fff;
-    background: $secondary-text-color;
+    background: $highlite-color-3;
 }
 
 a, a:link, a:visited {

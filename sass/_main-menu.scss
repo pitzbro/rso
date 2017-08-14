@@ -1,0 +1,58 @@
+.main-menu-block {
+    ul.nice-menu {
+        width: 100%;
+        display: flex;
+        // justify-content: space-between;
+
+        > li {
+            background: transparent;
+            border:none;
+            flex: 1;
+
+            &:hover {
+                background: transparent;
+            }
+
+            > a {
+                // background: green;
+                padding: 0 0 0 40px;
+                height: $header-height;
+                line-height: $header-height;
+                color: $secondary-text-color;
+                text-decoration: none;
+                // position: relative;
+
+                &:before {
+                    content: "";
+                    width: 0px;
+                    height: $header-height - 50px;
+                    position: absolute;
+                    z-index: -1;
+                    background: $highlite-color-3;
+                    transform: translate(0, 25px);
+                    transition: width 0.5s;
+                }
+
+                &:hover:before {
+                    width: 30px;
+                }
+
+                &:hover {
+                    font-family: 'Miriam_Bold';
+                    color: $highlite-color-1;
+                }
+            }
+
+            ul {
+                position: fixed;
+                top: $header-height + 10px;
+                width: 100%;
+                background: grey;
+                border: none;
+                border-left: 10px solid #47206e;
+                border-right: 10px solid #47206e;
+            }
+
+        }
+    }
+}
