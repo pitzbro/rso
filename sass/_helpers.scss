@@ -12,10 +12,6 @@
   }
 }
 
-button, select {
-  cursor: pointer;
-}
-
 textarea {
     resize: none;
 }
@@ -148,6 +144,10 @@ textarea {
 
 .full-height {
   height: 100%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .view-filters {

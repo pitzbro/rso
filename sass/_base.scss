@@ -7,12 +7,17 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 }
 
 html { 
+  height: 100%;
   // @include for-narrow-layout {
   //   font-size: 14px;
   // }
 }
 
 body {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px 0;
   font: 1rem/1.5 $primary-font, Arial, Helvetica, sans-serif;
   color: $main-text-color;
 	background-color: $main-color;
@@ -20,12 +25,12 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: $secondary-text-color;
+    background: $highlite-color-3;
 }
 
 ::selection {
     color: #fff;
-    background: $secondary-text-color;
+    background: $highlite-color-3;
 }
 
 a, a:link, a:visited {
@@ -73,6 +78,20 @@ h2.block-title {
 h4 {
     font-size: rem(16px);
     margin-bottom: 5px;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+button {
+  background: $highlite-color-1;
+  color: $highlite-color-2;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: unset;
+  border: none;
+  text-shadow: none;
 }
 
 ul,

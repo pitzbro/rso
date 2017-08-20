@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 10px solid $highlite-color-1;
+    border-left: 10px solid $highlite-color-1;
+    border-right: 10px solid $highlite-color-1;
+    font-size: rem(20px);
+
+    .container-12, .container-12 .grid-12 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .region-menu-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $header-height;
+        padding: 10px;
+
+        .main-menu-block {
+            flex-grow: 1;
+        }
+    }
+
+    // Logo Link
+
+    .logo-block {
+        width: 210px;
+        padding: 0 10px 0 0;
+        img {
+            height: 50px;
+        }
+    }
+
+    // Subscription Signup Button
+
+    .subscription-signup button {
+        width: 200px;
+        height: 66px;
+    }
+}
