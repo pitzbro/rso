@@ -456,7 +456,8 @@ header {
   border-top: 10px solid #47206e;
   border-left: 10px solid #47206e;
   border-right: 10px solid #47206e;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  background: #ece9e3; }
   header .container-12, header .container-12 .grid-12 {
     margin: 0;
     width: 100%; }
