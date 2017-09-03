@@ -424,6 +424,7 @@ header .zone-menu {
   border-top: 10px solid #47206e;
   border-left: 10px solid #47206e;
   border-right: 10px solid #47206e;
+<<<<<<< HEAD
   font-size: 1.25rem; }
 
 header .container-12, header .container-12 .grid-12 {
@@ -448,3 +449,26 @@ header .logo-block {
 header .subscription-signup button {
   width: 200px;
   height: 66px; }
+=======
+  font-size: 1.25rem;
+  background: #ece9e3; }
+  header .container-12, header .container-12 .grid-12 {
+    margin: 0;
+    width: 100%; }
+  header .region-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+    padding: 10px; }
+    header .region-menu-inner .main-menu-block {
+      flex-grow: 1; }
+  header .logo-block {
+    width: 210px;
+    padding: 0 10px 0 0; }
+    header .logo-block img {
+      height: 50px; }
+  header .subscription-signup button {
+    width: 200px;
+    height: 66px; }
+>>>>>>> fca0f81f46c34951a5df95eb46308ad53b9ae64f
