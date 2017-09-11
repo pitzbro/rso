@@ -1,0 +1,49 @@
+.mini-calendar {
+
+  width: 416px;
+  color: $light-text-color;
+  font-size: $font-large;
+
+  td.fc-day {
+    height: 60px;
+    overflow: hidden;
+    padding: 5px;
+    > div {
+      height: 100%;
+    }
+    &.fc-today .fc-day-number {
+      border: 2px solid $highlite-color-3;
+      color: $highlite-color-3;
+      border-radius: 50%;
+    }
+  }
+
+  .fc-day-number {
+    float: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fc-cell-event {
+    cursor: pointer;
+    .fc-day-number {
+      background: $highlite-color-4;
+      color: #fff;
+      &:hover {
+        color: $highlite-color-1;
+      }
+    }
+  }
+
+  .fc-event {
+    display: none;
+    height: 0;
+  }
+}
+
+.fc-state-highlight {
+    background: transparent;
+}

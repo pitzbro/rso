@@ -1,5 +1,4 @@
 header {
-<<<<<<< HEAD
 
     .zone-menu {
         position: fixed;
@@ -13,18 +12,6 @@ header {
         border-right: 10px solid $highlite-color-1;
         font-size: rem(20px);
     }
-=======
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-top: 10px solid $highlite-color-1;
-    border-left: 10px solid $highlite-color-1;
-    border-right: 10px solid $highlite-color-1;
-    font-size: rem(20px);
-    background: $main-color;
->>>>>>> fca0f81f46c34951a5df95eb46308ad53b9ae64f
 
     .container-12, .container-12 .grid-12 {
         margin: 0;
