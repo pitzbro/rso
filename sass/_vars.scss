@@ -8,13 +8,19 @@ $main-color: #ece9e3;
 $secondary-color: #c0c1c2;
 
 /* Fonts */
-$primary-font: Miriam;
-$font-small: rem(12px);
-$font-large: rem(22px);
+$font-primary: 'Miriam';
+$font-bold: 'Miriam_Bold';
+
+$font-h1: rem(55px);
+$font-h2: rem(33px);
+$font-h3: rem(22px);
+
+$font-small: rem(13px);
 
 /* Text Colors*/
 $main-text-color: #000;
 $light-text-color: #a4a4a4;
+$light-text-color-2: #eeebe6;
 $secondary-text-color: #545555;
 $highlite-color-1: #47206e;
 $highlite-color-2: #ff6600;

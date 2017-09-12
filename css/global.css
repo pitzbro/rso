@@ -46,6 +46,11 @@ textarea {
 .float-end {
   float: right; }
 
+.colored {
+  background: #47206e; }
+  .colored.second {
+    background: #40c389; }
+
 .ltr {
   direction: ltr; }
 
@@ -112,6 +117,9 @@ textarea {
   @media (max-width: 740px) {
     .space-between, .flex-view.space-between .view-content {
       justify-content: space-around; } }
+
+.flex-full {
+  flex: 1; }
 
 .flex-wrap, .flex-view.flex-wrap .view-content {
   flex-wrap: wrap; }
@@ -191,7 +199,7 @@ body {
   overflow-y: auto;
   padding: 10px 0;
   padding: 96px 0 10px;
-  font: 1rem/1.5 Miriam, Arial, Helvetica, sans-serif;
+  font: 1rem/1.5 "Miriam", Arial, Helvetica, sans-serif;
   color: #000;
   background-color: #ece9e3; }
 
@@ -204,6 +212,13 @@ body {
   color: #fff;
   background: #0097d7; }
 
+a.btn, a:link.btn, a:visited.btn {
+  display: block;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none; }
+
 h1, .bulletin-main-title, .main-title {
   line-height: 36px;
   padding: 10px 0;
@@ -212,25 +227,15 @@ h1, .bulletin-main-title, .main-title {
   font-weight: normal; }
 
 h2 {
-  border-top: solid 2px #231f20;
-  border-bottom: solid 2px #231f20;
-  line-height: 30px;
-  padding: 5px 0;
-  font-size: 1.25rem;
+  font-family: 'Miriam_Bold';
+  line-height: 1.1;
+  font-size: 2.0625rem;
   margin-bottom: 20px;
   font-weight: normal; }
-
-h3, h2.block-title {
-  border-top: solid 1px #231f20;
-  border-bottom: solid 1px #231f20;
-  line-height: 25px;
-  padding: 5px 0;
-  font-size: 1.125rem;
-  margin-bottom: 15px;
-  font-weight: normal; }
-
-h2.block-title {
-  font-size: 0.9rem; }
+  h2.block-title {
+    font-size: 2.5rem;
+    color: #47206e;
+    margin-bottom: 25px; }
 
 h4 {
   font-size: 1rem;
@@ -247,6 +252,13 @@ button {
   border-radius: unset;
   border: none;
   text-shadow: none; }
+
+small {
+  font-size: 0.8125rem; }
+
+strong {
+  font-weight: normal;
+  font-family: "Miriam_Bold"; }
 
 ul,
 fieldset {
@@ -277,7 +289,7 @@ abbr[title], acronym[title] {
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser-row {
   width: 100%;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   margin-bottom: 30px; }
   @media (max-width: 740px) {
     .teaser-row {
@@ -326,7 +338,7 @@ abbr[title], acronym[title] {
       text-decoration: none !important; }
   .small-thumbs-row .image-text-block {
     padding-top: 10px;
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -449,37 +461,96 @@ header .subscription-signup button {
   width: 200px;
   height: 66px; }
 
-.mini-calendar {
-  width: 416px;
-  color: #a4a4a4;
-  font-size: 1.375rem; }
-  .mini-calendar td.fc-day {
-    height: 60px;
-    overflow: hidden;
-    padding: 5px; }
-    .mini-calendar td.fc-day > div {
-      height: 100%; }
-    .mini-calendar td.fc-day.fc-today .fc-day-number {
-      border: 2px solid #0097d7;
-      color: #0097d7;
-      border-radius: 50%; }
-  .mini-calendar .fc-day-number {
-    float: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .mini-calendar .fc-cell-event {
-    cursor: pointer; }
-    .mini-calendar .fc-cell-event .fc-day-number {
-      background: #40c389;
-      color: #fff; }
-      .mini-calendar .fc-cell-event .fc-day-number:hover {
-        color: #47206e; }
-  .mini-calendar .fc-event {
-    display: none;
-    height: 0; }
-
 .fc-state-highlight {
   background: transparent; }
+
+.fc-header tr, tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+  background-color: transparent; }
+
+.mini-calendar .view-content, .mini-calendar .attachment {
+  flex: 0 0 455px; }
+
+.mini-calendar table {
+  border: none; }
+
+.mini-calendar .fc-header {
+  background: #47206e;
+  font-size: 2.0625rem;
+  font-family: 'Miriam_Bold';
+  color: #fff;
+  height: 50px;
+  line-height: 50px; }
+  .mini-calendar .fc-header h2 {
+    line-height: 50px;
+    margin: 0;
+    font-size: 1.5625rem; }
+  .mini-calendar .fc-header .fc-button {
+    line-height: 50px;
+    height: 50px; }
+
+.mini-calendar .fc-content tbody {
+  color: #a4a4a4;
+  font-size: 1.375rem;
+  background: #fff; }
+
+.mini-calendar .fc-widget-content {
+  border-color: #a4a4a4; }
+
+.mini-calendar thead th, .mini-calendar th {
+  background: transparent;
+  border: none;
+  color: #545555; }
+
+.mini-calendar tr.fc-week.fc-first td {
+  border-top: 1px solid #a4a4a4; }
+
+.mini-calendar td.fc-day {
+  height: 60px;
+  overflow: hidden;
+  padding: 5px; }
+  .mini-calendar td.fc-day > div {
+    height: 100%; }
+  .mini-calendar td.fc-day.fc-today .fc-day-number {
+    border: 2px solid #0097d7;
+    color: #0097d7;
+    border-radius: 50%; }
+
+.mini-calendar .fc-day-number {
+  float: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mini-calendar .fc-cell-event {
+  cursor: pointer; }
+  .mini-calendar .fc-cell-event .fc-day-number {
+    background: #40c389;
+    color: #fff; }
+    .mini-calendar .fc-cell-event .fc-day-number:hover {
+      color: #47206e; }
+
+.mini-calendar .fc-event {
+  display: none;
+  height: 0; }
+
+.flyout-item {
+  display: none;
+  background: #fff; }
+  .flyout-item.opened {
+    display: block; }
+  .flyout-item .flyout-date {
+    font-size: 1.375rem;
+    color: #40c389;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid #eeebe6; }
+    .flyout-item .flyout-date > div {
+      flex: 1;
+      border-left: 2px solid #eeebe6; }
+      .flyout-item .flyout-date > div:last-child {
+        border: none; }
+  .flyout-item .flyout_info {
+    padding: 20px 25px; }

@@ -1,8 +1,63 @@
+// --------- Global ----------- //
+
+.fc-state-highlight {
+    background: transparent;
+}
+
+.fc-header tr, tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
+    background-color: transparent;
+}
+
+
+// --------- Mini Calendar ----------- //
+
 .mini-calendar {
 
-  width: 416px;
-  color: $light-text-color;
-  font-size: $font-large;
+  .view-content, .attachment {
+    flex: 0 0 455px;
+  }
+
+  table {
+    border: none;
+  }
+
+  .fc-header {
+    background: $highlite-color-1;
+    font-size: $font-h2;
+    font-family: 'Miriam_Bold';
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    h2 {
+      line-height: 50px;
+      margin: 0;
+      font-size: rem(25px);
+    }
+    .fc-button {
+        line-height: 50px;
+        height: 50px;
+    }
+  }
+
+  .fc-content tbody {
+    color: $light-text-color;
+    font-size: $font-h3;
+    background: #fff;
+  }
+
+  .fc-widget-content {
+    border-color: $light-text-color;
+  }
+
+  thead th, th {
+    background: transparent;
+    border: none;
+    color: $secondary-text-color;
+  }
+
+  tr.fc-week.fc-first td {
+    border-top: 1px solid $light-text-color;
+  }
 
   td.fc-day {
     height: 60px;
@@ -44,6 +99,33 @@
   }
 }
 
-.fc-state-highlight {
-    background: transparent;
+// ---------- Flyouts ----------- //
+
+.flyout-item {
+  display: none;
+  background: #fff;
+
+  &.opened {
+    display: block;
+  }
+
+  .flyout-date {
+    font-size: $font-h3;
+    color: $highlite-color-4;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid $light-text-color-2;
+    > div {
+      flex: 1;
+      border-left: 2px solid $light-text-color-2;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .flyout_info {
+    padding: 20px 25px;
+  }
 }
