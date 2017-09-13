@@ -3,6 +3,7 @@
 .main-slider {
 
     height: $header-height;
+    background: #000;
 
     .views-slideshow-cycle-main-frame {
         height: $header-height;
@@ -15,4 +16,40 @@
         height: $header-height;
         width: 100%;
     }
+
+    .item-info-container {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 940px;
+        height: 100%;
+    }
+
+    .item-info {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        max-width: 550px;
+        padding-bottom: 50px;
+    }
+
+    .show-date {
+        display: inline-block;
+        color: $highlite-color-4;
+        font-size: rem(26px);
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: $font-h1;
+        color: #fff;
+    }
+
+    a.btn {
+        display: inline-block;
+        padding: 0 25px;
+    }
+
 }

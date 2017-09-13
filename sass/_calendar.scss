@@ -28,21 +28,67 @@
     color: #fff;
     height: 50px;
     line-height: 50px;
+    margin: 0;
+
     h2 {
       line-height: 50px;
       margin: 0;
       font-size: rem(25px);
     }
+
     .fc-button {
         line-height: 50px;
         height: 50px;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        background: none;
+        text-shadow: none;
+        box-shadow: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 0;
+        transition: all 0.3s;
+
+        &.fc-button-next {
+         .fc-text-arrow {
+            transform: rotate(225deg);
+          }
+        }
+
+        &:hover {
+          background: $highlite-color-2;
+        }
+
+        .fc-text-arrow {
+          display: block;
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+          transform: rotate(45deg);
+          overflow: hidden;
+          text-indent: 9999px;
+        }
     }
   }
 
-  .fc-content tbody {
-    color: $light-text-color;
-    font-size: $font-h3;
-    background: #fff;
+  .fc-content {
+    thead {
+      th {
+        direction: rtl;
+      }
+      height: 30px;
+      line-height: 30px;
+    }
+    tbody {
+      color: $light-text-color;
+      font-size: $font-h3;
+      background: #fff;
+    }
   }
 
   .fc-widget-content {
@@ -71,6 +117,12 @@
       color: $highlite-color-3;
       border-radius: 50%;
     }
+    &.fc-today.opened .fc-day-number {
+      border-color: $highlite-color-1;
+      color: $highlite-color-1;
+      box-shadow: none;
+    }
+
   }
 
   .fc-day-number {
@@ -91,6 +143,10 @@
         color: $highlite-color-1;
       }
     }
+    &.opened .fc-day-number{
+      box-shadow: inset 0 0 0 1px $highlite-color-1;
+      color: $highlite-color-1;
+    }
   }
 
   .fc-event {
@@ -110,12 +166,15 @@
   }
 
   .flyout-date {
+
+    font-family: $font-bold;
     font-size: $font-h3;
     color: $highlite-color-4;
     text-align: center;
     height: 50px;
     line-height: 50px;
     border-bottom: 3px solid $light-text-color-2;
+
     > div {
       flex: 1;
       border-left: 2px solid $light-text-color-2;
@@ -126,6 +185,8 @@
   }
 
   .flyout_info {
+    height: 190px;
+    overflow: hidden;
     padding: 20px 25px;
   }
 }

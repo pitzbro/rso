@@ -1,3 +1,35 @@
+// ------------- Links ------------- //
+
+a, a:link, a:visited {
+
+  &.btn {
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    &.colored:hover {
+      background: $highlite-color-2;
+    }
+  }
+
+  &.full-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+// ------------- Modal ------------- //
+
+.modal-bg {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+// ------------- Lists ------------- //
+
 .clean-list {
   list-style: none;
 }

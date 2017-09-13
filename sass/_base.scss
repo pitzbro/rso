@@ -35,6 +35,7 @@ body {
 }
 
 a, a:link, a:visited {
+  transition: all 0.3s;
   // cursor: pointer;
   // color: currentColor;
   // text-decoration: none;
@@ -42,13 +43,13 @@ a, a:link, a:visited {
   // &:hover {
   //   color: #000;
   // }
-  &.btn {
-    display: block;
-    text-align: center;
-    line-height: 35px;
-    color: #fff;
-    text-decoration: none;
-  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-bold;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    font-weight: normal;
 }
 
 h1, .bulletin-main-title, .main-title {
