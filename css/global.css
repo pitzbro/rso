@@ -255,6 +255,10 @@ body {
 .section-content {
   margin-top: 40px; }
 
+/*---------- Post Script ---------*/
+.zone-postscript-wrapper {
+  background: #fff; }
+
 * {
   box-sizing: border-box; }
 
@@ -271,7 +275,7 @@ body {
   padding: 10px 0;
   padding: 96px 0 10px;
   font: 1rem/1.5 "Miriam", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #545555;
   background-color: #ece9e3; }
 
 ::-moz-selection {
@@ -309,6 +313,13 @@ h2 {
   margin-bottom: 20px;
   font-weight: normal; }
   h2.block-title {
+    font-family: "Miriam_Bold";
+    font-size: 1.625rem;
+    color: #0097d7;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 0.5em;
+    line-height: 1.8; }
+  .large-block-title h2.block-title {
     font-size: 2.5rem;
     color: #47206e;
     margin-bottom: 25px; }
@@ -359,6 +370,11 @@ abbr[title], acronym[title] {
   padding: 0;
   margin: 0;
   border: none; }
+
+table {
+  border: none; }
+  table tbody tr {
+    border-bottom: 2px solid #c0c0c0; }
 
 /*----------------Main Slider Gallery-----------------*/
 .main-slider {
@@ -446,7 +462,7 @@ abbr[title], acronym[title] {
   .small-thumbs-row:hover {
     filter: grayscale(0%); }
     .small-thumbs-row:hover a {
-      color: #000 !important;
+      color: #545555 !important;
       text-decoration: none !important; }
   .small-thumbs-row .image-text-block {
     padding-top: 10px;

@@ -65,6 +65,15 @@ h2 {
   font-weight: normal;
 
   &.block-title {
+    font-family: $font-bold;
+    font-size: $font-h3;
+    color: $highlite-color-3;
+    border-bottom: $main-border;
+    margin-bottom: 0.5em;
+    line-height: 1.8; 
+  }
+
+  .large-block-title &.block-title {
     font-size: rem(40px);
     color: $highlite-color-1;
     margin-bottom: 25px;
