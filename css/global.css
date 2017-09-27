@@ -40,6 +40,10 @@
   font-size: 1.25rem;
   line-height: 1; }
 
+.text-large {
+  font-size: 1.875rem;
+  font-family: "Miriam_Bold"; }
+
 .border-bottom {
   border-bottom: 1px solid #c0c0c0; }
 
@@ -51,6 +55,8 @@ a.btn, a:link.btn, a:visited.btn {
   text-decoration: none; }
   a.btn.colored:hover, a:link.btn.colored:hover, a:visited.btn.colored:hover {
     background: #ff6600; }
+    a.btn.colored:hover.third, a:link.btn.colored:hover.third, a:visited.btn.colored:hover.third {
+      background: #47206e; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   position: absolute;
@@ -62,7 +68,7 @@ a.full-link, a:link.full-link, a:visited.full-link {
 .modal-bg {
   background: rgba(0, 0, 0, 0.65); }
 
-.clean-list {
+.clean-list li {
   list-style: none; }
 
 .comma-list .comma-item {
@@ -72,6 +78,18 @@ a.full-link, a:link.full-link, a:visited.full-link {
   .comma-list .comma-item:last-child:after {
     content: ""; }
 
+ul.menu.icon-menu {
+  display: flex; }
+  ul.menu.icon-menu li {
+    list-style: none;
+    flex: 1;
+    margin: 0;
+    padding: 0; }
+  ul.menu.icon-menu img, ul.menu.icon-menu svg {
+    max-height: 25px;
+    max-width: 45px; }
+
+/*--------------*/
 textarea {
   resize: none; }
 
@@ -99,6 +117,8 @@ textarea {
   background: #47206e; }
   .colored.second {
     background: #40c389; }
+  .colored.third {
+    background: #ff6600; }
 
 .ltr {
   direction: ltr; }
@@ -251,13 +271,18 @@ body {
   border-left: 10px solid #47206e;
   border-right: 10px solid #47206e; }
 
-/*---------- Content  ----------*/
+/*---------- Layout  ----------*/
 .section-content {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 20px; }
+
+.zone-wrapper:not(.zone-footer-wrapper) {
+  margin-bottom: 20px; }
 
 /*---------- Post Script ---------*/
 .zone-postscript-wrapper {
-  background: #fff; }
+  background: #fff;
+  padding: 30px 0; }
 
 * {
   box-sizing: border-box; }
@@ -328,6 +353,10 @@ h4 {
   font-size: 1rem;
   margin-bottom: 5px; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 button, select {
   cursor: pointer; }
 
@@ -371,9 +400,9 @@ abbr[title], acronym[title] {
   margin: 0;
   border: none; }
 
-table {
+.table table {
   border: none; }
-  table tbody tr {
+  .table table tbody tr {
     border-bottom: 2px solid #c0c0c0; }
 
 /*----------------Main Slider Gallery-----------------*/
@@ -553,6 +582,45 @@ ul.custom-pager .next a:after {
       border: none;
       border-left: 10px solid #47206e;
       border-right: 10px solid #47206e; }
+      body.admin-menu .main-menu-block ul.nice-menu > li ul {
+        top: 121px; }
+
+footer.section-footer {
+  background: #47206e;
+  color: #fff;
+  padding: 30px 0 50px; }
+  footer.section-footer .region-inner {
+    display: flex;
+    flex-wrap: wrap; }
+  footer.section-footer .region-footer-first {
+    margin-bottom: 50px; }
+  footer.section-footer .footer-small {
+    flex: 0 0 210px; }
+    footer.section-footer .footer-small .block-inner {
+      padding: 0 0 0 40px; }
+  footer.section-footer .footer-large {
+    flex: 1; }
+  footer.section-footer .footer-menu .content > ul.menu {
+    display: flex; }
+    footer.section-footer .footer-menu .content > ul.menu li {
+      flex: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    footer.section-footer .footer-menu .content > ul.menu a {
+      color: #fff;
+      text-decoration: none; }
+    footer.section-footer .footer-menu .content > ul.menu > li > a {
+      font-size: 1.25rem;
+      font-family: "Miriam_Bold"; }
+  footer.section-footer .logo-img-link {
+    width: 160px;
+    padding-bottom: 10px; }
+
+header .region-inner > div {
+  padding-left: 25px; }
+  header .region-inner > div:last-child {
+    padding: 0; }
 
 header .zone-menu {
   position: fixed;
@@ -565,6 +633,8 @@ header .zone-menu {
   border-left: 10px solid #47206e;
   border-right: 10px solid #47206e;
   font-size: 1.25rem; }
+  body.admin-menu header .zone-menu {
+    top: 25px; }
 
 header .container-12, header .container-12 .grid-12 {
   margin: 0;

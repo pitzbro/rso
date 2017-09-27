@@ -25,14 +25,22 @@ body {
     border-right: 10px solid $highlite-color-1; 
 }
 
-/*---------- Content  ----------*/
+/*---------- Layout  ----------*/
 
 .section-content {
     margin-top: 40px;
+    padding-bottom: 20px;
 }
+
+.zone-wrapper:not(.zone-footer-wrapper) {
+    margin-bottom: 20px;
+}
+
 
 /*---------- Post Script ---------*/
 
 .zone-postscript-wrapper {
     background: #fff;
+    padding: 30px 0;
+
 }

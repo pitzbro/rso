@@ -21,6 +21,11 @@
   line-height: 1;
 }
 
+.text-large {
+  font-size: rem(30px);
+  font-family: $font-bold;
+}
+
 // ------------- Borders ------------- //
 
 .border-bottom {
@@ -39,6 +44,9 @@ a, a:link, a:visited {
     text-decoration: none;
     &.colored:hover {
       background: $highlite-color-2;
+      &.third {
+        background: $highlite-color-1;
+      }
     }
   }
 
@@ -60,7 +68,9 @@ a, a:link, a:visited {
 // ------------- Lists ------------- //
 
 .clean-list {
-  list-style: none;
+  li {
+    list-style: none;
+  }
 }
 
 .comma-list .comma-item {
@@ -72,6 +82,25 @@ a, a:link, a:visited {
     content: "";
   }
 }
+ul.menu.icon-menu  {
+  display: flex;
+  li {
+    list-style: none;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  img, svg {
+    max-height: 25px;
+    max-width: 45px;
+  }
+}
+
+
+
+
+/*--------------*/
 
 textarea {
     resize: none;
@@ -106,6 +135,9 @@ textarea {
   background: $highlite-color-1;
   &.second {
     background: $highlite-color-4;
+  }
+  &.third {
+    background: $highlite-color-2;
   }
 }
 

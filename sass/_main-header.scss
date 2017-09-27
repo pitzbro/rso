@@ -1,5 +1,12 @@
 header {
 
+    .region-inner > div {
+        padding-left: 25px;
+        &:last-child {
+            padding: 0;
+        }
+    }
+
     .zone-menu {
         position: fixed;
         z-index: 100;
@@ -11,6 +18,9 @@ header {
         border-left: 10px solid $highlite-color-1;
         border-right: 10px solid $highlite-color-1;
         font-size: rem(20px);
+        body.admin-menu & {
+            top: 25px;
+        }
     }
 
     .container-12, .container-12 .grid-12 {

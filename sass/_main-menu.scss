@@ -51,6 +51,9 @@
                 border: none;
                 border-left: 10px solid #47206e;
                 border-right: 10px solid #47206e;
+                body.admin-menu & {
+                    top: $menu-height + 35px;
+                }
             }
 
         }
