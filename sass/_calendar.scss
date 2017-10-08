@@ -13,8 +13,12 @@
 
 .mini-calendar {
 
-  .view-content, .attachment {
+  .view-content, .attachment-after {
     flex: 0 0 455px;
+  }
+
+  .attachment-before {
+    display: none;
   }
 
   table {

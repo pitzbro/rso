@@ -53,10 +53,15 @@ a.btn, a:link.btn, a:visited.btn {
   line-height: 35px;
   color: #fff;
   text-decoration: none; }
+  a.btn.colored.fourth, a:link.btn.colored.fourth, a:visited.btn.colored.fourth {
+    color: #545555; }
   a.btn.colored:hover, a:link.btn.colored:hover, a:visited.btn.colored:hover {
     background: #ff6600; }
     a.btn.colored:hover.third, a:link.btn.colored:hover.third, a:visited.btn.colored:hover.third {
       background: #47206e; }
+    a.btn.colored:hover.fourth, a:link.btn.colored:hover.fourth, a:visited.btn.colored:hover.fourth {
+      background: #0097d7;
+      color: #fff; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   position: absolute;
@@ -119,6 +124,9 @@ textarea {
     background: #40c389; }
   .colored.third {
     background: #ff6600; }
+  .colored.fourth {
+    background: #c0c1c2;
+    color: #545555; }
 
 .ltr {
   direction: ltr; }
@@ -284,6 +292,14 @@ body {
   background: #fff;
   padding: 30px 0; }
 
+/*---------- Back To Top Button ---------*/
+#back-top {
+  left: 35px;
+  margin: 0px;
+  bottom: 20px; }
+  #back-top span#button {
+    border-radius: 50%; }
+
 * {
   box-sizing: border-box; }
 
@@ -404,6 +420,16 @@ abbr[title], acronym[title] {
   border: none; }
   .table table tbody tr {
     border-bottom: 2px solid #c0c0c0; }
+  .table table tr.options-row {
+    border: none; }
+    .table table tr.options-row td {
+      padding-top: 30px; }
+  .table table td, .table table th {
+    padding: 10px 70px; }
+  .table table td.first, .table table td.last {
+    padding: 10px 0; }
+  .table table td.button-column {
+    min-width: 230px; }
 
 /*----------------Main Slider Gallery-----------------*/
 .main-slider {
@@ -549,9 +575,9 @@ ul.custom-pager .next a:after {
   width: 100%;
   display: flex; }
   .main-menu-block ul.nice-menu > li {
-    background: transparent;
     border: none;
-    flex: 1; }
+    background: transparent;
+    font-family: 'Miriam_Bold'; }
     .main-menu-block ul.nice-menu > li:hover {
       background: transparent; }
     .main-menu-block ul.nice-menu > li > a {
@@ -560,6 +586,8 @@ ul.custom-pager .next a:after {
       line-height: 86px;
       color: #545555;
       text-decoration: none; }
+      .main-menu-block ul.nice-menu > li > a:hover {
+        color: #47206e; }
       .main-menu-block ul.nice-menu > li > a:before {
         content: "";
         width: 0px;
@@ -568,22 +596,65 @@ ul.custom-pager .next a:after {
         z-index: -1;
         background: #0097d7;
         transform: translate(0, 25px);
-        transition: width 0.5s; }
+        transition: all 0.5s; }
       .main-menu-block ul.nice-menu > li > a:hover:before {
         width: 30px; }
-      .main-menu-block ul.nice-menu > li > a:hover {
-        font-family: 'Miriam_Bold';
-        color: #47206e; }
+    .main-menu-block ul.nice-menu > li.over > a {
+      color: #47206e; }
+      .main-menu-block ul.nice-menu > li.over > a:before {
+        background: #ff6600;
+        width: 30px; }
+    .main-menu-block ul.nice-menu > li.over > ul {
+      height: 220px; }
     .main-menu-block ul.nice-menu > li ul {
+      display: flex !important;
+      visibility: visible !important;
+      height: 0;
+      overflow: hidden !important;
+      transition: all 0.5s;
+      justify-content: center;
       position: fixed;
       top: 96px;
       width: 100%;
-      background: grey;
+      background: #c0c1c2;
       border: none;
       border-left: 10px solid #47206e;
-      border-right: 10px solid #47206e; }
+      border-right: 10px solid #47206e;
+      display: flex; }
       body.admin-menu .main-menu-block ul.nice-menu > li ul {
         top: 121px; }
+      .main-menu-block ul.nice-menu > li ul li {
+        flex: 0 0 300px;
+        margin: 25px 10px;
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+        font-family: "Miriam";
+        height: 170px;
+        position: relative;
+        background-color: #ff6600;
+        background-repeat: no-repeat; }
+        .main-menu-block ul.nice-menu > li ul li a {
+          color: #fff;
+          position: absolute;
+          top: 0;
+          display: block;
+          width: 100%;
+          text-decoration: none;
+          padding-top: 135px;
+          line-height: 35px; }
+        .main-menu-block ul.nice-menu > li ul li.link_about {
+          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_staff {
+          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_education {
+          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_calendar {
+          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_events {
+          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_membership {
+          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
 
 footer.section-footer {
   background: #47206e;
@@ -600,6 +671,11 @@ footer.section-footer {
       padding: 0 0 0 40px; }
   footer.section-footer .footer-large {
     flex: 1; }
+  footer.section-footer a {
+    color: #fff;
+    text-decoration: none; }
+    footer.section-footer a:hover {
+      text-decoration: underline; }
   footer.section-footer .footer-menu .content > ul.menu {
     display: flex; }
     footer.section-footer .footer-menu .content > ul.menu li {
@@ -607,9 +683,6 @@ footer.section-footer {
       list-style: none;
       margin: 0;
       padding: 0; }
-    footer.section-footer .footer-menu .content > ul.menu a {
-      color: #fff;
-      text-decoration: none; }
     footer.section-footer .footer-menu .content > ul.menu > li > a {
       font-size: 1.25rem;
       font-family: "Miriam_Bold"; }
@@ -665,8 +738,11 @@ header .subscription-signup button {
 .fc-header tr, tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
   background-color: transparent; }
 
-.mini-calendar .view-content, .mini-calendar .attachment {
+.mini-calendar .view-content, .mini-calendar .attachment-after {
   flex: 0 0 455px; }
+
+.mini-calendar .attachment-before {
+  display: none; }
 
 .mini-calendar table {
   border: none; }

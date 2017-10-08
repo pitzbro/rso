@@ -3,4 +3,22 @@
     tbody tr {
         border-bottom: $bold-border;
     }
+    tr.options-row {
+        border: none;
+        td {
+            padding-top: 30px;
+        }
+    }
+    td, th {
+        padding: 10px 70px;
+    }
+    td.first, td.last {
+        padding: 10px 0;
+    }
+
+    td.button-column {
+        min-width: 230px;
+    }
 }
+
+

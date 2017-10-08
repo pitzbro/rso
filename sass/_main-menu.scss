@@ -5,9 +5,10 @@
         // justify-content: space-between;
 
         > li {
-            background: transparent;
             border:none;
-            flex: 1;
+            background: transparent;
+            font-family: 'Miriam_Bold';
+            // flex: 1;
 
             &:hover {
                 background: transparent;
@@ -22,6 +23,11 @@
                 text-decoration: none;
                 // position: relative;
 
+                &:hover {
+                    color: $highlite-color-1;
+                    // font-family: 'Miriam_Bold';
+                }
+
                 &:before {
                     content: "";
                     width: 0px;
@@ -30,29 +36,103 @@
                     z-index: -1;
                     background: $highlite-color-3;
                     transform: translate(0, 25px);
-                    transition: width 0.5s;
+                    transition: all 0.5s;
                 }
 
                 &:hover:before {
                     width: 30px;
                 }
 
-                &:hover {
-                    font-family: 'Miriam_Bold';
-                    color: $highlite-color-1;
+            }
+
+            &.over > a {
+
+                color: $highlite-color-1;
+
+                &:before {
+                    background: $highlite-color-2;
+                    width: 30px;
                 }
             }
 
+            &.over > ul {
+                height:  220px;
+            }
+            
+
             ul {
+
+                display: flex !important;
+                visibility: visible !important;
+
+                height: 0;
+                overflow: hidden !important;
+                transition: all 0.5s;
+
+
+
+                justify-content: center;
                 position: fixed;
                 top: $menu-height + 10px;
                 width: 100%;
-                background: grey;
+                background: $secondary-color;
                 border: none;
                 border-left: 10px solid #47206e;
                 border-right: 10px solid #47206e;
+                display: flex;
                 body.admin-menu & {
                     top: $menu-height + 35px;
+                }
+
+                li {
+                    flex: 0 0 300px;
+                    margin: 25px 10px;
+                    padding: 0;
+                    text-align: center;
+                    font-size: $font-base;
+                    font-family: $font-primary;
+                    height: 170px;
+                    position: relative;
+
+                    a {
+                        color: #fff;
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        width: 100%;
+                        text-decoration: none;
+                        padding-top: 135px;
+                        line-height: 35px;
+                    }
+
+                    background-color: $highlite-color-2;
+                    background-repeat: no-repeat;
+
+                    &.link_about {
+                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
+                    }
+
+                     &.link_staff {
+                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
+                    }
+                    
+                    &.link_education {
+                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
+                    }   
+
+                    &.link_calendar {
+                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
+                    }
+                    
+                    &.link_events {
+                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
+                    }
+
+                    &.link_membership {
+                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
+                    }
+                    
+
                 }
             }
 

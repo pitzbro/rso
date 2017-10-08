@@ -23,6 +23,14 @@ footer.section-footer {
         flex: 1;
     }
 
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     .footer-menu .content > ul.menu {
         display: flex;
         li {
@@ -30,10 +38,6 @@ footer.section-footer {
             list-style: none;
             margin: 0;
             padding: 0;            
-        }
-        a {
-            color: #fff;
-            text-decoration: none;
         }
         > li > a {
             font-size: $font-h5;

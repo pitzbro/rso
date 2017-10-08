@@ -42,10 +42,18 @@ a, a:link, a:visited {
     line-height: 35px;
     color: #fff;
     text-decoration: none;
+    // max-width: 230px;
+    &.colored.fourth {
+      color: $main-text-color;
+    }
     &.colored:hover {
       background: $highlite-color-2;
       &.third {
         background: $highlite-color-1;
+      }
+      &.fourth {
+        background: $highlite-color-3;
+        color: #fff;
       }
     }
   }
@@ -138,6 +146,10 @@ textarea {
   }
   &.third {
     background: $highlite-color-2;
+  }
+  &.fourth {
+    background: $secondary-color;
+    color: $main-text-color;
   }
 }
 
