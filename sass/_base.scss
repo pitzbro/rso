@@ -43,6 +43,16 @@ a, a:link, a:visited {
   // &:hover {
   //   color: #000;
   // }
+  &.download-link {
+    display: inline-block;
+    text-decoration: none;
+    color: $main-text-color;
+    background-image: url(../images/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 17px;
+    padding-left: 29px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

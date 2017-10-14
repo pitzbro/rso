@@ -9,6 +9,14 @@
   line-height: 1.8;
 }
 
+.block-title-side {
+  position: absolute;
+  z-index: 1;
+  line-height: 46px;
+  top: 0;
+  left: 0;
+}
+
 .sub-title {
   @include main-title;
   font-family: $font-primary;
@@ -318,4 +326,68 @@ a.more-link {
         background: #000;
       }
     } 
+}
+
+
+/*----------------- Social Icons --------------*/
+
+.block-social-share ul {
+
+  display: flex;
+
+  li {
+    flex: 0 0 30px;
+    list-style: none;
+    margin-left: 15px;
+  }
+
+  a {
+
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: inherit; // can't have font-size inherit on line above, so need to override
+    text-rendering: auto; // optimizelegibility throws things off #1094
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -9999px;
+
+    &:before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      text-indent: 0;
+      color: $main-color;
+      font-size: rem(14px);
+      background: $background-color-001;
+      border-radius: 50%;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &.social-share-facebook:before {
+      content: '\f09a';
+    }
+    &.social-share-googleplus:before {
+      content: '\f0d5';
+    }
+    &.social-share-linkedin:before {
+      content: '\f0e1';
+    }
+    &.social-share-pinterest:before {
+      content: '\f231';
+    }
+    &.social-share-twitter:before {
+      content: '\f099';
+    }
+
+  }
+
 }

@@ -26,6 +26,9 @@
                 &:hover {
                     color: $highlite-color-1;
                     // font-family: 'Miriam_Bold';
+                    &.nolink {
+                        cursor: default;
+                    }
                 }
 
                 &:before {

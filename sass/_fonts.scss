@@ -1,4 +1,4 @@
-/*----------  Alef Font  ----------*/
+/*----------  Miriam Font  ----------*/
 
 @font-face {
     font-family: 'Miriam';
@@ -8,4 +8,19 @@
 @font-face {
     font-family: 'Miriam_Bold';
     src: url('../fonts/MiriamLibre-Bold.ttf');
+}
+
+/*----------  Awsome Font  ----------*/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/FontAwesome.otf');
+  src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+    url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+    url('../fonts/fontawesome-webfont.svg') format('svg');
+//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
 }
