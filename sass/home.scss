@@ -1,0 +1,32 @@
+/*------ Contact Zone -------*/
+
+.home-contact {
+    h2.block-title {
+        padding-right: #{$container-padding};
+    }
+    .content {
+        display: flex;
+        background: $highlite-color-5;
+        color: #fff;
+
+        > * {
+            flex: 0 0 50%;
+        }
+
+        .content-home-text {
+            padding: 40px #{$container-padding} 40px 0;
+
+            h2 {
+                font-size: $font-h3;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

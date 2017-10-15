@@ -1,0 +1,7 @@
+.home-contact {
+  padding-right: calc((100%-940)/2); }
+  .home-contact .content {
+    display: flex;
+    color: #fff; }
+    .home-contact .content > * {
+      flex: 1; }

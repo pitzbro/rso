@@ -30,9 +30,12 @@ body {
 .section-content {
     margin-top: 40px;
     padding-bottom: 20px;
+    .front & {
+        padding-bottom: 0;
+    }
 }
 
-.zone-wrapper:not(.zone-footer-wrapper) {
+.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper) {
     margin-bottom: 20px;
 }
 

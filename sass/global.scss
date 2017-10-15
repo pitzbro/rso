@@ -1,7 +1,7 @@
 @import 'vendors';
 @import 'functions';
 @import 'fonts';
-@import 'font-awesome';
+// @import 'font-awesome';
 @import 'vars';
 @import 'helpers';
 @import 'layout';
@@ -18,3 +18,7 @@
 @import 'main-footer';
 @import 'main-header';
 @import 'calendar';
+
+/* Pages */
+@import 'home';
+

@@ -297,6 +297,10 @@ textarea {
 
 .full-width {
   width: 100%;
+  & .container-12, & .container-12 .grid-12 {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .view-filters {
@@ -370,6 +374,12 @@ a.more-link {
       border-radius: 50%;
       line-height: 30px;
       text-align: center;
+
+      transition: all .2s;
+    }
+    &:hover:before {
+      background: $highlite-color-1;
+      color: #fff;
     }
 
     &.social-share-facebook:before {
