@@ -1,3 +1,7 @@
+.fit-content {
+  width: fit-content;
+}
+
 // ------------- Text ------------- //
 
 .block-title {
@@ -46,6 +50,7 @@ a, a:link, a:visited {
 
   &.btn {
     display: block;
+    padding: 0 25px;
     text-align: center;
     line-height: 35px;
     color: #fff;
@@ -158,6 +163,9 @@ textarea {
   &.fourth {
     background: $secondary-color;
     color: $main-text-color;
+  }
+  &.fifth {
+    background: $highlite-color-3;
   }
 }
 

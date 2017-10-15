@@ -15,18 +15,6 @@
 
         .content-home-text {
             padding: 40px #{$container-padding} 40px 0;
-
-            h2 {
-                font-size: $font-h3;
-            }
-
-            a {
-                color: #fff;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
         }
     }
 }

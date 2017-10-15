@@ -1,7 +1,11 @@
-/*------------Admin Menu---------*/
+/*------------Admin CSS---------*/
 
 .admin-menu-processed {
-  font-size: 12px !important;
+    font-size: 12px !important;
+}
+
+.tabs {
+    margin-bottom: 25px;
 }
 
 /*-------------Frame---------------------*/
@@ -28,8 +32,7 @@ body {
 /*---------- Layout  ----------*/
 
 .section-content {
-    margin-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 0 20px;
     .front & {
         padding-bottom: 0;
     }

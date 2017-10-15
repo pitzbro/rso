@@ -1,0 +1,58 @@
+
+.form-item, .form-actions {
+    margin: 0;
+    text-align: end;
+}
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    width: 100%;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.dark-bg {
+    textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-family: $font-primary;
+        font-size: $font-h3;
+        line-height: 30px;
+        height: 30px;
+        padding: 0;
+        border-bottom: 2px solid $secondary-color;
+        margin-bottom: 25px;
+
+        &:focus {
+            border-color: $highlite-color-3;
+        }
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    textarea {
+        min-height: 130px;
+    }
+
+    button, input[type="reset"], input[type="submit"], input[type="button"] {
+        font-family: $font-bold;
+        font-size: $font-base;
+        background: transparent;
+        border: 1px solid $main-text-color;
+        border-radius: 0;
+        padding: 0 40px;
+        height: 30px;
+        line-height: 30px;
+        text-shadow: none;
+        color: #fff;
+
+        transition: all .2s;
+
+        &:hover {
+            background: $highlite-color-3;
+        }
+    }
+}

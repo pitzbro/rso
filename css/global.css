@@ -24,6 +24,9 @@
 /* Fonts */
 /* Borders */
 /* Text Colors*/
+.fit-content {
+  width: fit-content; }
+
 .block-title {
   font-family: "Miriam_Bold";
   font-size: 1.625rem;
@@ -64,6 +67,7 @@
 
 a.btn, a:link.btn, a:visited.btn {
   display: block;
+  padding: 0 25px;
   text-align: center;
   line-height: 35px;
   color: #fff;
@@ -142,6 +146,8 @@ textarea {
   .colored.fourth {
     background: #c0c1c2;
     color: #545555; }
+  .colored.fifth {
+    background: #0097d7; }
 
 .ltr {
   direction: ltr; }
@@ -322,9 +328,12 @@ a.more-link {
     .block-social-share ul a.social-share-twitter:before {
       content: '\f099'; }
 
-/*------------Admin Menu---------*/
+/*------------Admin CSS---------*/
 .admin-menu-processed {
   font-size: 12px !important; }
+
+.tabs {
+  margin-bottom: 25px; }
 
 /*-------------Frame---------------------*/
 body:before, body:after {
@@ -347,8 +356,7 @@ body {
 
 /*---------- Layout  ----------*/
 .section-content {
-  margin-top: 40px;
-  padding-bottom: 20px; }
+  padding: 40px 0 20px; }
   .front .section-content {
     padding-bottom: 0; }
 
@@ -402,6 +410,11 @@ body {
 
 a, a:link, a:visited {
   transition: all 0.3s; }
+  .dark-bg a, .dark-bg a:link, .dark-bg a:visited {
+    color: #fff;
+    text-decoration: none; }
+    .dark-bg a:hover:not(.btn), .dark-bg a:link:hover:not(.btn), .dark-bg a:visited:hover:not(.btn) {
+      text-decoration: underline; }
   a.download-link, a:link.download-link, a:visited.download-link {
     display: inline-block;
     text-decoration: none;
@@ -431,12 +444,11 @@ h1, .bulletin-main-title, .main-title {
 h2 {
   font-family: 'Miriam_Bold';
   line-height: 1.1;
-  font-size: 2.0625rem;
-  margin-bottom: 20px;
+  font-size: 1.625rem;
+  margin-bottom: 30px;
   font-weight: normal; }
   h2.block-title {
     font-family: "Miriam_Bold";
-    font-size: 1.625rem;
     color: #0097d7;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 0.5em;
@@ -458,7 +470,7 @@ img {
 button, select {
   cursor: pointer; }
 
-button {
+button, .btn a {
   background: #47206e;
   color: #ff6600;
   font-size: inherit;
@@ -497,6 +509,49 @@ abbr[title], acronym[title] {
   padding: 0;
   margin: 0;
   border: none; }
+
+.form-item, .form-actions {
+  margin: 0;
+  text-align: end; }
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+  width: 100%; }
+  textarea:focus, select:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
+    box-shadow: none; }
+
+.dark-bg textarea, .dark-bg select, .dark-bg input[type="date"], .dark-bg input[type="datetime"], .dark-bg input[type="datetime-local"], .dark-bg input[type="email"], .dark-bg input[type="month"], .dark-bg input[type="number"], .dark-bg input[type="password"], .dark-bg input[type="search"], .dark-bg input[type="tel"], .dark-bg input[type="text"], .dark-bg input[type="time"], .dark-bg input[type="url"], .dark-bg input[type="week"] {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: "Miriam";
+  font-size: 1.625rem;
+  line-height: 30px;
+  height: 30px;
+  padding: 0;
+  border-bottom: 2px solid #c0c1c2;
+  margin-bottom: 25px; }
+  .dark-bg textarea:focus, .dark-bg select:focus, .dark-bg input[type="date"]:focus, .dark-bg input[type="datetime"]:focus, .dark-bg input[type="datetime-local"]:focus, .dark-bg input[type="email"]:focus, .dark-bg input[type="month"]:focus, .dark-bg input[type="number"]:focus, .dark-bg input[type="password"]:focus, .dark-bg input[type="search"]:focus, .dark-bg input[type="tel"]:focus, .dark-bg input[type="text"]:focus, .dark-bg input[type="time"]:focus, .dark-bg input[type="url"]:focus, .dark-bg input[type="week"]:focus {
+    border-color: #0097d7; }
+  .dark-bg textarea::placeholder, .dark-bg select::placeholder, .dark-bg input[type="date"]::placeholder, .dark-bg input[type="datetime"]::placeholder, .dark-bg input[type="datetime-local"]::placeholder, .dark-bg input[type="email"]::placeholder, .dark-bg input[type="month"]::placeholder, .dark-bg input[type="number"]::placeholder, .dark-bg input[type="password"]::placeholder, .dark-bg input[type="search"]::placeholder, .dark-bg input[type="tel"]::placeholder, .dark-bg input[type="text"]::placeholder, .dark-bg input[type="time"]::placeholder, .dark-bg input[type="url"]::placeholder, .dark-bg input[type="week"]::placeholder {
+    color: #fff; }
+
+.dark-bg textarea {
+  min-height: 130px; }
+
+.dark-bg button, .dark-bg input[type="reset"], .dark-bg input[type="submit"], .dark-bg input[type="button"] {
+  font-family: "Miriam_Bold";
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid #545555;
+  border-radius: 0;
+  padding: 0 40px;
+  height: 30px;
+  line-height: 30px;
+  text-shadow: none;
+  color: #fff;
+  transition: all .2s; }
+  .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="submit"]:hover, .dark-bg input[type="button"]:hover {
+    background: #0097d7; }
 
 .table table {
   border: none; }
@@ -743,7 +798,8 @@ ul.custom-pager .next a:after {
 footer.section-footer {
   background: #47206e;
   color: #fff;
-  padding: 30px 0 50px; }
+  padding: 30px 0 50px;
+  border: none; }
   footer.section-footer .region-inner {
     display: flex;
     flex-wrap: wrap; }
@@ -971,10 +1027,14 @@ header .subscription-signup button {
     flex: 0 0 50%; }
   .home-contact .content .content-home-text {
     padding: 40px calc( (100% - 940px) / 2 ) 40px 0; }
-    .home-contact .content .content-home-text h2 {
-      font-size: 1.625rem; }
-    .home-contact .content .content-home-text a {
-      color: #fff;
-      text-decoration: none; }
-      .home-contact .content .content-home-text a:hover {
-        text-decoration: underline; }
+
+/*------ Contact Page -------*/
+.context-contact .section-content {
+  padding: 140px 0 100px;
+  background-image: url("../images/bg-001.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff; }
+  .context-contact .section-content .zone-content .block {
+    width: 50%;
+    float: right; }
