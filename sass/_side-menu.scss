@@ -14,12 +14,13 @@
         display: block;
         padding: 5px 0;
         color: $highlite-color-3;
-        &.active {
+    }
+
+    li:not(.expanded) a.active {
             background: url(../images/arrow-left.svg);
             background-repeat: no-repeat;
             background-position: left center;
             background-size: 10px;
-        }
     }
 
     > ul > li {
@@ -31,10 +32,10 @@
         }
 
         > ul > li {
-            font-size: $font-base;
+            font-size: rem(14px);
 
             a {
-                padding: 3px 0;
+                padding: 3px 15px;
                 color: $main-text-color;
                 &.active {
                     color: $highlite-color-3;
