@@ -57,3 +57,17 @@ header {
         height: 66px;
     }
 }
+
+.page-header-image-block {
+    font-size: $font-h2;
+    color: #fff;
+    .header-background-image {
+        background-image: url('../images/bg-001.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .main-title, h1 {
+        margin-bottom: 0;
+    }
+}

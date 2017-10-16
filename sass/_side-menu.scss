@@ -1,0 +1,49 @@
+.side-menu .menu-block-wrapper {
+
+    border-top: 2px solid $main-text-color;
+    border-bottom: 2px solid $main-text-color;
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 5px 0;
+        color: $highlite-color-3;
+        &.active {
+            background: url(../images/arrow-left.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 10px;
+        }
+    }
+
+    > ul > li {
+        font-size: $font-h5;
+        color: $highlite-color-3;
+
+        &:not(.last) {
+            border-bottom: 1px solid $main-text-color;
+        }
+
+        > ul > li {
+            font-size: $font-base;
+
+            a {
+                padding: 3px 0;
+                color: $main-text-color;
+                &.active {
+                    color: $highlite-color-3;
+                }
+                &:hover {
+                    color: $highlite-color-3;
+                }
+            }
+        }
+    }
+
+}

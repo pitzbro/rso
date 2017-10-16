@@ -72,6 +72,7 @@ a, a:link, a:visited {
   }
 
   &.full-link {
+    display: block;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -80,10 +81,19 @@ a, a:link, a:visited {
   }
 }
 
-// ------------- Modal ------------- //
+// ------------- Modal and Screens ------------- //
+
+.screen {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 
 .modal-bg {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 // ------------- Lists ------------- //

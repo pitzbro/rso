@@ -38,8 +38,30 @@ body {
     }
 }
 
+
 .zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper) {
     margin-bottom: 20px;
+}
+
+/*---------- Sidebar Layout  ----------*/
+
+.sidebar-layout .region-content-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tabs {
+        flex: 0 0 100%;
+    }
+
+    .sidebar {
+        flex: 0 0 200px;
+        margin-left: 35px; 
+    }
+
+    .block-main {
+        flex: 1;
+    }
+
 }
 
 /*---------- Preface Script ---------*/
