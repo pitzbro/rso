@@ -8,6 +8,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 html { 
   height: 100%;
+  background: $highlite-color-1;
   // @include for-narrow-layout {
   //   font-size: 14px;
   // }
@@ -21,7 +22,12 @@ body {
   padding: ($menu-height + 10px) 0 10px; 
   font: 1rem/1.5 $font-primary, Arial, Helvetica, sans-serif;
   color: $main-text-color;
-	background-color: $main-color;
+	// background-color: $main-color;
+  background: $highlite-color-1;
+
+  .page {
+    background-color: $main-color;
+  }
 }
 
 ::-moz-selection { /* Code for Firefox */

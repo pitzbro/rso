@@ -50,10 +50,11 @@
   margin-bottom: 0.45em;
   color: #ff6600;
   font-size: 2.6875rem;
+  font-size: 2.5rem;
   font-family: "Miriam";
   margin-bottom: 0; }
 
-.title {
+.title:not(h1) {
   font-family: "Miriam_Bold";
   font-size: 1.25rem;
   line-height: 1; }
@@ -76,7 +77,7 @@ a.btn, a:link.btn, a:visited.btn {
     color: #545555; }
   a.btn.colored:hover, a:link.btn.colored:hover, a:visited.btn.colored:hover {
     background: #ff6600; }
-    a.btn.colored:hover.third, a:link.btn.colored:hover.third, a:visited.btn.colored:hover.third {
+    a.btn.colored:hover.third, a.btn.colored:hover.fifth, a:link.btn.colored:hover.third, a:link.btn.colored:hover.fifth, a:visited.btn.colored:hover.third, a:visited.btn.colored:hover.fifth {
       background: #47206e; }
     a.btn.colored:hover.fourth, a:link.btn.colored:hover.fourth, a:visited.btn.colored:hover.fourth {
       background: #0097d7;
@@ -289,6 +290,26 @@ a.more-link {
       text-decoration: none;
       background: #000; }
 
+/*---------------- Groupings ------------------*/
+.group-title {
+  position: relative;
+  margin: 50px 0 40px; }
+  .group-title .group-line {
+    border-bottom: 1px solid #545555;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 0; }
+  .group-title h3 {
+    display: inline-block;
+    font-size: 2.0625rem;
+    font-family: "Miriam_Bold";
+    background: #ece9e3;
+    margin-bottom: 0;
+    padding-left: 10px;
+    z-index: 1;
+    position: relative; }
+
 /*----------------- Social Icons --------------*/
 .block-social-share ul {
   display: flex; }
@@ -402,6 +423,11 @@ body {
   #back-top span#button {
     border-radius: 50%; }
 
+/*---------- Login Page ---------*/
+.page-user .section-content {
+  color: #fff;
+  background-image: url("../images/bg-001.jpg"); }
+
 * {
   box-sizing: border-box; }
 
@@ -409,7 +435,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   outline: none; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  background: #47206e; }
 
 body {
   min-height: 100%;
@@ -419,7 +446,9 @@ body {
   padding: 96px 0 10px;
   font: 1rem/1.5 "Miriam", Arial, Helvetica, sans-serif;
   color: #545555;
-  background-color: #ece9e3; }
+  background: #47206e; }
+  body .page {
+    background-color: #ece9e3; }
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -461,7 +490,8 @@ h1, .bulletin-main-title, .main-title {
   font-weight: normal;
   margin-bottom: 0.45em;
   color: #ff6600;
-  font-size: 2.6875rem; }
+  font-size: 2.6875rem;
+  font-size: 2.5rem; }
 
 h2 {
   font-family: 'Miriam_Bold';
@@ -531,7 +561,9 @@ abbr[title], acronym[title] {
   border: none; }
 
 .form-item, .form-actions {
-  margin: 0;
+  margin: 0; }
+
+.form-actions {
   text-align: end; }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
@@ -539,7 +571,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   textarea:focus, select:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
     box-shadow: none; }
 
-.dark-bg textarea, .dark-bg select, .dark-bg input[type="date"], .dark-bg input[type="datetime"], .dark-bg input[type="datetime-local"], .dark-bg input[type="email"], .dark-bg input[type="month"], .dark-bg input[type="number"], .dark-bg input[type="password"], .dark-bg input[type="search"], .dark-bg input[type="tel"], .dark-bg input[type="text"], .dark-bg input[type="time"], .dark-bg input[type="url"], .dark-bg input[type="week"] {
+.dark-bg textarea, .dark-bg select, .dark-bg input[type="date"], .dark-bg input[type="datetime"], .dark-bg input[type="datetime-local"], .dark-bg input[type="email"], .dark-bg input[type="month"], .dark-bg input[type="number"], .dark-bg input[type="password"], .dark-bg input[type="search"], .dark-bg input[type="tel"], .dark-bg input[type="text"], .dark-bg input[type="time"], .dark-bg input[type="url"], .dark-bg input[type="week"], .page-user .section-content textarea, .page-user .section-content select, .page-user .section-content input[type="date"], .page-user .section-content input[type="datetime"], .page-user .section-content input[type="datetime-local"], .page-user .section-content input[type="email"], .page-user .section-content input[type="month"], .page-user .section-content input[type="number"], .page-user .section-content input[type="password"], .page-user .section-content input[type="search"], .page-user .section-content input[type="tel"], .page-user .section-content input[type="text"], .page-user .section-content input[type="time"], .page-user .section-content input[type="url"], .page-user .section-content input[type="week"] {
   border: none;
   background: transparent;
   color: #fff;
@@ -550,15 +582,15 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   padding: 0;
   border-bottom: 2px solid #c0c1c2;
   margin-bottom: 25px; }
-  .dark-bg textarea:focus, .dark-bg select:focus, .dark-bg input[type="date"]:focus, .dark-bg input[type="datetime"]:focus, .dark-bg input[type="datetime-local"]:focus, .dark-bg input[type="email"]:focus, .dark-bg input[type="month"]:focus, .dark-bg input[type="number"]:focus, .dark-bg input[type="password"]:focus, .dark-bg input[type="search"]:focus, .dark-bg input[type="tel"]:focus, .dark-bg input[type="text"]:focus, .dark-bg input[type="time"]:focus, .dark-bg input[type="url"]:focus, .dark-bg input[type="week"]:focus {
+  .dark-bg textarea:focus, .dark-bg select:focus, .dark-bg input[type="date"]:focus, .dark-bg input[type="datetime"]:focus, .dark-bg input[type="datetime-local"]:focus, .dark-bg input[type="email"]:focus, .dark-bg input[type="month"]:focus, .dark-bg input[type="number"]:focus, .dark-bg input[type="password"]:focus, .dark-bg input[type="search"]:focus, .dark-bg input[type="tel"]:focus, .dark-bg input[type="text"]:focus, .dark-bg input[type="time"]:focus, .dark-bg input[type="url"]:focus, .dark-bg input[type="week"]:focus, .page-user .section-content textarea:focus, .page-user .section-content select:focus, .page-user .section-content input[type="date"]:focus, .page-user .section-content input[type="datetime"]:focus, .page-user .section-content input[type="datetime-local"]:focus, .page-user .section-content input[type="email"]:focus, .page-user .section-content input[type="month"]:focus, .page-user .section-content input[type="number"]:focus, .page-user .section-content input[type="password"]:focus, .page-user .section-content input[type="search"]:focus, .page-user .section-content input[type="tel"]:focus, .page-user .section-content input[type="text"]:focus, .page-user .section-content input[type="time"]:focus, .page-user .section-content input[type="url"]:focus, .page-user .section-content input[type="week"]:focus {
     border-color: #0097d7; }
-  .dark-bg textarea::placeholder, .dark-bg select::placeholder, .dark-bg input[type="date"]::placeholder, .dark-bg input[type="datetime"]::placeholder, .dark-bg input[type="datetime-local"]::placeholder, .dark-bg input[type="email"]::placeholder, .dark-bg input[type="month"]::placeholder, .dark-bg input[type="number"]::placeholder, .dark-bg input[type="password"]::placeholder, .dark-bg input[type="search"]::placeholder, .dark-bg input[type="tel"]::placeholder, .dark-bg input[type="text"]::placeholder, .dark-bg input[type="time"]::placeholder, .dark-bg input[type="url"]::placeholder, .dark-bg input[type="week"]::placeholder {
+  .dark-bg textarea::placeholder, .dark-bg select::placeholder, .dark-bg input[type="date"]::placeholder, .dark-bg input[type="datetime"]::placeholder, .dark-bg input[type="datetime-local"]::placeholder, .dark-bg input[type="email"]::placeholder, .dark-bg input[type="month"]::placeholder, .dark-bg input[type="number"]::placeholder, .dark-bg input[type="password"]::placeholder, .dark-bg input[type="search"]::placeholder, .dark-bg input[type="tel"]::placeholder, .dark-bg input[type="text"]::placeholder, .dark-bg input[type="time"]::placeholder, .dark-bg input[type="url"]::placeholder, .dark-bg input[type="week"]::placeholder, .page-user .section-content textarea::placeholder, .page-user .section-content select::placeholder, .page-user .section-content input[type="date"]::placeholder, .page-user .section-content input[type="datetime"]::placeholder, .page-user .section-content input[type="datetime-local"]::placeholder, .page-user .section-content input[type="email"]::placeholder, .page-user .section-content input[type="month"]::placeholder, .page-user .section-content input[type="number"]::placeholder, .page-user .section-content input[type="password"]::placeholder, .page-user .section-content input[type="search"]::placeholder, .page-user .section-content input[type="tel"]::placeholder, .page-user .section-content input[type="text"]::placeholder, .page-user .section-content input[type="time"]::placeholder, .page-user .section-content input[type="url"]::placeholder, .page-user .section-content input[type="week"]::placeholder {
     color: #fff; }
 
-.dark-bg textarea {
+.dark-bg textarea, .page-user .section-content textarea {
   min-height: 130px; }
 
-.dark-bg button, .dark-bg input[type="reset"], .dark-bg input[type="submit"], .dark-bg input[type="button"] {
+.dark-bg button, .dark-bg input[type="reset"], .dark-bg input[type="submit"], .dark-bg input[type="button"], .page-user .section-content button, .page-user .section-content input[type="reset"], .page-user .section-content input[type="submit"], .page-user .section-content input[type="button"] {
   font-family: "Miriam_Bold";
   font-size: 1rem;
   background: transparent;
@@ -570,7 +602,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   text-shadow: none;
   color: #fff;
   transition: all .2s; }
-  .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="submit"]:hover, .dark-bg input[type="button"]:hover {
+  .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="submit"]:hover, .dark-bg input[type="button"]:hover, .page-user .section-content button:hover, .page-user .section-content input[type="reset"]:hover, .page-user .section-content input[type="submit"]:hover, .page-user .section-content input[type="button"]:hover {
     background: #0097d7; }
 
 .table table {
@@ -632,11 +664,16 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser {
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 35px; }
+  .teaser .teaser-image {
+    flex: 0 0 385px; }
+  .teaser .teaser-content {
+    flex: 1; }
   .teaser .teaser-date {
     font-family: "Miriam_Bold";
     font-size: 1.375rem;
-    color: #40c389;
+    color: #ff6600;
     text-align: center;
     height: 50px;
     line-height: 50px;
@@ -646,8 +683,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       border-left: 2px solid #eeebe6; }
       .teaser .teaser-date > div:last-child {
         border: none; }
-  .teaser .teaser_info {
-    height: 190px;
+  .teaser .teaser-info {
+    flex: 1;
     overflow: hidden;
     padding: 20px 25px; }
 

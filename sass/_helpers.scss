@@ -27,7 +27,7 @@
   margin-bottom: 0;
 }
 
-.title {
+.title:not(h1) {
   font-family: $font-bold;
   font-size: $font-h5;
   line-height: 1;
@@ -61,7 +61,7 @@ a, a:link, a:visited {
     }
     &.colored:hover {
       background: $highlite-color-2;
-      &.third {
+      &.third, &.fifth {
         background: $highlite-color-1;
       }
       &.fourth {
@@ -348,6 +348,30 @@ a.more-link {
         background: #000;
       }
     } 
+}
+
+/*---------------- Groupings ------------------*/
+
+.group-title {
+  position: relative;
+  margin: 50px 0 40px;
+  .group-line {
+    border-bottom: 1px solid $main-text-color;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+  }
+  h3 {
+    display: inline-block;
+    font-size: $font-h2;
+    font-family: $font-bold;
+    background: $main-color;
+    margin-bottom: 0;
+    padding-left: 10px;
+    z-index: 1;
+    position: relative;
+  }
 }
 
 

@@ -3,12 +3,21 @@
 .teaser {
 
   background: #fff;
+  margin-bottom: 35px;
+
+  .teaser-image {
+    flex: 0 0 385px;
+  }
+
+  .teaser-content {
+    flex: 1;
+  }
 
   .teaser-date {
 
     font-family: $font-bold;
     font-size: $font-h4;
-    color: $highlite-color-4;
+    color: $highlite-color-2;
     text-align: center;
     height: 50px;
     line-height: 50px;
@@ -23,8 +32,8 @@
     }
   }
 
-  .teaser_info {
-    height: 190px;
+  .teaser-info {
+    flex: 1;
     overflow: hidden;
     padding: 20px 25px;
   }
