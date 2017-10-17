@@ -631,66 +631,25 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   height: 400px; }
 
 /*-----------------Main Teasers Preview-----------------------*/
-.teaser-row {
-  width: 100%;
-  font-size: 0.8125rem;
-  margin-bottom: 30px; }
-  @media (max-width: 740px) {
-    .teaser-row {
-      text-align: center; } }
-  .teaser-row .teaser-image {
-    width: 170px;
-    margin-bottom: 20px;
-    text-align: center; }
-    @media (max-width: 740px) {
-      .teaser-row .teaser-image {
-        width: 100%; } }
-  .teaser-row .teaser-info {
-    width: calc(100% - 150px);
-    padding: 0 0 0 20px;
-    max-width: 470px; }
-    @media (max-width: 740px) {
-      .teaser-row .teaser-info {
-        width: 100%;
-        max-width: 100%;
-        padding: 0; } }
-
-@media (max-width: 740px) {
-  .main-teaser-view {
-    flex-direction: column; } }
-
-/*-----------------Small Teasers Thumbnails Preview-----------------------*/
-.small-thumbs-block > .view-content {
-  width: 755px;
-  margin-bottom: 30px; }
-  @media (max-width: 980px) {
-    .small-thumbs-block > .view-content {
-      width: 540px; } }
-  @media (max-width: 740px) {
-    .small-thumbs-block > .view-content {
-      width: 100%;
-      justify-content: space-around; } }
-
-.small-thumbs-row {
-  width: 136px;
-  margin: 0 15px 10px 0;
-  filter: grayscale(100%); }
-  .small-thumbs-row:hover {
-    filter: grayscale(0%); }
-    .small-thumbs-row:hover a {
-      color: #545555 !important;
-      text-decoration: none !important; }
-  .small-thumbs-row .image-text-block {
-    padding-top: 10px;
-    font-size: 0.8125rem;
-    display: block;
+.teaser {
+  background: #fff; }
+  .teaser .teaser-date {
+    font-family: "Miriam_Bold";
+    font-size: 1.375rem;
+    color: #40c389;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid #eeebe6; }
+    .teaser .teaser-date > div {
+      flex: 1;
+      border-left: 2px solid #eeebe6; }
+      .teaser .teaser-date > div:last-child {
+        border: none; }
+  .teaser .teaser_info {
+    height: 190px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 136px; }
-  @media (max-width: 740px) {
-    .small-thumbs-row {
-      margin: 0 5px 10px 5px; } }
+    padding: 20px 25px; }
 
 /*----------------custome pagers--------------------*/
 .block-custom-pagers .content {
@@ -881,6 +840,8 @@ footer.section-footer {
       list-style: none;
       margin: 0;
       padding: 0; }
+      footer.section-footer .footer-menu .content > ul.menu li ul ul {
+        display: none; }
     footer.section-footer .footer-menu .content > ul.menu > li > a {
       font-size: 1.25rem;
       font-family: "Miriam_Bold"; }
@@ -1111,4 +1072,6 @@ header .subscription-signup button {
   width: 720px; }
   .staff-container .staff-item {
     flex: 0 0 230px;
-    margin-left: 10px; }
+    margin: 0 0 20px 10px; }
+    .staff-container .staff-item img {
+      margin-bottom: 15px; }

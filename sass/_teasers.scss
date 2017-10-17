@@ -1,74 +1,31 @@
 /*-----------------Main Teasers Preview-----------------------*/
 
-.teaser-row {
-    width: 100%;
-    font-size: $font-small;
-    margin-bottom: 30px;
-    @include for-mobile-layout {
-        text-align: center;
-    }
-    .teaser-image {
-        width: 170px;
-        margin-bottom: 20px;
-        text-align: center;
-        @include for-mobile-layout {
-            width: 100%;
-        }
-    }
-    .teaser-info {
-        width: calc(100% - 150px);
-        padding: 0 0 0 20px;
-        max-width: 470px;
-        @include for-mobile-layout {
-            width: 100%;
-            max-width: 100%;
-            padding: 0;
-        }
-    }
-}
+.teaser {
 
-.main-teaser-view {
-    @include for-mobile-layout {
-        flex-direction: column;
-    }   
-}
+  background: #fff;
 
-/*-----------------Small Teasers Thumbnails Preview-----------------------*/
+  .teaser-date {
 
-.small-thumbs-block > .view-content {
-    width: 755px;
-    margin-bottom: 30px;
-    @include for-narrow-layout {
-        width: 540px;
-    }
-    @include for-mobile-layout {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
+    font-family: $font-bold;
+    font-size: $font-h4;
+    color: $highlite-color-4;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid $light-text-color-2;
 
-.small-thumbs-row {
-    width: 136px;
-    margin: 0 15px 10px 0;
-    filter: grayscale(100%);
-    &:hover {
-        a {
-        color: $main-text-color !important;
-        text-decoration: none !important;
-        }
+    > div {
+      flex: 1;
+      border-left: 2px solid $light-text-color-2;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
 
-        filter: grayscale(0%);
-    }
-    .image-text-block {
-        padding-top: 10px;
-        font-size: $font-small;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 136px;
-    }
-    @include for-mobile-layout {
-        margin: 0 5px 10px 5px;
-    }
+  .teaser_info {
+    height: 190px;
+    overflow: hidden;
+    padding: 20px 25px;
+  }
 }
