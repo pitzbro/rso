@@ -24,6 +24,9 @@
         margin-right: auto;
         width: 940px;
         height: 100%;
+        body.full-width-text & {
+            max-width: 680px;
+        }
     }
 
     .item-info {

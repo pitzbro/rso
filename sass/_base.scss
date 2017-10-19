@@ -72,10 +72,10 @@ a, a:link, a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-bold;
+    font-family: $font-primary;
     line-height: 1.3;
-    letter-spacing: -1px;
-    font-weight: normal;
+    letter-spacing: 0.01em;
+    font-weight: bold;
     margin-bottom: 0.45em;
 }
 
@@ -84,13 +84,13 @@ h1, .bulletin-main-title, .main-title {
 }
 
 h2 {
-  font-family: 'Miriam_Bold';
+  // font-family: 'Miriam_Bold';
   line-height: 1.1;
   font-size: $font-h3;
-  font-weight: normal;
+  // font-weight: normal;
 
   &.block-title {
-    font-family: $font-bold;
+    // font-family: $font-bold;
     // font-size: $font-h3;
     color: $highlite-color-3;
     border-bottom: $main-border;
@@ -133,10 +133,10 @@ small {
   font-size: $font-small;
 }
 
-strong {
-  font-weight: normal;
-  font-family: $font-bold;
-}
+// strong {
+//   font-weight: normal;
+//   font-family: $font-bold;
+// }
 
 ul,
 fieldset {

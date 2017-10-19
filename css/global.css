@@ -28,7 +28,6 @@
   width: fit-content; }
 
 .block-title {
-  font-family: "Miriam_Bold";
   font-size: 1.625rem;
   color: #0097d7;
   border-bottom: 1px solid #c0c0c0;
@@ -158,6 +157,17 @@ textarea {
     color: #545555; }
   .colored.fifth {
     background: #0097d7; }
+
+.colored-text {
+  color: #47206e; }
+  .colored-text.second {
+    color: #40c389; }
+  .colored-text.third {
+    color: #ff6600; }
+  .colored-text.fourth {
+    color: #c0c1c2; }
+  .colored-text.fifth {
+    color: #0097d7; }
 
 .ltr {
   direction: ltr; }
@@ -406,6 +416,11 @@ body {
     flex: 1;
     overflow: hidden; }
 
+/*---------- Sidebar Layout  ----------*/
+.full-width-text .block-main {
+  max-width: 680px;
+  margin: 0 auto; }
+
 /*---------- Preface Script ---------*/
 .zone-preface-wrapper {
   background: #fff;
@@ -477,10 +492,10 @@ a, a:link, a:visited {
     padding-left: 29px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Miriam_Bold";
+  font-family: "Miriam";
   line-height: 1.3;
-  letter-spacing: -1px;
-  font-weight: normal;
+  letter-spacing: 0.01em;
+  font-weight: bold;
   margin-bottom: 0.45em; }
 
 h1, .bulletin-main-title, .main-title {
@@ -494,12 +509,9 @@ h1, .bulletin-main-title, .main-title {
   font-size: 2.5rem; }
 
 h2 {
-  font-family: 'Miriam_Bold';
   line-height: 1.1;
-  font-size: 1.625rem;
-  font-weight: normal; }
+  font-size: 1.625rem; }
   h2.block-title {
-    font-family: "Miriam_Bold";
     color: #0097d7;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 0.5em;
@@ -531,10 +543,6 @@ button, .btn a {
 
 small {
   font-size: 0.8125rem; }
-
-strong {
-  font-weight: normal;
-  font-family: "Miriam_Bold"; }
 
 ul,
 fieldset {
@@ -639,6 +647,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     margin-right: auto;
     width: 940px;
     height: 100%; }
+    body.full-width-text .main-slider .item-info-container {
+      max-width: 680px; }
   .main-slider .item-info {
     position: absolute;
     right: 0;
@@ -734,7 +744,7 @@ ul.custom-pager .next a:after {
   .main-menu-block ul.nice-menu > li {
     border: none;
     background: transparent;
-    font-family: 'Miriam_Bold'; }
+    font-weight: bold; }
     .main-menu-block ul.nice-menu > li:hover {
       background: transparent; }
     .main-menu-block ul.nice-menu > li > a {
