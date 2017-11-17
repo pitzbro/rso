@@ -1,0 +1,10 @@
+/*------ Archive Pages -------*/
+
+.archive-block .view-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    > * {
+        width: 345px;
+    }
+}

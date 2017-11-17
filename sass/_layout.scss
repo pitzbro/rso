@@ -65,7 +65,11 @@ body {
 
 }
 
-/*---------- Sidebar Layout  ----------*/
+.node-type-archive-page.sidebar-layout .region-content-inner > .block-system {
+        display:none;
+}
+
+/*---------- Full Width Layout  ----------*/
 
 .full-width-text {
     .block-main {

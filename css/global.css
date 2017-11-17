@@ -416,7 +416,10 @@ body {
     flex: 1;
     overflow: hidden; }
 
-/*---------- Sidebar Layout  ----------*/
+.node-type-archive-page.sidebar-layout .region-content-inner > .block-system {
+  display: none; }
+
+/*---------- Full Width Layout  ----------*/
 .full-width-text .block-main {
   max-width: 680px;
   margin: 0 auto; }
@@ -1128,3 +1131,11 @@ header .subscription-signup button {
     margin: 0 0 20px 10px; }
     .staff-container .staff-item img {
       margin-bottom: 15px; }
+
+/*------ Archive Pages -------*/
+.archive-block .view-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .archive-block .view-content > * {
+    width: 345px; }
