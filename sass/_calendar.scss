@@ -170,12 +170,16 @@
 
 // ---------- Flyouts ----------- //
 
-.flyout-item {
+.flyout-container {
   display: none;
   background: #fff;
 
   &.opened {
     display: block;
+  }
+
+  .flyout-item:not(:first-child) {
+    display: none;
   }
 
   .flyout-date {

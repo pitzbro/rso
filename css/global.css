@@ -1210,12 +1210,14 @@ header .subscription-signup button {
   display: none;
   height: 0; }
 
-.flyout-item {
+.flyout-container {
   display: none;
   background: #fff; }
-  .flyout-item.opened {
+  .flyout-container.opened {
     display: block; }
-  .flyout-item .flyout-date {
+  .flyout-container .flyout-item:not(:first-child) {
+    display: none; }
+  .flyout-container .flyout-date {
     font-family: "Miriam_Bold";
     font-size: 1.375rem;
     color: #40c389;
@@ -1223,12 +1225,12 @@ header .subscription-signup button {
     height: 50px;
     line-height: 50px;
     border-bottom: 3px solid #eeebe6; }
-    .flyout-item .flyout-date > div {
+    .flyout-container .flyout-date > div {
       flex: 1;
       border-left: 2px solid #eeebe6; }
-      .flyout-item .flyout-date > div:last-child {
+      .flyout-container .flyout-date > div:last-child {
         border: none; }
-  .flyout-item .flyout_info {
+  .flyout-container .flyout_info {
     height: 190px;
     overflow: hidden;
     padding: 20px 25px; }
