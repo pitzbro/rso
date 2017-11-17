@@ -1,13 +1,37 @@
 /*----------  Miriam Font  ----------*/
 
+// @font-face {
+//     font-family: 'Miriam';
+//     src: url('../fonts/MiriamLibre-Regular.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Miriam_Bold';
+//     src: url('../fonts/MiriamLibre-Bold.ttf');
+// }
+
 @font-face {
     font-family: 'Miriam';
-    src: url('../fonts/MiriamLibre-Regular.ttf');
+    src: url('../fonts/miriam/MiriamLibre-Regular.eot');
+    src: url('../fonts/miriam/MiriamLibre-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/miriam/MiriamLibre-Regular.woff2') format('woff2'),
+        url('../fonts/miriam/MiriamLibre-Regular.woff') format('woff'),
+        url('../fonts/miriam/MiriamLibre-Regular.ttf') format('truetype'),
+        url('../fonts/miriam/MiriamLibre-Regular.svg#MiriamLibre-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: 'Miriam_Bold';
-    src: url('../fonts/MiriamLibre-Bold.ttf');
+    src: url('../fonts/miriam/MiriamLibre-Bold.eot');
+    src: url('../fonts/miriam/MiriamLibre-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/miriam/MiriamLibre-Bold.woff2') format('woff2'),
+        url('../fonts/miriam/MiriamLibre-Bold.woff') format('woff'),
+        url('../fonts/miriam/MiriamLibre-Bold.ttf') format('truetype'),
+        url('../fonts/miriam/MiriamLibre-Bold.svg#MiriamLibre-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }
 
 /*----------  Awsome Font  ----------*/
@@ -24,3 +48,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: inherit; // can't have font-size inherit on line above, so need to override
+    text-rendering: auto; // optimizelegibility throws things off #1094
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

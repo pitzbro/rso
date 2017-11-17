@@ -39,7 +39,7 @@ body {
 }
 
 
-.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper) {
+.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper):not(.zone-header-wrapper) {
     margin-bottom: 20px;
 }
 
@@ -76,6 +76,14 @@ body {
         max-width: 680px;
         margin: 0 auto;
     }
+}
+
+
+/*---------- User Bar ---------*/
+
+.zone-user-wrapper {
+    background: $background-color-002;
+    padding: 30px 0;
 }
 
 /*---------- Preface Script ---------*/

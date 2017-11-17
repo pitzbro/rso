@@ -5,11 +5,17 @@
 /*----------  Miriam Font  ----------*/
 @font-face {
   font-family: 'Miriam';
-  src: url("../fonts/MiriamLibre-Regular.ttf"); }
+  src: url("../fonts/miriam/MiriamLibre-Regular.eot");
+  src: url("../fonts/miriam/MiriamLibre-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/miriam/MiriamLibre-Regular.woff2") format("woff2"), url("../fonts/miriam/MiriamLibre-Regular.woff") format("woff"), url("../fonts/miriam/MiriamLibre-Regular.ttf") format("truetype"), url("../fonts/miriam/MiriamLibre-Regular.svg#MiriamLibre-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
   font-family: 'Miriam_Bold';
-  src: url("../fonts/MiriamLibre-Bold.ttf"); }
+  src: url("../fonts/miriam/MiriamLibre-Bold.eot");
+  src: url("../fonts/miriam/MiriamLibre-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/miriam/MiriamLibre-Bold.woff2") format("woff2"), url("../fonts/miriam/MiriamLibre-Bold.woff") format("woff"), url("../fonts/miriam/MiriamLibre-Bold.ttf") format("truetype"), url("../fonts/miriam/MiriamLibre-Bold.svg#MiriamLibre-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 /*----------  Awsome Font  ----------*/
 @font-face {
@@ -19,11 +25,20 @@
   font-weight: normal;
   font-style: normal; }
 
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 /* Layout */
 /* Background Colors */
 /* Fonts */
 /* Borders */
 /* Text Colors*/
+/* Transitions */
 .fit-content {
   width: fit-content; }
 
@@ -91,6 +106,14 @@ a.full-link, a:link.full-link, a:visited.full-link {
   top: 0;
   left: 0; }
 
+.zoom-image {
+  display: block;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 0.5s; }
+  a:hover .zoom-image {
+    transform: scale(1.05); }
+
 .screen {
   display: block;
   position: absolute;
@@ -98,6 +121,25 @@ a.full-link, a:link.full-link, a:visited.full-link {
   height: 100%;
   top: 0;
   left: 0; }
+  .screen.hover.arrow-next:after {
+    content: "";
+    font-size: 5rem;
+    color: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translate(30px, 0);
+    transition: all 0.5s; }
+    a:hover .screen.hover.arrow-next:after {
+      opacity: 1;
+      transform: translate(0, 0); }
+  .screen.hover {
+    background: transparent;
+    transition: background 0.5s; }
+    a:hover .screen.hover.hover-3 {
+      background: rgba(0, 151, 215, 0.4); }
 
 .modal-bg {
   background: rgba(0, 0, 0, 0.45); }
@@ -401,7 +443,7 @@ body {
   .front .section-content {
     padding-bottom: 0; }
 
-.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper) {
+.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper):not(.zone-header-wrapper) {
   margin-bottom: 20px; }
 
 /*---------- Sidebar Layout  ----------*/
@@ -424,6 +466,11 @@ body {
 .full-width-text .block-main {
   max-width: 680px;
   margin: 0 auto; }
+
+/*---------- User Bar ---------*/
+.zone-user-wrapper {
+  background: #d8d8d8;
+  padding: 30px 0; }
 
 /*---------- Preface Script ---------*/
 .zone-preface-wrapper {
@@ -713,6 +760,37 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     overflow: hidden;
     padding: 20px 25px; }
 
+.teaser-square-view > .view-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .teaser-square-view > .view-content:after {
+    content: "";
+    flex: 0 0 300px; }
+  @media (max-width: 740px) {
+    .teaser-square-view > .view-content {
+      justify-content: space-around; } }
+  .teaser-square-view > .view-content .teaser-square-item {
+    flex: 0 0 300px;
+    background: #fff;
+    margin-bottom: 20px; }
+    .teaser-square-view > .view-content .teaser-square-item .teaser-square-image {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      height: 300px; }
+      .teaser-square-view > .view-content .teaser-square-item .teaser-square-image .blog-image {
+        background-image: url("../images/default-square.jpg"); }
+    .teaser-square-view > .view-content .teaser-square-item .teaser-square-info {
+      display: block;
+      margin: 12px 12px 25px; }
+    .teaser-square-view > .view-content .teaser-square-item a {
+      text-decoration: none;
+      color: inherit; }
+      .teaser-square-view > .view-content .teaser-square-item a:hover {
+        color: #0097d7; }
+
 /*----------------custome pagers--------------------*/
 .block-custom-pagers .content {
   position: relative;
@@ -930,7 +1008,7 @@ header .zone-menu {
   body.admin-menu header .zone-menu {
     top: 25px; }
 
-header .container-12, header .container-12 .grid-12 {
+header .zone-header-wrapper .container-12, header .container-12 .grid-12 {
   margin: 0;
   width: 100%; }
 

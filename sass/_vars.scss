@@ -9,6 +9,7 @@ $container-padding: 'calc( (100% - 940px) / 2 )';
 $main-color: #ece9e3;
 $secondary-color: #c0c1c2;
 $background-color-001: #6d6e71;
+$background-color-002: #d8d8d8;
 
 /* Fonts */
 $font-primary: 'Miriam';
@@ -38,4 +39,10 @@ $highlite-color-2: #ff6600;
 $highlite-color-3: #0097d7;
 $highlite-color-4: #40c389;
 $highlite-color-5: #474747;
+
+/* Transitions */
+
+$slow-transition: 0.7s;
+$medium-transition: 0.5s;
+$fast-transition: 0.3s;
 

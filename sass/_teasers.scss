@@ -38,3 +38,44 @@
     padding: 20px 25px;
   }
 }
+
+.teaser-square-view > .view-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &:after {
+    content: "";
+    flex: 0 0 300px;
+  }
+  @include for-mobile-layout {
+    justify-content: space-around;
+  }
+  .teaser-square-item {
+    flex: 0 0 300px;
+    background: #fff;
+    margin-bottom: 20px;
+    .teaser-square-image {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      
+      .blog-image {
+        background-image: url('../images/default-square.jpg');
+      }
+    }
+    .teaser-square-info {
+      display: block;
+      margin: 12px 12px 25px; 
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $highlite-color-3;
+      }
+    }
+  }
+}
