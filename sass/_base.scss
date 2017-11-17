@@ -90,8 +90,8 @@ h2 {
   // font-weight: normal;
 
   &.block-title {
-    // font-family: $font-bold;
-    // font-size: $font-h3;
+    font-family: $font-bold;
+    font-size: $font-h3;
     color: $highlite-color-3;
     border-bottom: $main-border;
     margin-bottom: 0.5em;
@@ -167,4 +167,8 @@ abbr[title], acronym[title] {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+.field-collection-view .entity-field-collection-item {
+  margin-bottom: 15px;
 }

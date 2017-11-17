@@ -28,6 +28,7 @@
   width: fit-content; }
 
 .block-title {
+  font-family: "Miriam_Bold";
   font-size: 1.625rem;
   color: #0097d7;
   border-bottom: 1px solid #c0c0c0;
@@ -518,6 +519,8 @@ h2 {
   line-height: 1.1;
   font-size: 1.625rem; }
   h2.block-title {
+    font-family: "Miriam_Bold";
+    font-size: 1.625rem;
     color: #0097d7;
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 0.5em;
@@ -573,6 +576,9 @@ abbr[title], acronym[title] {
   padding: 0;
   margin: 0;
   border: none; }
+
+.field-collection-view .entity-field-collection-item {
+  margin-bottom: 15px; }
 
 .form-item, .form-actions {
   margin: 0; }
