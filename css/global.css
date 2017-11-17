@@ -78,8 +78,28 @@
   font-size: 1.875rem;
   font-family: "Miriam_Bold"; }
 
+.text-medium {
+  font-size: 1.25rem; }
+
 .border-bottom {
   border-bottom: 1px solid #c0c0c0; }
+
+.btn, a.btn {
+  display: block;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none; }
+  .btn.colored.fourth, a.btn.colored.fourth {
+    color: #545555; }
+  .btn.colored:hover, a.btn.colored:hover {
+    background: #ff6600; }
+    .btn.colored:hover.third, .btn.colored:hover.fifth, a.btn.colored:hover.third, a.btn.colored:hover.fifth {
+      background: #47206e; }
+    .btn.colored:hover.fourth, a.btn.colored:hover.fourth {
+      background: #0097d7;
+      color: #fff; }
 
 a.btn, a:link.btn, a:visited.btn {
   display: block;
@@ -136,7 +156,6 @@ a.full-link, a:link.full-link, a:visited.full-link {
       opacity: 1;
       transform: translate(0, 0); }
   .screen.hover {
-    background: transparent;
     transition: background 0.5s; }
     a:hover .screen.hover.hover-3 {
       background: rgba(0, 151, 215, 0.4); }
@@ -791,6 +810,30 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       .teaser-square-view > .view-content .teaser-square-item a:hover {
         color: #0097d7; }
 
+.teaser-large, a.teaser-large {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: 2px solid #c0c0c0; }
+  .teaser-large .teaser-large-image, a.teaser-large .teaser-large-image {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    position: relative; }
+    .teaser-large .teaser-large-image .teaser-large-info, a.teaser-large .teaser-large-image .teaser-large-info {
+      position: absolute;
+      padding: 30px 35px;
+      bottom: 0; }
+  .teaser-large .more-link, a.teaser-large .more-link {
+    display: block;
+    background: #0097d7;
+    text-align: center;
+    font-family: "Miriam_Bold";
+    font-size: 1.25rem;
+    line-height: 40px; }
+
 /*----------------custome pagers--------------------*/
 .block-custom-pagers .content {
   position: relative;
@@ -1057,6 +1100,9 @@ header .subscription-signup button {
 .mini-calendar table {
   border: none; }
 
+.mini-calendar .fc-grid .fc-day-content {
+  display: none; }
+
 .mini-calendar .fc-header {
   background: #47206e;
   font-size: 2.0625rem;
@@ -1126,11 +1172,16 @@ header .subscription-signup button {
   overflow: hidden;
   padding: 5px; }
   .mini-calendar td.fc-day > div {
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .mini-calendar td.fc-day.fc-today .fc-day-number {
     border: 2px solid #0097d7;
     color: #0097d7;
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 48px;
+    width: 48px; }
   .mini-calendar td.fc-day.fc-today.opened .fc-day-number {
     border-color: #47206e;
     color: #47206e;

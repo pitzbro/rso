@@ -25,6 +25,10 @@
     border: none;
   }
 
+  .fc-grid .fc-day-content {
+    display: none;
+  }
+
   .fc-header {
     background: $highlite-color-1;
     font-size: $font-h2;
@@ -115,11 +119,16 @@
     padding: 5px;
     > div {
       height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &.fc-today .fc-day-number {
       border: 2px solid $highlite-color-3;
       color: $highlite-color-3;
       border-radius: 50%;
+      height: 48px;
+      width: 48px;
     }
     &.fc-today.opened .fc-day-number {
       border-color: $highlite-color-1;

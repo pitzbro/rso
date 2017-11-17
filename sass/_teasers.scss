@@ -79,3 +79,36 @@
     }
   }
 }
+
+
+.teaser-large, a.teaser-large {
+
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: $bold-border;
+
+  .teaser-large-image {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    .teaser-large-info {
+      position: absolute;
+      padding: 30px 35px;
+      bottom: 0;
+    }
+  }
+
+  .more-link {
+    display: block;
+    background: $highlite-color-3;
+    text-align: center;
+    font-family: $font-bold;
+    font-size: rem(20px);
+    line-height: 40px;
+  }
+}
+

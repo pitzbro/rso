@@ -38,13 +38,43 @@
   font-family: $font-bold;
 }
 
+.text-medium {
+  font-size: rem(20px);
+}
+
 // ------------- Borders ------------- //
 
 .border-bottom {
   border-bottom: $main-border;
 }
 
-// ------------- Links ------------- //
+// ------------- Links and Buttons ------------- //
+
+@mixin button() {
+  display: block;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none;
+  &.colored.fourth {
+    color: $main-text-color;
+  }
+  &.colored:hover {
+    background: $highlite-color-2;
+    &.third, &.fifth {
+      background: $highlite-color-1;
+    }
+    &.fourth {
+      background: $highlite-color-3;
+      color: #fff;
+    }
+  }
+}
+
+.btn, a.btn {
+  @include button();
+}
 
 a, a:link, a:visited {
 
@@ -93,10 +123,6 @@ a, a:link, a:visited {
   
 }
 
-a:hover .zoom-image {
-
-}
-
 // ------------- Modal and Screens ------------- //
 
 .screen {
@@ -128,7 +154,6 @@ a:hover .zoom-image {
 
 
   &.hover {
-    background: transparent;
     transition: background $medium-transition;
     
     a:hover &.hover-3 {
