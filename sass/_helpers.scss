@@ -50,56 +50,46 @@
 
 // ------------- Links and Buttons ------------- //
 
-@mixin button() {
+@mixin button($default-background, $default-background-hover) {
   display: block;
   padding: 0 25px;
+  background: $default-background;
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-family: $font-primary;
+  font-weight: normal;
   text-align: center;
-  line-height: 35px;
+  line-height: $form-item-height;
+  height: $form-item-height;
   color: #fff;
   text-decoration: none;
-  &.colored.fourth {
-    color: $main-text-color;
+  transition: all .3s;
+
+  &:not(:last-child) {
+    padding-left: $form-item-padding
   }
-  &.colored:hover {
-    background: $highlite-color-2;
-    &.third, &.fifth {
-      background: $highlite-color-1;
-    }
-    &.fourth {
-      background: $highlite-color-3;
-      color: #fff;
-    }
+
+  &:hover {
+    background: $default-background-hover;
   }
+
 }
 
 .btn, a.btn {
-  @include button();
+  @include button($highlite-color-1, $highlite-color-2);
+  &.third {
+    @include button($highlite-color-1, $highlite-color-1);
+  }
+  &.fourth {
+    @include button($highlite-color-1, $highlite-color-3);
+  }
+  &.fifth {
+    @include button($highlite-color-1, $highlite-color-1);
+  }
 }
 
 a, a:link, a:visited {
-
-  &.btn {
-    display: block;
-    padding: 0 25px;
-    text-align: center;
-    line-height: 35px;
-    color: #fff;
-    text-decoration: none;
-    // max-width: 230px;
-    &.colored.fourth {
-      color: $main-text-color;
-    }
-    &.colored:hover {
-      background: $highlite-color-2;
-      &.third, &.fifth {
-        background: $highlite-color-1;
-      }
-      &.fourth {
-        background: $highlite-color-3;
-        color: #fff;
-      }
-    }
-  }
 
   &.full-link {
     display: block;
@@ -109,6 +99,14 @@ a, a:link, a:visited {
     top: 0;
     left: 0;
   }
+}
+
+// ------------- Images Helpers ------------- //
+
+.default-image {
+  background-image: url('../images/default-square.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .zoom-image {

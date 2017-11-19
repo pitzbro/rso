@@ -1,46 +1,43 @@
 /*----------------custome pagers--------------------*/
 
-.block-custom-pagers .content {
-  position: relative;
-  font-size: rem(80px);
-}
-
-ul.custom-pager li.key {
-  display: none;
-}
-
-ul.custom-pager a:after {
-  display: inline-block;
-  position: absolute;
-  width: 50px;
-  line-height: 50px;
-  height: 60px;
-  top: 0;
-  text-align: center;
-}
-
-ul.custom-pager a {
-  width: 0;
-  overflow: hidden;
-}
-
-ul.custom-pager .previous a:after {
-  content: "‹";
-  left: 0;
-  @include for-mobile-layout {
-    left: 50%;
-    margin: 0 0 0 -50px;
+.item-list .pager {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  margin: 40px 0;
+  
+  li {
+    border: none;
+    a {
+      font-family: $font-primary;
+      font-weight: normal;
+      font-size: rem(26px);
+      color: $highlite-color-1;
+      background: none;
+      &:hover {
+        color: $highlite-color-3;
+      }
+    }
+    &.pager-current {
+      font-family: $font-primary;
+      font-weight: normal;
+      background: none;
+      font-size: rem(26px);
+      color: inherit;
+    }
   }
-}
-
-ul.custom-pager .next a:after {
-  content: "›";
-  left: 50px;
-  @include for-mobile-layout {
-    left: 50%;
+  
+  .pager-next, .pager-last, .pager-previous, .pager-first {
+    position: static;
+    a {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: rem(26px);
+      color: $highlite-color-1;
+      text-rendering: auto; // optimizelegibility throws things off #1094
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
   }
-}
-
-.region-content-info ul.custom-pager a:hover {
-  color: #000;
 }

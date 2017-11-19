@@ -87,36 +87,79 @@
 .btn, a.btn {
   display: block;
   padding: 0 25px;
+  background: #47206e;
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-family: "Miriam";
+  font-weight: normal;
   text-align: center;
   line-height: 35px;
+  height: 35px;
   color: #fff;
-  text-decoration: none; }
-  .btn.colored.fourth, a.btn.colored.fourth {
-    color: #545555; }
-  .btn.colored:hover, a.btn.colored:hover {
+  text-decoration: none;
+  transition: all .3s; }
+  .btn:not(:last-child), a.btn:not(:last-child) {
+    padding-left: 10px; }
+  .btn:hover, a.btn:hover {
     background: #ff6600; }
-    .btn.colored:hover.third, .btn.colored:hover.fifth, a.btn.colored:hover.third, a.btn.colored:hover.fifth {
+  .btn.third, a.btn.third {
+    display: block;
+    padding: 0 25px;
+    background: #47206e;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s; }
+    .btn.third:not(:last-child), a.btn.third:not(:last-child) {
+      padding-left: 10px; }
+    .btn.third:hover, a.btn.third:hover {
       background: #47206e; }
-    .btn.colored:hover.fourth, a.btn.colored:hover.fourth {
-      background: #0097d7;
-      color: #fff; }
-
-a.btn, a:link.btn, a:visited.btn {
-  display: block;
-  padding: 0 25px;
-  text-align: center;
-  line-height: 35px;
-  color: #fff;
-  text-decoration: none; }
-  a.btn.colored.fourth, a:link.btn.colored.fourth, a:visited.btn.colored.fourth {
-    color: #545555; }
-  a.btn.colored:hover, a:link.btn.colored:hover, a:visited.btn.colored:hover {
-    background: #ff6600; }
-    a.btn.colored:hover.third, a.btn.colored:hover.fifth, a:link.btn.colored:hover.third, a:link.btn.colored:hover.fifth, a:visited.btn.colored:hover.third, a:visited.btn.colored:hover.fifth {
+  .btn.fourth, a.btn.fourth {
+    display: block;
+    padding: 0 25px;
+    background: #47206e;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s; }
+    .btn.fourth:not(:last-child), a.btn.fourth:not(:last-child) {
+      padding-left: 10px; }
+    .btn.fourth:hover, a.btn.fourth:hover {
+      background: #0097d7; }
+  .btn.fifth, a.btn.fifth {
+    display: block;
+    padding: 0 25px;
+    background: #47206e;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s; }
+    .btn.fifth:not(:last-child), a.btn.fifth:not(:last-child) {
+      padding-left: 10px; }
+    .btn.fifth:hover, a.btn.fifth:hover {
       background: #47206e; }
-    a.btn.colored:hover.fourth, a:link.btn.colored:hover.fourth, a:visited.btn.colored:hover.fourth {
-      background: #0097d7;
-      color: #fff; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
@@ -125,6 +168,11 @@ a.full-link, a:link.full-link, a:visited.full-link {
   height: 100%;
   top: 0;
   left: 0; }
+
+.default-image {
+  background-image: url("../images/default-square.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .zoom-image {
   display: block;
@@ -656,7 +704,16 @@ abbr[title], acronym[title] {
   text-align: end; }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
-  width: 100%; }
+  width: 100%;
+  background: #fff;
+  border: 1px solid #c0c0c0;
+  font-family: "Miriam";
+  line-height: 35px;
+  height: 35px;
+  color: #545555;
+  padding: 0 10px; }
+  textarea::placeholder, select::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="email"]::placeholder, input[type="month"]::placeholder, input[type="number"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="text"]::placeholder, input[type="time"]::placeholder, input[type="url"]::placeholder, input[type="week"]::placeholder {
+    color: #a4a4a4; }
   textarea:focus, select:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
     box-shadow: none; }
 
@@ -693,6 +750,25 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   transition: all .2s; }
   .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="submit"]:hover, .dark-bg input[type="button"]:hover, .page-user .section-content button:hover, .page-user .section-content input[type="reset"]:hover, .page-user .section-content input[type="submit"]:hover, .page-user .section-content input[type="button"]:hover {
     background: #0097d7; }
+
+/*------ Icons -------*/
+.form-item-combine {
+  position: relative; }
+  .form-item-combine input {
+    padding-left: 35px; }
+  .form-item-combine::after {
+    content: "";
+    display: block;
+    font-family: FontAwesome;
+    line-height: 35px;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #a4a4a4;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
 
 .table table {
   border: none; }
@@ -799,7 +875,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       position: relative;
       width: 300px;
       height: 300px; }
-      .teaser-square-view > .view-content .teaser-square-item .teaser-square-image .blog-image {
+      .teaser-square-view > .view-content .teaser-square-item .teaser-square-image .default-image {
         background-image: url("../images/default-square.jpg"); }
     .teaser-square-view > .view-content .teaser-square-item .teaser-square-info {
       display: block;
@@ -822,6 +898,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     height: 400px;
     overflow: hidden;
     position: relative; }
+    .teaser-large .teaser-large-image .default-image, a.teaser-large .teaser-large-image .default-image {
+      background-image: url("../images/default-large.jpg"); }
     .teaser-large .teaser-large-image .teaser-large-info, a.teaser-large .teaser-large-image .teaser-large-info {
       position: absolute;
       padding: 30px 35px;
@@ -834,44 +912,83 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     font-size: 1.25rem;
     line-height: 40px; }
 
+/*-----------Filters------------*/
+.views-exposed-form .views-exposed-widget {
+  padding: 0 0 0 10px; }
+  .views-exposed-form .views-exposed-widget .form-submit {
+    margin-top: 0; }
+  .views-exposed-form .views-exposed-widget input[type="submit"] {
+    display: block;
+    padding: 0 25px;
+    background: #ff6600;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s; }
+    .views-exposed-form .views-exposed-widget input[type="submit"]:not(:last-child) {
+      padding-left: 10px; }
+    .views-exposed-form .views-exposed-widget input[type="submit"]:hover {
+      background: #0097d7; }
+    .views-exposed-form .views-exposed-widget input[type="submit"][name="op"] {
+      display: block;
+      padding: 0 25px;
+      background: #474747;
+      border: none;
+      border-radius: 0;
+      text-shadow: none;
+      font-family: "Miriam";
+      font-weight: normal;
+      text-align: center;
+      line-height: 35px;
+      height: 35px;
+      color: #fff;
+      text-decoration: none;
+      transition: all .3s; }
+      .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:not(:last-child) {
+        padding-left: 10px; }
+      .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:hover {
+        background: #0097d7; }
+
 /*----------------custome pagers--------------------*/
-.block-custom-pagers .content {
-  position: relative;
-  font-size: 5rem; }
-
-ul.custom-pager li.key {
-  display: none; }
-
-ul.custom-pager a:after {
-  display: inline-block;
-  position: absolute;
-  width: 50px;
-  line-height: 50px;
-  height: 60px;
-  top: 0;
-  text-align: center; }
-
-ul.custom-pager a {
-  width: 0;
-  overflow: hidden; }
-
-ul.custom-pager .previous a:after {
-  content: "‹";
-  left: 0; }
-  @media (max-width: 740px) {
-    ul.custom-pager .previous a:after {
-      left: 50%;
-      margin: 0 0 0 -50px; } }
-
-ul.custom-pager .next a:after {
-  content: "›";
-  left: 50px; }
-  @media (max-width: 740px) {
-    ul.custom-pager .next a:after {
-      left: 50%; } }
-
-.region-content-info ul.custom-pager a:hover {
-  color: #000; }
+.item-list .pager {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  margin: 40px 0; }
+  .item-list .pager li {
+    border: none; }
+    .item-list .pager li a {
+      font-family: "Miriam";
+      font-weight: normal;
+      font-size: 1.625rem;
+      color: #47206e;
+      background: none; }
+      .item-list .pager li a:hover {
+        color: #0097d7; }
+    .item-list .pager li.pager-current {
+      font-family: "Miriam";
+      font-weight: normal;
+      background: none;
+      font-size: 1.625rem;
+      color: inherit; }
+  .item-list .pager .pager-next, .item-list .pager .pager-last, .item-list .pager .pager-previous, .item-list .pager .pager-first {
+    position: static; }
+    .item-list .pager .pager-next a, .item-list .pager .pager-last a, .item-list .pager .pager-previous a, .item-list .pager .pager-first a {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 1.625rem;
+      color: #47206e;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
 
 /* Components */
 .main-menu-block ul.nice-menu {

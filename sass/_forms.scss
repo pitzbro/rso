@@ -8,6 +8,16 @@
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
     width: 100%;
+    background: #fff;
+    border: $main-border;
+    font-family: $font-primary;
+    line-height: $form-item-height;
+    height: $form-item-height;
+    color: $main-text-color;
+    padding: 0 10px;
+    &::placeholder {
+        color: $light-text-color;
+    }
 
     &:focus {
         box-shadow: none;
@@ -56,5 +66,30 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
         &:hover {
             background: $highlite-color-3;
         }
+    }
+}
+
+/*------ Icons -------*/
+
+.form-item-combine {
+    position: relative;
+
+    input {
+        padding-left: $form-item-height;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        font-family: FontAwesome;
+        line-height: $form-item-height;
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $light-text-color;
+        text-rendering: auto; // optimizelegibility throws things off #1094
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;    
     }
 }
