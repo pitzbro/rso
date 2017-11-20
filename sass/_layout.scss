@@ -32,7 +32,7 @@ body {
 /*---------- Layout  ----------*/
 
 .section-content {
-    padding: 40px 0 20px;
+    // padding: 40px 0 20px;
     .front & {
         padding-bottom: 0;
     }
@@ -41,6 +41,7 @@ body {
 
 .zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper):not(.zone-header-wrapper) {
     margin-bottom: 20px;
+    padding: 30px 0
 }
 
 /*---------- Sidebar Layout  ----------*/
@@ -98,6 +99,18 @@ body {
 
 .zone-postscript-wrapper {
     padding: 30px 0;
+}
+
+/*---------- Banner Script ---------*/
+
+.zone-banner-wrapper {
+    background: $highlite-color-1;
+    color: #fff;
+    text-align: center;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 /*---------- Back To Top Button ---------*/

@@ -85,7 +85,7 @@
     @include button($highlite-color-1, $highlite-color-3);
   }
   &.fifth {
-    @include button($highlite-color-3, $highlite-color-1);
+    @include button($highlite-color-3, $highlite-color-2);
   }
 }
 

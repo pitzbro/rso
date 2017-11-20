@@ -1,10 +1,18 @@
 /*-----------------Main Teasers Preview-----------------------*/
 
-.teaser {
 
-  display: flex;
+.teaser {
+  
   background: #fff;
   margin-bottom: 35px;
+
+  .dark-bg & {
+    background: #fff;
+  }
+  .light-bg & {
+    background: $main-color;
+    color: #000;
+  }
 
   .teaser-image {
     flex: 0 0 385px;
@@ -54,7 +62,7 @@
   }
   .teaser-square-item {
     flex: 0 0 300px;
-    background: #fff;
+    // background: #fff;
     margin-bottom: 20px;
     .teaser-square-image {
       display: block;
@@ -116,6 +124,24 @@
     line-height: 40px;
   }
 }
+
+.teaser-medium {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+    .teaser-item {
+      flex: 0 0 445px;
+      background: #fff;
+    }
+
+    .teaser-info {
+      padding: 25px 35px;
+      color: #000;
+    }
+
+  }
 
 /*-----------Filters------------*/
 

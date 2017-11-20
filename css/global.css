@@ -159,7 +159,7 @@
     .btn.fifth:not(:last-child), a.btn.fifth:not(:last-child) {
       padding-left: 10px; }
     .btn.fifth:hover, a.btn.fifth:hover {
-      background: #47206e; }
+      background: #ff6600; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
@@ -505,13 +505,12 @@ body {
   border-right: 10px solid #47206e; }
 
 /*---------- Layout  ----------*/
-.section-content {
-  padding: 40px 0 20px; }
-  .front .section-content {
-    padding-bottom: 0; }
+.front .section-content {
+  padding-bottom: 0; }
 
 .zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper):not(.zone-header-wrapper) {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding: 30px 0; }
 
 /*---------- Sidebar Layout  ----------*/
 .sidebar-layout .region-content-inner {
@@ -547,6 +546,15 @@ body {
 /*---------- Post Script ---------*/
 .zone-postscript-wrapper {
   padding: 30px 0; }
+
+/*---------- Banner Script ---------*/
+.zone-banner-wrapper {
+  background: #47206e;
+  color: #fff;
+  text-align: center; }
+  .zone-banner-wrapper a {
+    color: #fff;
+    text-decoration: none; }
 
 /*---------- Back To Top Button ---------*/
 #back-top {
@@ -603,8 +611,6 @@ a, a:link, a:visited {
   .dark-bg a, .dark-bg a:link, .dark-bg a:visited {
     color: #fff;
     text-decoration: none; }
-    .dark-bg a:hover:not(.btn), .dark-bg a:link:hover:not(.btn), .dark-bg a:visited:hover:not(.btn) {
-      text-decoration: underline; }
   a.download-link, a:link.download-link, a:visited.download-link {
     display: inline-block;
     text-decoration: none;
@@ -618,7 +624,7 @@ a, a:link, a:visited {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Miriam";
   line-height: 1.3;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   font-weight: bold;
   margin-bottom: 0.45em; }
 
@@ -831,9 +837,13 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser {
-  display: flex;
   background: #fff;
   margin-bottom: 35px; }
+  .dark-bg .teaser {
+    background: #fff; }
+  .light-bg .teaser {
+    background: #ece9e3;
+    color: #000; }
   .teaser .teaser-image {
     flex: 0 0 385px; }
   .teaser .teaser-content {
@@ -869,7 +879,6 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       justify-content: space-around; } }
   .teaser-square-view > .view-content .teaser-square-item {
     flex: 0 0 300px;
-    background: #fff;
     margin-bottom: 20px; }
     .teaser-square-view > .view-content .teaser-square-item .teaser-square-image {
       display: block;
@@ -913,6 +922,17 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     font-family: "Miriam_Bold";
     font-size: 1.25rem;
     line-height: 40px; }
+
+.teaser-medium {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .teaser-medium .teaser-item {
+    flex: 0 0 445px;
+    background: #fff; }
+  .teaser-medium .teaser-info {
+    padding: 25px 35px;
+    color: #000; }
 
 /*-----------Filters------------*/
 .views-exposed-form .views-exposed-widget {
@@ -1142,6 +1162,8 @@ footer.section-footer {
       list-style: none;
       margin: 0;
       padding: 0; }
+      footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
+        padding-left: 15px; }
       footer.section-footer .footer-menu .content > ul.menu li ul ul {
         display: none; }
     footer.section-footer .footer-menu .content > ul.menu > li > a {
@@ -1212,6 +1234,11 @@ header .subscription-signup button {
 
 .mini-calendar .view-content, .mini-calendar .attachment-after {
   flex: 0 0 455px; }
+
+.mini-calendar .attachment-after > .view {
+  height: 100%; }
+  .mini-calendar .attachment-after > .view > .view-content {
+    height: 100%; }
 
 .mini-calendar .attachment-before {
   display: none; }
@@ -1331,11 +1358,18 @@ header .subscription-signup button {
 
 .flyout-container {
   display: none;
+  height: 100%;
   background: #fff; }
   .flyout-container.opened {
     display: block; }
   .flyout-container .flyout-item:not(:first-child) {
     display: none; }
+  .flyout-container .flyout-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+  .flyout-container .flyout-image {
+    flex: 0 0 260px; }
   .flyout-container .flyout-date {
     font-family: "Miriam_Bold";
     font-size: 1.375rem;
@@ -1350,7 +1384,7 @@ header .subscription-signup button {
       .flyout-container .flyout-date > div:last-child {
         border: none; }
   .flyout-container .flyout_info {
-    height: 190px;
+    flex: 1;
     overflow: hidden;
     padding: 20px 25px; }
 

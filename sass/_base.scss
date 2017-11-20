@@ -54,9 +54,9 @@ a, a:link, a:visited {
   .dark-bg & {
       color: #fff;
       text-decoration: none;
-      &:hover:not(.btn) {
-          text-decoration: underline;
-      }
+      // &:hover:not(.btn) {
+      //     text-decoration: underline;
+      // }
   }
 
   &.download-link {
@@ -74,7 +74,7 @@ a, a:link, a:visited {
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-primary;
     line-height: 1.3;
-    letter-spacing: 0.01em;
+    letter-spacing: 0;
     font-weight: bold;
     margin-bottom: 0.45em;
 }
