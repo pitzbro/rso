@@ -106,7 +106,7 @@
   .btn.third, a.btn.third {
     display: block;
     padding: 0 25px;
-    background: #47206e;
+    background: #ff6600;
     border: none;
     border-radius: 0;
     text-shadow: none;
@@ -144,7 +144,7 @@
   .btn.fifth, a.btn.fifth {
     display: block;
     padding: 0 25px;
-    background: #47206e;
+    background: #0097d7;
     border: none;
     border-radius: 0;
     text-shadow: none;
@@ -831,6 +831,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser {
+  display: flex;
   background: #fff;
   margin-bottom: 35px; }
   .teaser .teaser-image {
@@ -853,7 +854,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
   .teaser .teaser-info {
     flex: 1;
     overflow: hidden;
-    padding: 20px 25px; }
+    padding: 20px 25px;
+    color: #000; }
 
 .teaser-square-view > .view-content {
   display: flex;
