@@ -120,8 +120,8 @@ button, select {
 }
 
 button, .btn a {
-  background: $highlite-color-1;
-  color: $highlite-color-2;
+  background: transparent;
+  color: inherit;
   font-size: inherit;
   font-family: inherit;
   border-radius: unset;

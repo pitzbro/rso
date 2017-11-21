@@ -1,0 +1,79 @@
+.main-search {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($highlite-color-1, 0.95);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+
+    &.opened {
+        visibility: visible;
+    }
+
+    .inner-block {
+        margin-top: 160px
+    }
+
+    h2.block-title {
+        color: #fff;
+        font-size: rem(33px);
+        font-weight: normal;
+        font-family: $font-primary;
+        border: none;
+        margin: 80px 0;
+        &::before {
+            content: " ";
+            font-size: rem(20px);
+            display: inline-block;
+            font-family: FontAwesome;
+            text-rendering: auto; // optimizelegibility throws things off #1094
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;            
+        }
+    }
+
+    .form-item-combine::after { display: none; }
+
+    input[name='combine'] {
+        color: #fff;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        font-size: rem(40px);
+        height: 60px;
+        line-height: 60px;
+        padding-left: 10px;
+        max-width: 500px;
+    }
+
+    .views-exposed-form .views-exposed-widget input[type='submit'] {
+        @include button(rgba($highlite-color-2, 0.2), rgba($highlite-color-3, 0.2));
+        font-size: rem(20px);
+        display: inline-block;
+        font-family: FontAwesome;
+        text-rendering: auto; // optimizelegibility throws things off #1094
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; 
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
+    }
+
+    .closeBtn {
+        @include button(transparent, transparent);
+        position: absolute;
+        font-size: rem(30px);
+        right:0 ;
+        top: 0;
+        cursor: pointer;
+        padding: 40px;
+    }
+}

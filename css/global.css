@@ -683,8 +683,8 @@ button, select {
   cursor: pointer; }
 
 button, .btn a {
-  background: #47206e;
-  color: #ff6600;
+  background: transparent;
+  color: inherit;
   font-size: inherit;
   font-family: inherit;
   border-radius: unset;
@@ -1243,6 +1243,106 @@ header .subscription-signup button {
     background-size: cover; }
   .page-header-image-block .main-title, .page-header-image-block h1 {
     margin-bottom: 0; }
+
+.main-search {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(71, 32, 110, 0.95);
+  display: flex;
+  justify-content: center;
+  visibility: hidden; }
+  .main-search.opened {
+    visibility: visible; }
+  .main-search .inner-block {
+    margin-top: 160px; }
+  .main-search h2.block-title {
+    color: #fff;
+    font-size: 2.0625rem;
+    font-weight: normal;
+    font-family: "Miriam";
+    border: none;
+    margin: 80px 0; }
+    .main-search h2.block-title::before {
+      content: " ";
+      font-size: 1.25rem;
+      display: inline-block;
+      font-family: FontAwesome;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+  .main-search .form-item-combine::after {
+    display: none; }
+  .main-search input[name='combine'] {
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 2.5rem;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    max-width: 500px; }
+  .main-search .views-exposed-form .views-exposed-widget input[type='submit'] {
+    display: block;
+    padding: 0 25px;
+    background: rgba(255, 102, 0, 0.2);
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+    font-size: 1.25rem;
+    display: inline-block;
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px; }
+    .main-search .views-exposed-form .views-exposed-widget input[type='submit']:not(:last-child) {
+      padding-left: 10px; }
+    .main-search .views-exposed-form .views-exposed-widget input[type='submit']:hover {
+      background: rgba(0, 151, 215, 0.2); }
+  .main-search .closeBtn {
+    display: block;
+    padding: 0 25px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    font-family: "Miriam";
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+    position: absolute;
+    font-size: 1.875rem;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 40px; }
+    .main-search .closeBtn:not(:last-child) {
+      padding-left: 10px; }
+    .main-search .closeBtn:hover {
+      background: transparent; }
 
 .fc-state-highlight {
   background: transparent; }
