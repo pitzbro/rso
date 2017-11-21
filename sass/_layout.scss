@@ -111,6 +111,32 @@ body {
         color: #fff;
         text-decoration: none;
     }
+
+    h2 {
+        font-size: rem(60px);
+    }
+
+    a.full-link, a:link.full-link, a:visited.full-link {
+        position: relative;
+    }
+
+    .subtitle-line {
+        position: absolute;
+        border: solid 2px #fff;
+        bottom: 0;
+        left: 0;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .subtitle {
+        display: inline-block;
+        position: relative;
+        font-size: rem(33px);
+        display: inline-block;
+        background: $highlite-color-1;
+        padding: 0 35px;
+    }
 }
 
 /*---------- Back To Top Button ---------*/
