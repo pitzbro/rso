@@ -129,6 +129,15 @@ button, .btn a {
   text-shadow: none;
 }
 
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  box-shadow: $highlite-color-3;
+  z-index: 1;
+}
+
+button.clear-btn:focus, button.clear-btn:active {
+  box-shadow: none;
+}
+
 small {
   font-size: $font-small;
 }
