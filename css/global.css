@@ -81,6 +81,12 @@
 .text-medium {
   font-size: 1.25rem; }
 
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 .border-bottom {
   border-bottom: 1px solid #c0c0c0; }
 
@@ -103,6 +109,8 @@
     padding-left: 10px; }
   .btn:hover, a.btn:hover {
     background: #ff6600; }
+  .btn.limited-width, a.btn.limited-width {
+    max-width: 230px; }
   .btn.third, a.btn.third {
     display: block;
     padding: 0 25px;
@@ -122,6 +130,8 @@
       padding-left: 10px; }
     .btn.third:hover, a.btn.third:hover {
       background: #47206e; }
+    .btn.third.limited-width, a.btn.third.limited-width {
+      max-width: 230px; }
   .btn.fourth, a.btn.fourth {
     display: block;
     padding: 0 25px;
@@ -141,6 +151,8 @@
       padding-left: 10px; }
     .btn.fourth:hover, a.btn.fourth:hover {
       background: #0097d7; }
+    .btn.fourth.limited-width, a.btn.fourth.limited-width {
+      max-width: 230px; }
   .btn.fifth, a.btn.fifth {
     display: block;
     padding: 0 25px;
@@ -160,6 +172,8 @@
       padding-left: 10px; }
     .btn.fifth:hover, a.btn.fifth:hover {
       background: #ff6600; }
+    .btn.fifth.limited-width, a.btn.fifth.limited-width {
+      max-width: 230px; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
@@ -173,6 +187,8 @@ a.full-link, a:link.full-link, a:visited.full-link {
   background-image: url("../images/default-square.jpg");
   background-size: cover;
   background-position: center center; }
+  .default-image.large-image {
+    background-image: url("../images/default-large.jpg"); }
 
 .zoom-image {
   display: block;
@@ -411,6 +427,13 @@ a.more-link {
       background: #000; }
 
 /*---------------- Groupings ------------------*/
+h3.group-title {
+  border-top: 2px solid #545555;
+  border-bottom: 2px solid #545555;
+  color: #0097d7;
+  font-family: "Miriam_Bold";
+  padding: 8px 0; }
+
 .group-title {
   position: relative;
   margin: 50px 0 40px; }
@@ -862,7 +885,6 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser {
-  background: #fff;
   margin-bottom: 35px; }
   .dark-bg .teaser {
     background: #fff; }
@@ -891,6 +913,23 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     overflow: hidden;
     padding: 20px 25px;
     color: #000; }
+
+.teaser.search-item {
+  min-height: 120px;
+  margin-bottom: 45px; }
+  .teaser.search-item .teaser-image {
+    flex: 0 0 140px; }
+    .teaser.search-item .teaser-image.קונצרט {
+      flex: 0 0 215px; }
+  .teaser.search-item .teaser-info {
+    padding: 0 25px 0 0; }
+  .teaser.search-item h2 {
+    margin-bottom: 0; }
+    .teaser.search-item h2 a {
+      color: initial;
+      text-decoration: none; }
+  .teaser.search-item p {
+    margin-bottom: 5px; }
 
 .teaser-square-view > .view-content {
   display: flex;
@@ -983,6 +1022,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       padding-left: 10px; }
     .views-exposed-form .views-exposed-widget input[type="submit"]:hover {
       background: #0097d7; }
+    .views-exposed-form .views-exposed-widget input[type="submit"].limited-width {
+      max-width: 230px; }
     .views-exposed-form .views-exposed-widget input[type="submit"][name="op"] {
       display: block;
       padding: 0 25px;
@@ -1002,6 +1043,8 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
         padding-left: 10px; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:hover {
         background: #0097d7; }
+      .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width {
+        max-width: 230px; }
 
 /*----------------custome pagers--------------------*/
 .item-list .pager {
@@ -1330,6 +1373,8 @@ header .subscription-signup button {
       padding-left: 10px; }
     .main-search .views-exposed-form .views-exposed-widget input[type='submit']:hover {
       background: rgba(0, 151, 215, 0.2); }
+    .main-search .views-exposed-form .views-exposed-widget input[type='submit'].limited-width {
+      max-width: 230px; }
   .main-search .views-exposed-form {
     transition: all .3s;
     transform: translate(0, 100px); }
@@ -1358,6 +1403,8 @@ header .subscription-signup button {
       padding-left: 10px; }
     .main-search .closeBtn:hover {
       background: transparent; }
+    .main-search .closeBtn.limited-width {
+      max-width: 230px; }
 
 .fc-state-highlight {
   background: transparent; }

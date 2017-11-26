@@ -3,7 +3,7 @@
 
 .teaser {
   
-  background: #fff;
+  // background: #fff;
   margin-bottom: 35px;
 
   .dark-bg & {
@@ -46,6 +46,33 @@
     overflow: hidden;
     padding: 20px 25px;
     color: #000;
+  }
+}
+
+.teaser.search-item {
+  min-height: 120px;
+  margin-bottom: 45px;
+  .teaser-image {
+    flex: 0 0 140px;
+    &.קונצרט {
+      flex: 0 0 215px;
+    }
+  }
+  .teaser-info {
+    padding: 0 25px 0 0;
+  }
+  // .teaser-top {
+  //   font-family: $font-bold;
+  // }
+  h2 {
+    margin-bottom: 0;
+    a {
+      color: initial;
+      text-decoration: none;
+    }
+  }
+  p {
+    margin-bottom: 5px;
   }
 }
 

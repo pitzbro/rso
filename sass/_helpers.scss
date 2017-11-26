@@ -42,6 +42,13 @@
   font-size: rem(20px);
 }
 
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 // ------------- Borders ------------- //
 
 .border-bottom {
@@ -72,6 +79,10 @@
 
   &:hover {
     background: $default-background-hover;
+  }
+
+  &.limited-width {
+    max-width: 230px;
   }
 
 }
@@ -107,6 +118,10 @@ a, a:link, a:visited {
   background-image: url('../images/default-square.jpg');
   background-size: cover;
   background-position: center center;
+  
+  &.large-image {
+    background-image: url('../images/default-large.jpg');
+  }
 }
 
 .zoom-image {
@@ -435,6 +450,14 @@ a.more-link {
 }
 
 /*---------------- Groupings ------------------*/
+
+h3.group-title {
+  border-top: 2px solid $main-text-color;
+  border-bottom: 2px solid $main-text-color;
+  color: $highlite-color-3;
+  font-family: $font-bold;
+  padding: 8px 0;
+}
 
 .group-title {
   position: relative;
