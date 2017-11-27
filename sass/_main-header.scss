@@ -56,6 +56,16 @@ header {
         width: 200px;
         height: 66px;
     }
+
+    a.btn {
+        height: 65px;
+        line-height: 65px;
+        padding: 0 40px;
+        color: $highlite-color-2;
+        &:hover {
+            color: #fff;
+        }
+    }
 }
 
 .page-header-image-block {

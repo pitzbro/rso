@@ -110,7 +110,7 @@ h4 {
     font-size: rem(16px);
 }
 
-img {
+img:not(.admin-menu-icon) {
   width: 100%;
   height: auto;
 }

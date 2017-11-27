@@ -11,6 +11,13 @@
   border-bottom: $main-border;
   margin-bottom: 0.5em;
   line-height: 1.8;
+  &.double {
+    border-top: $main-border;
+    font-size: rem(20px);
+    padding: 10px 0;
+    margin: 25px 0;
+    line-height: 1;
+  }
 }
 
 .block-title-side {
@@ -59,7 +66,7 @@
 
 @mixin button($default-background, $default-background-hover) {
   display: block;
-  padding: 0 25px;
+  padding: 0 15px;
   background: $default-background;
   border: none;
   border-radius: 0;
@@ -74,7 +81,7 @@
   transition: all .3s;
 
   &:not(:last-child) {
-    padding-left: $form-item-padding
+    margin-left: $form-item-padding
   }
 
   &:hover {
@@ -97,6 +104,29 @@
   }
   &.fifth {
     @include button($highlite-color-3, $highlite-color-2);
+  }
+}
+
+.download-btn {
+  img, .file-size { display: none }
+  a {
+    @include button($highlite-color-2, $highlite-color-1);
+    max-width: 230px;
+    position: relative;
+    text-align: right;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+      background: url(../images/download.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
   }
 }
 
@@ -299,6 +329,10 @@ textarea {
 .site-block {
   margin-bottom: 20px;
   display: block;
+}
+
+.section-block {
+  margin: 40px 0;
 }
 
 .site-block-top {

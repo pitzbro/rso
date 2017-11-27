@@ -49,6 +49,12 @@
   border-bottom: 1px solid #c0c0c0;
   margin-bottom: 0.5em;
   line-height: 1.8; }
+  .block-title.double {
+    border-top: 1px solid #c0c0c0;
+    font-size: 1.25rem;
+    padding: 10px 0;
+    margin: 25px 0;
+    line-height: 1; }
 
 .block-title-side {
   position: absolute;
@@ -92,7 +98,7 @@
 
 .btn, a.btn {
   display: block;
-  padding: 0 25px;
+  padding: 0 15px;
   background: #47206e;
   border: none;
   border-radius: 0;
@@ -106,14 +112,14 @@
   text-decoration: none;
   transition: all .3s; }
   .btn:not(:last-child), a.btn:not(:last-child) {
-    padding-left: 10px; }
+    margin-left: 10px; }
   .btn:hover, a.btn:hover {
     background: #ff6600; }
   .btn.limited-width, a.btn.limited-width {
     max-width: 230px; }
   .btn.third, a.btn.third {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: #ff6600;
     border: none;
     border-radius: 0;
@@ -127,14 +133,14 @@
     text-decoration: none;
     transition: all .3s; }
     .btn.third:not(:last-child), a.btn.third:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .btn.third:hover, a.btn.third:hover {
       background: #47206e; }
     .btn.third.limited-width, a.btn.third.limited-width {
       max-width: 230px; }
   .btn.fourth, a.btn.fourth {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: #47206e;
     border: none;
     border-radius: 0;
@@ -148,14 +154,14 @@
     text-decoration: none;
     transition: all .3s; }
     .btn.fourth:not(:last-child), a.btn.fourth:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .btn.fourth:hover, a.btn.fourth:hover {
       background: #0097d7; }
     .btn.fourth.limited-width, a.btn.fourth.limited-width {
       max-width: 230px; }
   .btn.fifth, a.btn.fifth {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: #0097d7;
     border: none;
     border-radius: 0;
@@ -169,11 +175,51 @@
     text-decoration: none;
     transition: all .3s; }
     .btn.fifth:not(:last-child), a.btn.fifth:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .btn.fifth:hover, a.btn.fifth:hover {
       background: #ff6600; }
     .btn.fifth.limited-width, a.btn.fifth.limited-width {
       max-width: 230px; }
+
+.download-btn img, .download-btn .file-size {
+  display: none; }
+
+.download-btn a {
+  display: block;
+  padding: 0 15px;
+  background: #ff6600;
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-family: "Miriam";
+  font-weight: normal;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s;
+  max-width: 230px;
+  position: relative;
+  text-align: right; }
+  .download-btn a:not(:last-child) {
+    margin-left: 10px; }
+  .download-btn a:hover {
+    background: #47206e; }
+  .download-btn a.limited-width {
+    max-width: 230px; }
+  .download-btn a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/download.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
@@ -310,6 +356,9 @@ textarea {
 .site-block {
   margin-bottom: 20px;
   display: block; }
+
+.section-block {
+  margin: 40px 0; }
 
 .site-block-top {
   margin-top: 20px;
@@ -698,7 +747,7 @@ h2 {
 h4 {
   font-size: 1rem; }
 
-img {
+img:not(.admin-menu-icon) {
   width: 100%;
   height: auto; }
 
@@ -824,20 +873,31 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
-.table table {
-  border: none; }
-  .table table tbody tr {
-    border-bottom: 2px solid #c0c0c0; }
-  .table table tr.options-row {
-    border: none; }
-    .table table tr.options-row td {
-      padding-top: 30px; }
-  .table table td, .table table th {
-    padding: 10px 70px; }
-  .table table td.first, .table table td.last {
-    padding: 10px 0; }
-  .table table td.button-column {
-    min-width: 230px; }
+.season-prices table {
+  margin-bottom: 10px; }
+
+.season-prices table, .season-prices th {
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: #fff; }
+
+.season-prices th {
+  background: #545555; }
+
+.season-prices tr {
+  display: flex; }
+  .season-prices tr > * {
+    flex: 1;
+    margin-bottom: 2px; }
+  .season-prices tr > *:not(:last-child) {
+    margin-left: 2px; }
+
+.season-prices .price-a td {
+  background: #47206e; }
+
+.season-prices .price-b td {
+  background: #0097d7; }
 
 /*----------------Main Slider Gallery-----------------*/
 .main-slider {
@@ -1005,7 +1065,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     margin-top: 0; }
   .views-exposed-form .views-exposed-widget input[type="submit"] {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: #ff6600;
     border: none;
     border-radius: 0;
@@ -1019,14 +1079,14 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     text-decoration: none;
     transition: all .3s; }
     .views-exposed-form .views-exposed-widget input[type="submit"]:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .views-exposed-form .views-exposed-widget input[type="submit"]:hover {
       background: #0097d7; }
     .views-exposed-form .views-exposed-widget input[type="submit"].limited-width {
       max-width: 230px; }
     .views-exposed-form .views-exposed-widget input[type="submit"][name="op"] {
       display: block;
-      padding: 0 25px;
+      padding: 0 15px;
       background: #474747;
       border: none;
       border-radius: 0;
@@ -1040,7 +1100,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       text-decoration: none;
       transition: all .3s; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:not(:last-child) {
-        padding-left: 10px; }
+        margin-left: 10px; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:hover {
         background: #0097d7; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width {
@@ -1283,6 +1343,14 @@ header .subscription-signup button {
   width: 200px;
   height: 66px; }
 
+header a.btn {
+  height: 65px;
+  line-height: 65px;
+  padding: 0 40px;
+  color: #ff6600; }
+  header a.btn:hover {
+    color: #fff; }
+
 .page-header-image-block {
   font-size: 2.0625rem;
   color: #fff; }
@@ -1343,7 +1411,7 @@ header .subscription-signup button {
     max-width: 500px; }
   .main-search .views-exposed-form .views-exposed-widget input[type='submit'] {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: rgba(255, 102, 0, 0.2);
     border: none;
     border-radius: 0;
@@ -1370,7 +1438,7 @@ header .subscription-signup button {
     align-items: center;
     margin: 0 15px; }
     .main-search .views-exposed-form .views-exposed-widget input[type='submit']:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .main-search .views-exposed-form .views-exposed-widget input[type='submit']:hover {
       background: rgba(0, 151, 215, 0.2); }
     .main-search .views-exposed-form .views-exposed-widget input[type='submit'].limited-width {
@@ -1380,7 +1448,7 @@ header .subscription-signup button {
     transform: translate(0, 100px); }
   .main-search .closeBtn {
     display: block;
-    padding: 0 25px;
+    padding: 0 15px;
     background: transparent;
     border: none;
     border-radius: 0;
@@ -1400,7 +1468,7 @@ header .subscription-signup button {
     cursor: pointer;
     padding: 40px; }
     .main-search .closeBtn:not(:last-child) {
-      padding-left: 10px; }
+      margin-left: 10px; }
     .main-search .closeBtn:hover {
       background: transparent; }
     .main-search .closeBtn.limited-width {

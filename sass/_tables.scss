@@ -1,24 +1,30 @@
-.table table {
-    border: none;
-    tbody tr {
-        border-bottom: $bold-border;
-    }
-    tr.options-row {
-        border: none;
-        td {
-            padding-top: 30px;
-        }
-    }
-    td, th {
-        padding: 10px 70px;
-    }
-    td.first, td.last {
-        padding: 10px 0;
+.season-prices {
+
+    table {
+        margin-bottom: 10px;
     }
 
-    td.button-column {
-        min-width: 230px;
+    table, th {
+        border: none;
+        background: transparent;
+        text-align: center;
+        color: #fff;
     }
+    th {
+        background: $main-text-color;
+    }
+    tr {
+        display: flex;
+        > * {
+            flex: 1;
+            margin-bottom: 2px;
+        }
+        > *:not(:last-child) {
+            margin-left: 2px;
+        }
+    }
+    .price-a td { background: $highlite-color-1; }
+    .price-b td { background: $highlite-color-3; }
 }
 
 
