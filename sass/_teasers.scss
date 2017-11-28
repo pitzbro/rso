@@ -187,3 +187,33 @@
 }
 
 
+/*--------------Blockgroup----------------*/
+
+.region-blockgroup-archive-teasers-inner {
+  display: flex;
+  justify-content: space-between;
+
+  section {
+      flex: 0 0 calc(50% - 20px);
+
+      h2.block-title {
+        color: inherit;
+        border: none;
+      }
+
+      .view-content {
+        margin-bottom: 45px;
+        a {
+          display: block;
+          color: inherit;
+          text-decoration: none;
+          border-bottom: $main-border;
+          padding: 5px 0;
+          &:hover {
+            color: $highlite-color-3;
+          }
+        }
+      } 
+  }
+}
+
