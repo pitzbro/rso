@@ -6,6 +6,28 @@
 
 .fc-header tr, tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
     background-color: transparent;
+    background: transparent;
+}
+
+// ---------- Main Calendar ----------- //
+
+.main-calendar {
+  .ui-widget-content {
+    background: transparent;
+  }
+
+  a.fc-event[href$="/node/"] {
+    visibility: hidden;
+  }
+
+  .no-link-event {
+    text-align: right;
+    direction: rtl;
+  }
+
+  // .fc-grid .fc-day-content {
+  //   padding: 0;
+  // }
 }
 
 

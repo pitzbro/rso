@@ -1522,7 +1522,18 @@ header .subscription-signup button {
   background: transparent; }
 
 .fc-header tr, tr:hover td, tr.even:hover td.active, tr.odd:hover td.active {
-  background-color: transparent; }
+  background-color: transparent;
+  background: transparent; }
+
+.main-calendar .ui-widget-content {
+  background: transparent; }
+
+.main-calendar a.fc-event[href$="/node/"] {
+  visibility: hidden; }
+
+.main-calendar .no-link-event {
+  text-align: right;
+  direction: rtl; }
 
 .mini-calendar .view-content, .mini-calendar .attachment-after {
   flex: 0 0 455px; }
