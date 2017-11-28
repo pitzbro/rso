@@ -11,7 +11,7 @@
   border-bottom: $main-border;
   margin-bottom: 0.5em;
   line-height: 1.8;
-  &.double {
+  &.double, .double & {
     border-top: $main-border;
     font-size: rem(20px);
     padding: 10px 0;
@@ -593,4 +593,19 @@ h3.group-title {
 
   }
 
+}
+
+/*-------------------- Legend -------------------------*/
+
+.legend .content {
+  display: inline-flex;
+  margin: 20px 0;
+  > * {
+    margin-left: 10px;
+  }
+}
+
+.legend-block {
+  width: 25px;
+  height: 25px;
 }

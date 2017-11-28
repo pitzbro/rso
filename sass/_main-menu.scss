@@ -43,18 +43,30 @@
                     transition: all 0.5s;
                 }
 
+                &.nolink:before {
+                    background: $highlite-color-2;
+                }
+
+                &.active:before {
+                    width: 30px;
+                }
+
                 &:hover:before {
                     width: 30px;
                 }
 
             }
 
+            // &.nolink.over > a {
+            //     background: $highlite-color-2;
+            // }
+
             &.over > a {
 
                 color: $highlite-color-1;
 
                 &:before {
-                    background: $highlite-color-2;
+                    // background: $highlite-color-3;
                     width: 30px;
                 }
             }

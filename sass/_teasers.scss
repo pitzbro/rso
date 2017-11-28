@@ -6,7 +6,7 @@
   // background: #fff;
   margin-bottom: 35px;
 
-  .dark-bg & {
+  .dark-bg &, &.dark-bg {
     background: #fff;
   }
   .light-bg & {

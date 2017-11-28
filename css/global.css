@@ -49,7 +49,7 @@
   border-bottom: 1px solid #c0c0c0;
   margin-bottom: 0.5em;
   line-height: 1.8; }
-  .block-title.double {
+  .block-title.double, .double .block-title {
     border-top: 1px solid #c0c0c0;
     font-size: 1.25rem;
     padding: 10px 0;
@@ -536,6 +536,17 @@ h3.group-title {
     .block-social-share ul a.social-share-twitter:before {
       content: '\f099'; }
 
+/*-------------------- Legend -------------------------*/
+.legend .content {
+  display: inline-flex;
+  margin: 20px 0; }
+  .legend .content > * {
+    margin-left: 10px; }
+
+.legend-block {
+  width: 25px;
+  height: 25px; }
+
 /*------------Admin CSS---------*/
 .admin-menu-processed {
   font-size: 12px !important; }
@@ -579,7 +590,7 @@ body {
   .sidebar-layout .region-content-inner .sidebar {
     flex: 0 0 200px;
     margin-left: 30px; }
-  .sidebar-layout .region-content-inner .block-main {
+  .sidebar-layout .region-content-inner .region-blockgroup-main-content-group {
     flex: 1;
     overflow: hidden; }
 
@@ -792,9 +803,12 @@ abbr[title], acronym[title] {
 .form-actions {
   text-align: end; }
 
+.form-item {
+  margin-bottom: 25px; }
+
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
   width: 100%;
-  background: #fff;
+  background: transparent;
   border: 1px solid #c0c0c0;
   font-family: "Miriam";
   line-height: 35px;
@@ -805,6 +819,34 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     color: #a4a4a4; }
   textarea:focus, select:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus {
     box-shadow: none; }
+
+textarea {
+  height: auto;
+  line-height: 2;
+  padding: 10px; }
+
+input[type="reset"], input[type="submit"], input[type="button"] {
+  display: block;
+  padding: 0 15px;
+  background: #0097d7;
+  border: none;
+  border-radius: 0;
+  text-shadow: none;
+  font-family: "Miriam";
+  font-weight: normal;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s;
+  font-size: initial; }
+  input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: #474747; }
+  input[type="reset"].limited-width, input[type="submit"].limited-width, input[type="button"].limited-width {
+    max-width: 230px; }
+    input[type="reset"].limited-width:not(:last-child), input[type="submit"].limited-width:not(:last-child), input[type="button"].limited-width:not(:last-child) {
+      margin-left: 10px; }
 
 .dark-bg textarea, .dark-bg select, .dark-bg input[type="date"], .dark-bg input[type="datetime"], .dark-bg input[type="datetime-local"], .dark-bg input[type="email"], .dark-bg input[type="month"], .dark-bg input[type="number"], .dark-bg input[type="password"], .dark-bg input[type="search"], .dark-bg input[type="tel"], .dark-bg input[type="text"], .dark-bg input[type="time"], .dark-bg input[type="url"], .dark-bg input[type="week"], .page-user .section-content textarea, .page-user .section-content select, .page-user .section-content input[type="date"], .page-user .section-content input[type="datetime"], .page-user .section-content input[type="datetime-local"], .page-user .section-content input[type="email"], .page-user .section-content input[type="month"], .page-user .section-content input[type="number"], .page-user .section-content input[type="password"], .page-user .section-content input[type="search"], .page-user .section-content input[type="tel"], .page-user .section-content input[type="text"], .page-user .section-content input[type="time"], .page-user .section-content input[type="url"], .page-user .section-content input[type="week"] {
   border: none;
@@ -902,15 +944,15 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*----------------Main Slider Gallery-----------------*/
 .main-slider {
-  height: 400px;
+  height: 500px;
   background: #000; }
   .main-slider .views-slideshow-cycle-main-frame {
-    height: 400px;
+    height: 500px;
     width: 100%; }
     .main-slider .views-slideshow-cycle-main-frame .views-slideshow-cycle-main-frame-row {
       width: 100% !important; }
   .main-slider .slide-row {
-    height: 400px;
+    height: 500px;
     width: 100%; }
   .main-slider .item-info-container {
     position: relative;
@@ -942,12 +984,12 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 
 /*------Single Image-------*/
 .header-background-image {
-  height: 400px; }
+  height: 500px; }
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser {
   margin-bottom: 35px; }
-  .dark-bg .teaser {
+  .dark-bg .teaser, .teaser.dark-bg {
     background: #fff; }
   .light-bg .teaser {
     background: #ece9e3;
@@ -1190,12 +1232,15 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
         background: #0097d7;
         transform: translate(0, 25px);
         transition: all 0.5s; }
+      .main-menu-block ul.nice-menu > li > a.nolink:before {
+        background: #ff6600; }
+      .main-menu-block ul.nice-menu > li > a.active:before {
+        width: 30px; }
       .main-menu-block ul.nice-menu > li > a:hover:before {
         width: 30px; }
     .main-menu-block ul.nice-menu > li.over > a {
       color: #47206e; }
       .main-menu-block ul.nice-menu > li.over > a:before {
-        background: #ff6600;
         width: 30px; }
     .main-menu-block ul.nice-menu > li.over > ul {
       height: 220px; }

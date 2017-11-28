@@ -6,9 +6,13 @@
     text-align: end;
 }
 
+.form-item {
+    margin-bottom: 25px;
+}
+
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
     width: 100%;
-    background: #fff;
+    background: transparent;
     border: $main-border;
     font-family: $font-primary;
     line-height: $form-item-height;
@@ -22,6 +26,17 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     &:focus {
         box-shadow: none;
     }
+}
+
+textarea {
+    height: auto;
+    line-height: 2;
+    padding: 10px;
+}
+
+input[type="reset"], input[type="submit"], input[type="button"] {
+    @include button($highlite-color-3, $highlite-color-5);
+    font-size: initial;
 }
 
 .dark-bg, .page-user .section-content {
