@@ -8,8 +8,18 @@
 
     color: #fff;
 
-    .zone-content .block {
+    .zone-content-wrapper {
+        z-index: 1;
+        position: relative;
+    }
+
+    .zone-content .block:not(.main-search) {
         width: 50%;
         float: right;
+    }
+
+    &::after {
+        content: "";
+        @include screen(#000, 0.6);
     }
 }

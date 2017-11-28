@@ -49,30 +49,45 @@
         color: #fff;
         background: transparent;
         border: none;
-        border-bottom: 1px solid #fff;
-        font-size: rem(40px);
+        // border-bottom: 1px solid #fff;
+        font-size: rem(50px);
         height: 60px;
         line-height: 60px;
         padding-left: 10px;
         max-width: 500px;
     }
 
-    .views-exposed-form .views-exposed-widget input[type='submit'] {
-        @include button(rgba($highlite-color-2, 0.2), rgba($highlite-color-3, 0.2));
-        font-size: rem(20px);
-        display: inline-block;
-        font-family: FontAwesome;
-        text-rendering: auto; // optimizelegibility throws things off #1094
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; 
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 15px;
+    .views-submit-button {
+        padding: 15px 0;
+        .views-exposed-widget input[type='submit'] {
+            // @include button(rgba($highlite-color-2, 0.2), rgba($highlite-color-3, 0.2));
+            // font-size: rem(20px);
+            // display: inline-block;
+            // font-family: FontAwesome;
+            // text-rendering: auto; // optimizelegibility throws things off #1094
+            // -webkit-font-smoothing: antialiased;
+            // -moz-osx-font-smoothing: grayscale; 
+            // height: 60px;
+            // width: 60px;
+            // border-radius: 50%;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // margin: 0 15px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid #fff;
+            border-left: 1px solid #fff;
+            transform: rotate(45deg);
+            background: transparent;
+            overflow: hidden;
+            text-indent: 9999px;
+        }
     }
+
 
     .views-exposed-form {
         transition: all .3s;

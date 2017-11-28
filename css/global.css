@@ -111,12 +111,12 @@
   color: #fff;
   text-decoration: none;
   transition: all .3s; }
-  .btn:not(:last-child), a.btn:not(:last-child) {
-    margin-left: 10px; }
   .btn:hover, a.btn:hover {
     background: #ff6600; }
   .btn.limited-width, a.btn.limited-width {
     max-width: 230px; }
+    .btn.limited-width:not(:last-child), a.btn.limited-width:not(:last-child) {
+      margin-left: 10px; }
   .btn.third, a.btn.third {
     display: block;
     padding: 0 15px;
@@ -132,12 +132,12 @@
     color: #fff;
     text-decoration: none;
     transition: all .3s; }
-    .btn.third:not(:last-child), a.btn.third:not(:last-child) {
-      margin-left: 10px; }
     .btn.third:hover, a.btn.third:hover {
       background: #47206e; }
     .btn.third.limited-width, a.btn.third.limited-width {
       max-width: 230px; }
+      .btn.third.limited-width:not(:last-child), a.btn.third.limited-width:not(:last-child) {
+        margin-left: 10px; }
   .btn.fourth, a.btn.fourth {
     display: block;
     padding: 0 15px;
@@ -153,12 +153,12 @@
     color: #fff;
     text-decoration: none;
     transition: all .3s; }
-    .btn.fourth:not(:last-child), a.btn.fourth:not(:last-child) {
-      margin-left: 10px; }
     .btn.fourth:hover, a.btn.fourth:hover {
       background: #0097d7; }
     .btn.fourth.limited-width, a.btn.fourth.limited-width {
       max-width: 230px; }
+      .btn.fourth.limited-width:not(:last-child), a.btn.fourth.limited-width:not(:last-child) {
+        margin-left: 10px; }
   .btn.fifth, a.btn.fifth {
     display: block;
     padding: 0 15px;
@@ -174,12 +174,12 @@
     color: #fff;
     text-decoration: none;
     transition: all .3s; }
-    .btn.fifth:not(:last-child), a.btn.fifth:not(:last-child) {
-      margin-left: 10px; }
     .btn.fifth:hover, a.btn.fifth:hover {
       background: #ff6600; }
     .btn.fifth.limited-width, a.btn.fifth.limited-width {
       max-width: 230px; }
+      .btn.fifth.limited-width:not(:last-child), a.btn.fifth.limited-width:not(:last-child) {
+        margin-left: 10px; }
 
 .download-btn img, .download-btn .file-size {
   display: none; }
@@ -202,12 +202,12 @@
   max-width: 230px;
   position: relative;
   text-align: right; }
-  .download-btn a:not(:last-child) {
-    margin-left: 10px; }
   .download-btn a:hover {
     background: #47206e; }
   .download-btn a.limited-width {
     max-width: 230px; }
+    .download-btn a.limited-width:not(:last-child) {
+      margin-left: 10px; }
   .download-btn a::after {
     content: "";
     display: block;
@@ -251,20 +251,6 @@ a.full-link, a:link.full-link, a:visited.full-link {
   height: 100%;
   top: 0;
   left: 0; }
-  .screen.hover.arrow-next:after {
-    content: "";
-    font-size: 5rem;
-    color: #fff;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transform: translate(30px, 0);
-    transition: all 0.5s; }
-    a:hover .screen.hover.arrow-next:after {
-      opacity: 1;
-      transform: translate(0, 0); }
   .screen.hover {
     transition: background 0.5s; }
     a:hover .screen.hover.hover-3 {
@@ -873,6 +859,21 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
+.table table {
+  border: none; }
+  .table table tbody tr {
+    border-bottom: 2px solid #c0c0c0; }
+  .table table tr.options-row {
+    border: none; }
+    .table table tr.options-row td {
+      padding-top: 30px; }
+  .table table td, .table table th {
+    padding: 10px 70px; }
+  .table table td.first, .table table td.last {
+    padding: 10px 0; }
+  .table table td.button-column {
+    min-width: 230px; }
+
 .season-prices table {
   margin-bottom: 10px; }
 
@@ -1078,12 +1079,12 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     color: #fff;
     text-decoration: none;
     transition: all .3s; }
-    .views-exposed-form .views-exposed-widget input[type="submit"]:not(:last-child) {
-      margin-left: 10px; }
     .views-exposed-form .views-exposed-widget input[type="submit"]:hover {
       background: #0097d7; }
     .views-exposed-form .views-exposed-widget input[type="submit"].limited-width {
       max-width: 230px; }
+      .views-exposed-form .views-exposed-widget input[type="submit"].limited-width:not(:last-child) {
+        margin-left: 10px; }
     .views-exposed-form .views-exposed-widget input[type="submit"][name="op"] {
       display: block;
       padding: 0 15px;
@@ -1099,12 +1100,12 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
       color: #fff;
       text-decoration: none;
       transition: all .3s; }
-      .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:not(:last-child) {
-        margin-left: 10px; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"]:hover {
         background: #0097d7; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width {
         max-width: 230px; }
+        .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width:not(:last-child) {
+          margin-left: 10px; }
 
 /*--------------Blockgroup----------------*/
 .region-blockgroup-archive-teasers-inner {
@@ -1422,46 +1423,25 @@ header .subscription-signup button {
     color: #fff;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #fff;
-    font-size: 2.5rem;
+    font-size: 3.125rem;
     height: 60px;
     line-height: 60px;
     padding-left: 10px;
     max-width: 500px; }
-  .main-search .views-exposed-form .views-exposed-widget input[type='submit'] {
-    display: block;
-    padding: 0 15px;
-    background: rgba(255, 102, 0, 0.2);
-    border: none;
-    border-radius: 0;
-    text-shadow: none;
-    font-family: "Miriam";
-    font-weight: normal;
-    text-align: center;
-    line-height: 35px;
-    height: 35px;
-    color: #fff;
-    text-decoration: none;
-    transition: all .3s;
-    font-size: 1.25rem;
-    display: inline-block;
-    font-family: FontAwesome;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 15px; }
-    .main-search .views-exposed-form .views-exposed-widget input[type='submit']:not(:last-child) {
-      margin-left: 10px; }
-    .main-search .views-exposed-form .views-exposed-widget input[type='submit']:hover {
-      background: rgba(0, 151, 215, 0.2); }
-    .main-search .views-exposed-form .views-exposed-widget input[type='submit'].limited-width {
-      max-width: 230px; }
+  .main-search .views-submit-button {
+    padding: 15px 0; }
+    .main-search .views-submit-button .views-exposed-widget input[type='submit'] {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff;
+      transform: rotate(45deg);
+      background: transparent;
+      overflow: hidden;
+      text-indent: 9999px; }
   .main-search .views-exposed-form {
     transition: all .3s;
     transform: translate(0, 100px); }
@@ -1486,12 +1466,12 @@ header .subscription-signup button {
     top: 0;
     cursor: pointer;
     padding: 40px; }
-    .main-search .closeBtn:not(:last-child) {
-      margin-left: 10px; }
     .main-search .closeBtn:hover {
       background: transparent; }
     .main-search .closeBtn.limited-width {
       max-width: 230px; }
+      .main-search .closeBtn.limited-width:not(:last-child) {
+        margin-left: 10px; }
 
 .fc-state-highlight {
   background: transparent; }
@@ -1676,9 +1656,21 @@ header .subscription-signup button {
   background-size: cover;
   background-position: center center;
   color: #fff; }
-  .context-contact .section-content .zone-content .block {
+  .context-contact .section-content .zone-content-wrapper {
+    z-index: 1;
+    position: relative; }
+  .context-contact .section-content .zone-content .block:not(.main-search) {
     width: 50%;
     float: right; }
+  .context-contact .section-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); }
 
 /*------ Contact Zone -------*/
 .staff-container {
