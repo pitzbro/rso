@@ -75,6 +75,9 @@
   font-family: "Miriam";
   margin-bottom: 0; }
 
+.font-primary {
+  font-family: "Miriam"; }
+
 .title:not(h1) {
   font-family: "Miriam_Bold";
   font-size: 1.25rem;
@@ -451,7 +454,13 @@ textarea {
   .flex-blocks > * {
     display: block;
     min-width: 50%;
-    flex: 1; }
+    flex: 1;
+    padding-left: 20px; }
+  .flex-blocks.col-3::after {
+    content: "";
+    flex: auto; }
+  .flex-blocks.col-3 > * {
+    min-width: 33.333%; }
 
 .full-height {
   height: 100%; }
@@ -1326,6 +1335,8 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     border: none;
     background: transparent;
     font-weight: bold; }
+    .main-menu-block ul.nice-menu > li.active-trail > a:before {
+      width: 30px; }
     .main-menu-block ul.nice-menu > li:hover {
       background: transparent; }
     .main-menu-block ul.nice-menu > li > a {
@@ -1467,7 +1478,7 @@ header .zone-menu {
   border-right: 10px solid #47206e;
   font-size: 1.25rem; }
   body.admin-menu header .zone-menu {
-    top: 25px; }
+    top: 24px; }
 
 header .zone-header-wrapper .container-12, header .container-12 .grid-12 {
   margin: 0;
@@ -1710,7 +1721,8 @@ header .subscription-signup button {
     color: #ff6600; }
 
 .main-calendar .fc-rtl .fc-grid .fc-event-inner {
-  padding: 5px 15px 20px; }
+  padding: 5px 15px 20px;
+  font-family: "Miriam"; }
 
 .main-calendar .fc-rtl .fc-grid .fc-event-time {
   display: block;

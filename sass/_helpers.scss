@@ -2,7 +2,7 @@
   width: fit-content;
 }
 
-// ------------- Text ------------- //
+// ------------- Text Font Helpers ------------- //
 
 .block-title {
   font-family: $font-bold;
@@ -32,6 +32,10 @@
   @include main-title;
   font-family: $font-primary;
   margin-bottom: 0;
+}
+
+.font-primary {
+  font-family: $font-primary;
 }
 
 .title:not(h1) {
@@ -455,7 +459,18 @@ textarea {
     display: block;
     min-width: 50%;
     flex: 1;
+    padding-left: 20px;
   }
+  
+  &.col-3 {
+    &::after {
+      content: "";
+      flex: auto;
+    }
+    > * {
+      min-width: 33.333%;
+    }
+  } 
 }
 
 //----------//

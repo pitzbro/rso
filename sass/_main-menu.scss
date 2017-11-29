@@ -11,6 +11,10 @@
             // font-family: 'Miriam_Bold';
             // flex: 1;
 
+            &.active-trail > a:before {
+                width: 30px;
+            }
+
             &:hover {
                 background: transparent;
             }
