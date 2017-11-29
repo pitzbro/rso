@@ -1,3 +1,5 @@
+// Side Menu
+
 .side-menu .menu-block-wrapper {
 
     border-top: 2px solid $main-text-color;
@@ -47,4 +49,35 @@
         }
     }
 
+}
+
+// Button Menu
+
+.button-menu ul.menu {
+    display: flex;
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        flex: 0 0 170px;
+
+        &:not(:last-child) {
+            margin-left: 20px;
+        }
+
+        a {
+            @include button($highlite-color-1, $highlite-color-3);
+        }
+    }
+}
+
+// Title Menu
+
+.title-menu {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    ul.menu {
+        justify-content: flex-end;
+    }
 }

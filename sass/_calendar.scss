@@ -12,8 +12,91 @@
 // ---------- Main Calendar ----------- //
 
 .main-calendar {
+
+  table {
+    border: none;
+    margin-bottom: 25px;
+  }
+  
+  // pager
+  
+  .fc-header {
+    background: $highlite-color-1;
+    font-family: 'Miriam_Bold';
+    color: #fff;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 0 25px 0;
+    
+    h2 {
+      line-height: 100px;
+      margin: 0;
+      font-size: rem(40px);
+    }
+    
+    .fc-button {
+      line-height: 100px;
+      height: 100px;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      background: none;
+      text-shadow: none;
+      box-shadow: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      padding: 0;
+      transition: all 0.3s;
+      
+      .ui-icon {
+        display: none;
+      }
+      
+      &.fc-button-next {
+        .fc-icon-wrap {
+          transform: rotate(225deg);
+        }
+      }
+      
+      &:hover {
+        background: $highlite-color-2;
+      }
+      
+      .fc-icon-wrap {
+        position: static;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        overflow: hidden;
+        text-indent: 9999px;
+      }
+    }
+  }
+  
+  // thead
+  
+  thead {
+    th.ui-widget-header {
+      background: $background-color-002;
+      direction: rtl;
+      line-height: 65px;
+      height: 65px;
+      color: inherit;
+      font-size: rem(20px);
+    }
+  }
+  
+  // tbody 
+  
   .ui-widget-content {
     background: transparent;
+    color: inherit;
   }
 
   a.fc-event[href$="/node/"] {
@@ -25,9 +108,84 @@
     direction: rtl;
   }
 
-  // .fc-grid .fc-day-content {
-  //   padding: 0;
-  // }
+  .fc-grid .fc-day-content {
+    padding: 0 0 1px 2px;
+  }
+
+  .fc-rtl .fc-grid {
+
+    .fc-day-number {
+      font-size: rem(33px);
+      float: right;
+      padding: 5px 15px;
+    }
+
+    .ui-state-highlight {
+      border-top: $main-border;     
+      border-left: $main-border;     
+      .fc-day-number { color: $highlite-color-2; }
+    } 
+
+    // events
+
+    .fc-event-default, .fc-event-default .fc-event-skin, .fc-event-default a {
+      color: inherit;
+      background: transparent;
+      border-color: transparent;
+      &.no-link-event {
+        color: $light-text-color;
+        .fc-event-time { 
+          color: $light-text-color;
+          &::after {
+            display: none;
+          }
+        }
+      }
+      &:not(.no-link-event):hover {
+        // background: rgba($highlite-color-2, 0.2);
+        // border-color: rgba($highlite-color-2, 0.2);
+        .fc-event-time::after {
+          width: 100%;
+        }
+        .fc-event-title {
+          color: $highlite-color-2;
+        }
+      }
+    }
+    
+    .fc-event-inner {
+      padding: 5px 15px 20px;
+    }
+    
+    .fc-event-time {
+      display: block;
+      position: relative;
+      background: transparent;
+      border-color: transparent;
+      color: $highlite-color-2;
+      font-size: rem(20px);
+      margin-bottom: 3px; 
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $highlite-color-2;
+        height: 2px;
+        width: 0;
+
+        transition: width .3s;
+      }
+    }
+    
+    .fc-event-title {
+      display: block;
+      clear: both;
+    }
+
+  }
+  
 }
 
 

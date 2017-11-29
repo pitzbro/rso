@@ -92,6 +92,14 @@
     }
   }
 
+  &.active {
+    background: $secondary-color;
+    cursor: default;
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+
 }
 
 .btn, a.btn {
