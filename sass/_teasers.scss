@@ -76,6 +76,15 @@
   }
 }
 
+.teaser-square-view.col-2  > .view-content {
+  .teaser-square-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+  &:after {
+    display: none;
+  }
+}
+
 .teaser-square-view > .view-content {
   display: flex;
   justify-content: space-between;
@@ -84,13 +93,17 @@
     content: "";
     flex: 0 0 300px;
   }
+  
   @include for-mobile-layout {
     justify-content: space-around;
   }
   .teaser-square-item {
     flex: 0 0 300px;
-    // background: #fff;
     margin-bottom: 20px;
+
+    &.col-2 {
+      flex: 0 0 calc(50% - 10px);
+    }
     .teaser-square-image {
       display: block;
       overflow: hidden;

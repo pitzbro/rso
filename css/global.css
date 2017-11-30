@@ -42,6 +42,12 @@
 .fit-content {
   width: fit-content; }
 
+.block {
+  display: block; }
+
+.relative {
+  position: relative; }
+
 .block-title {
   font-family: "Miriam_Bold";
   font-size: 1.625rem;
@@ -640,6 +646,13 @@ body {
 .zone-user-wrapper {
   background: #d8d8d8;
   padding: 30px 0; }
+  .blog-page .zone-user-wrapper {
+    background: #0097d7;
+    padding: 15px 0; }
+    .blog-page .zone-user-wrapper h1 {
+      margin-bottom: 0;
+      font-size: 2.0625rem;
+      color: #fff; }
 
 /*---------- Preface Script ---------*/
 .zone-preface-wrapper {
@@ -1073,6 +1086,12 @@ input[type="reset"], input[type="submit"], input[type="button"] {
   .teaser.search-item p {
     margin-bottom: 5px; }
 
+.teaser-square-view.col-2 > .view-content .teaser-square-item {
+  flex: 0 0 calc(50% - 10px); }
+
+.teaser-square-view.col-2 > .view-content:after {
+  display: none; }
+
 .teaser-square-view > .view-content {
   display: flex;
   justify-content: space-between;
@@ -1086,6 +1105,8 @@ input[type="reset"], input[type="submit"], input[type="button"] {
   .teaser-square-view > .view-content .teaser-square-item {
     flex: 0 0 300px;
     margin-bottom: 20px; }
+    .teaser-square-view > .view-content .teaser-square-item.col-2 {
+      flex: 0 0 calc(50% - 10px); }
     .teaser-square-view > .view-content .teaser-square-item .teaser-square-image {
       display: block;
       overflow: hidden;
