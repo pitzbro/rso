@@ -455,8 +455,7 @@ textarea {
   flex-wrap: wrap;
   color: #545555;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #c0c0c0; }
+  margin-bottom: 20px; }
   .flex-blocks > * {
     display: block;
     min-width: 50%;
@@ -725,7 +724,7 @@ body {
   overflow-y: auto;
   padding: 10px 0;
   padding: 96px 0 10px;
-  font: 1rem/1.5 "Miriam", Arial, Helvetica, sans-serif;
+  font: 18px/1.5 "Miriam", Arial, Helvetica, sans-serif;
   color: #545555;
   background: #47206e; }
   body .page {
@@ -756,7 +755,7 @@ a, a:link, a:visited {
     padding-left: 29px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Miriam";
+  font-family: "Miriam_Bold";
   line-height: 1.3;
   letter-spacing: 0;
   font-weight: bold;
@@ -774,7 +773,7 @@ h1, .bulletin-main-title, .main-title {
 
 h2 {
   line-height: 1.1;
-  font-size: 1.625rem; }
+  font-size: 1.875rem; }
   h2.block-title {
     font-family: "Miriam_Bold";
     font-size: 1.625rem;
@@ -787,6 +786,9 @@ h2 {
     color: #47206e;
     margin-bottom: 25px;
     border: none; }
+
+h3 {
+  font-size: 1.375rem; }
 
 h4 {
   font-size: 1rem; }
@@ -1026,10 +1028,12 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     display: inline-block;
     color: #40c389;
     font-size: 1.625rem;
-    margin-bottom: 20px; }
+    margin-bottom: 5px; }
   .main-slider h3 {
     font-size: 2.6875rem;
-    color: #fff; }
+    color: #fff;
+    font-size: 3.125rem;
+    line-height: 1.2; }
   .main-slider a.btn {
     display: inline-block;
     padding: 0 25px; }
@@ -1905,7 +1909,7 @@ header .subscription-signup button {
     flex-direction: column;
     height: 100%; }
   .flyout-container .flyout-image {
-    flex: 0 0 260px; }
+    flex: 0 0 245px; }
   .flyout-container .flyout-date {
     font-family: "Miriam_Bold";
     font-size: 1.375rem;
