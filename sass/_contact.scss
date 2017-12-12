@@ -1,6 +1,7 @@
 /*------ Contact Page -------*/
 
 .context-contact .section-content {
+    position: relative;
     padding: 140px 0 100px;
     background-image: url('../images/bg-001.jpg');
     background-size: cover;
@@ -18,8 +19,21 @@
         float: right;
     }
 
+    h2.block-title, h2 {
+        color: #fff;
+        line-height: 1.1;
+        font-size: rem(30px);
+        border: none;
+        margin-bottom: 1em;
+    }
+
     &::after {
         content: "";
-        @include screen(#000, 0.6);
+        @include screen(#000, 0.8);
+    }
+
+    input:not([type='submit']) {
+        margin-bottom: 0;
+        height: 50px;
     }
 }

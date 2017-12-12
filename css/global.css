@@ -626,7 +626,8 @@ body:before, body:after {
   background: #47206e;
   left: 0;
   right: 0;
-  height: 10px; }
+  height: 10px;
+  z-index: 500; }
 
 body:before {
   top: 0; }
@@ -916,7 +917,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
   transition: all .3s;
   font-size: initial; }
   input[type="reset"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
-    background: #474747; }
+    background: #47206e; }
   input[type="reset"].limited-width, input[type="submit"].limited-width, input[type="button"].limited-width {
     max-width: 230px; }
     input[type="reset"].limited-width:not(:last-child), input[type="submit"].limited-width:not(:last-child), input[type="button"].limited-width:not(:last-child) {
@@ -944,9 +945,9 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     color: #fff; }
 
 .dark-bg textarea, .page-user .section-content textarea {
-  min-height: 130px; }
+  min-height: 110px; }
 
-.dark-bg button, .dark-bg input[type="reset"], .dark-bg input[type="submit"], .dark-bg input[type="button"], .page-user .section-content button, .page-user .section-content input[type="reset"], .page-user .section-content input[type="submit"], .page-user .section-content input[type="button"] {
+.dark-bg button, .dark-bg input[type="reset"], .dark-bg input[type="button"], .page-user .section-content button, .page-user .section-content input[type="reset"], .page-user .section-content input[type="button"] {
   font-family: "Miriam_Bold";
   font-size: 1rem;
   background: transparent;
@@ -958,7 +959,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
   text-shadow: none;
   color: #fff;
   transition: all .2s; }
-  .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="submit"]:hover, .dark-bg input[type="button"]:hover, .page-user .section-content button:hover, .page-user .section-content input[type="reset"]:hover, .page-user .section-content input[type="submit"]:hover, .page-user .section-content input[type="button"]:hover {
+  .dark-bg button:hover, .dark-bg input[type="reset"]:hover, .dark-bg input[type="button"]:hover, .page-user .section-content button:hover, .page-user .section-content input[type="reset"]:hover, .page-user .section-content input[type="button"]:hover {
     background: #0097d7; }
 
 /*------ Icons -------*/
@@ -1588,39 +1589,48 @@ header .subscription-signup button {
   visibility: hidden;
   opacity: 0;
   transition: all .3s; }
+  .main-search .views-exposed-form .views-exposed-widget {
+    padding: 0; }
+  .main-search .views-exposed-widgets {
+    display: flex; }
+  .main-search .views-exposed-form .views-exposed-widget input[type="submit"] {
+    height: 100px;
+    line-height: 100px;
+    background: transparent;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 5.9375rem;
+    color: #a4a4a4;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .main-search .views-exposed-form .views-exposed-widget input[type="submit"]:hover {
+      color: #fff; }
   .main-search.opened {
     opacity: 1;
     visibility: visible; }
     .main-search.opened .views-exposed-form {
       transform: translate(0, 0); }
   .main-search .inner-block {
-    margin-top: 160px; }
+    margin-top: 95px;
+    width: 940px; }
   .main-search h2.block-title {
     color: #fff;
     font-size: 2.0625rem;
     font-weight: normal;
     font-family: "Miriam";
     border: none;
-    margin: 80px 0; }
-    .main-search h2.block-title::before {
-      content: " ";
-      font-size: 1.25rem;
-      display: inline-block;
-      font-family: FontAwesome;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
+    margin-bottom: 75px; }
   .main-search .form-item-combine::after {
     display: none; }
   .main-search input[name='combine'] {
     color: #fff;
     background: transparent;
     border: none;
-    font-size: 3.125rem;
-    height: 60px;
-    line-height: 60px;
-    padding-left: 10px;
-    max-width: 500px; }
+    font-size: 6.25rem;
+    height: 100px;
+    line-height: 100px;
+    padding: 0px; }
   .main-search .views-submit-button {
     padding: 15px 0; }
     .main-search .views-submit-button .views-exposed-widget input[type='submit'] {
@@ -1654,11 +1664,11 @@ header .subscription-signup button {
     text-decoration: none;
     transition: all .3s;
     position: absolute;
-    font-size: 1.875rem;
+    font-size: 2.5rem;
     right: 0;
     top: 0;
     cursor: pointer;
-    padding: 40px; }
+    padding: 27px 50px; }
     .main-search .closeBtn:hover {
       background: transparent; }
     .main-search .closeBtn.limited-width {
@@ -1975,6 +1985,7 @@ header .subscription-signup button {
 
 /*------ Contact Page -------*/
 .context-contact .section-content {
+  position: relative;
   padding: 140px 0 100px;
   background-image: url("../images/bg-001.jpg");
   background-size: cover;
@@ -1986,6 +1997,12 @@ header .subscription-signup button {
   .context-contact .section-content .zone-content .block:not(.main-search) {
     width: 50%;
     float: right; }
+  .context-contact .section-content h2.block-title, .context-contact .section-content h2 {
+    color: #fff;
+    line-height: 1.1;
+    font-size: 1.875rem;
+    border: none;
+    margin-bottom: 1em; }
   .context-contact .section-content::after {
     content: "";
     display: block;
@@ -1994,7 +2011,10 @@ header .subscription-signup button {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6); }
+    background: rgba(0, 0, 0, 0.8); }
+  .context-contact .section-content input:not([type='submit']) {
+    margin-bottom: 0;
+    height: 50px; }
 
 /*------ Contact Zone -------*/
 .staff-container {

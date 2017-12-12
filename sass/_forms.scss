@@ -35,7 +35,7 @@ textarea {
 }
 
 input[type="reset"], input[type="submit"], input[type="button"] {
-    @include button($highlite-color-3, $highlite-color-5);
+    @include button($highlite-color-3, $highlite-color-1);
     font-size: initial;
 }
 
@@ -61,10 +61,10 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     }
 
     textarea {
-        min-height: 130px;
+        min-height: 110px;
     }
 
-    button, input[type="reset"], input[type="submit"], input[type="button"] {
+    button, input[type="reset"], input[type="button"] {
         font-family: $font-bold;
         font-size: $font-base;
         background: transparent;
