@@ -121,8 +121,9 @@
     }
 
     .ui-state-highlight {
-      border-top: $main-border;     
-      border-left: $main-border;     
+      border-color: $main-border;          
+      border-left: $main-border;          
+      border-top: $main-border;          
       .fc-day-number { color: $highlite-color-2; }
     } 
 
@@ -183,6 +184,7 @@
     .fc-event-title {
       display: block;
       clear: both;
+      margin-bottom: 20px;
     }
 
   }
@@ -246,7 +248,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
+        width: 65px;
         padding: 0;
         transition: all 0.3s;
 
@@ -257,7 +259,10 @@
         }
 
         &:hover {
-          background: $highlite-color-2;
+          background: $highlite-color-3;
+          // span { 
+          //   border-color: $highlite-color-1 !important;
+          // }
         }
 
         .fc-text-arrow {

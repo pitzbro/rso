@@ -5,6 +5,10 @@
     border-top: 2px solid $main-text-color;
     border-bottom: 2px solid $main-text-color;
 
+    ul.menu ul.menu {
+        margin-bottom: 10px;
+    }
+
     li {
         list-style: none;
         margin: 0;

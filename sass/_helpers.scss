@@ -97,6 +97,7 @@
   
   &:hover {
     background: $default-background-hover;
+    // background: darken( $default-background, 10% );
   }
   
   &.limited-width {
@@ -117,15 +118,18 @@
 }
 
 .btn, a.btn {
-  @include button($highlite-color-1, $highlite-color-2);
+  @include button($highlite-color-1, $highlite-color-3);
+  &.second {
+    @include button($highlite-color-4, $highlite-color-3);
+  }
   &.third {
-    @include button($highlite-color-2, $highlite-color-1);
+    @include button($highlite-color-4, $highlite-color-3);
   }
   &.fourth {
     @include button($highlite-color-1, $highlite-color-3);
   }
   &.fifth {
-    @include button($highlite-color-3, $highlite-color-2);
+    @include button($highlite-color-3, $highlite-color-1);
   }
 }
 

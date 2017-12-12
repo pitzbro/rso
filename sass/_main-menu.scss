@@ -19,6 +19,16 @@
                 background: transparent;
             }
 
+            &.menu-3082 {
+                ul li {
+                    background-color: $highlite-color-4;
+                }
+
+                > a:before {
+                    background: $highlite-color-4;
+                }
+            }
+
             > a {
                 // background: green;
                 padding: 0 0 0 40px;
@@ -47,9 +57,9 @@
                     transition: all 0.5s;
                 }
 
-                &.nolink:before {
-                    background: $highlite-color-2;
-                }
+                // &.nolink:before {
+                //     background: $highlite-color-3;
+                // }
 
                 &.active:before {
                     width: 30px;
@@ -113,6 +123,8 @@
                     font-family: $font-primary;
                     height: 170px;
                     position: relative;
+                    background-color: $highlite-color-1;
+                    background-repeat: no-repeat;
 
                     a {
                         color: #fff;
@@ -124,9 +136,6 @@
                         padding-top: 135px;
                         line-height: 35px;
                     }
-
-                    background-color: $highlite-color-2;
-                    background-repeat: no-repeat;
 
                     &.link_about {
                         background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
