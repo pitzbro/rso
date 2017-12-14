@@ -1516,11 +1516,6 @@ footer.section-footer {
     width: 160px;
     padding-bottom: 10px; }
 
-header .region-inner > div {
-  padding-left: 25px; }
-  header .region-inner > div:last-child {
-    padding: 0; }
-
 header .zone-menu {
   position: fixed;
   z-index: 100;
