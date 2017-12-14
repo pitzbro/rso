@@ -555,7 +555,8 @@ h3.group-title {
 
 /*----------------- Social Icons --------------*/
 .block-social-share ul {
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }
   .block-social-share ul li {
     flex: 0 0 30px;
     list-style: none;
@@ -807,6 +808,8 @@ h2 {
     border-bottom: 1px solid #c0c0c0;
     margin-bottom: 0.5em;
     line-height: 1.8; }
+    .no-border h2.block-title {
+      border-bottom: none; }
   .large-block-title h2.block-title {
     font-size: 2.5rem;
     color: #47206e;
@@ -1944,6 +1947,8 @@ header .subscription-signup button {
     display: flex;
     flex-direction: column;
     height: 100%; }
+    .recommended-shows .flyout-container .flyout-item {
+      width: 450px; }
   .flyout-container .flyout-image {
     flex: 0 0 245px; }
   .flyout-container .flyout-date {

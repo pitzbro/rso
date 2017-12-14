@@ -95,7 +95,10 @@ h2 {
     color: $highlite-color-3;
     border-bottom: $main-border;
     margin-bottom: 0.5em;
-    line-height: 1.8; 
+    line-height: 1.8;
+    .no-border & {
+      border-bottom: none;
+    }
   }
 
   .large-block-title &.block-title {
