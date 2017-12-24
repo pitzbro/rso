@@ -137,29 +137,24 @@
                         line-height: 35px;
                     }
 
-                    &.link_about {
-                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
-                    }
+                    &.link_about { background-image: url('/sites/default/files/menu-images/dd_001.jpg'); }
 
-                     &.link_staff {
-                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
-                    }
+                     &.link_staff { background-image: url('/sites/default/files/menu-images/dd_002.jpg'); }
                     
-                    &.link_education {
-                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
-                    }   
+                    &.link_education { background-image: url('/sites/default/files/menu-images/dd_003.jpg'); }   
 
-                    &.link_calendar {
-                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
-                    }
+                    &.link_calendar { background-image: url('/sites/default/files/menu-images/dd_004.jpg');  }
                     
-                    &.link_events {
-                        background-image: url('/sites/default/files/menu-images/menu_image_001.jpg');
-                    }
+                    &.link_events { background-image: url('/sites/default/files/menu-images/dd_005.jpg'); }
 
-                    &.link_membership {
-                        background-image: url('/sites/default/files/menu-images/menu_image_002.jpg');
-                    }
+                    &.link_membership { background-image: url('/sites/default/files/menu-images/dd_006.jpg'); }
+
+
+                    &.link_images { background-image: url('/sites/default/files/menu-images/dd_007.jpg');  }
+                    
+                    &.link_videos { background-image: url('/sites/default/files/menu-images/dd_008.jpg'); }
+
+                    &.link_sounds { background-image: url('/sites/default/files/menu-images/dd_009.jpg'); }
                     
 
                 }

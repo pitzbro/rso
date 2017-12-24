@@ -1466,17 +1466,23 @@ input[type="reset"], input[type="submit"], input[type="button"] {
           padding-top: 135px;
           line-height: 35px; }
         .main-menu-block ul.nice-menu > li ul li.link_about {
-          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_001.jpg"); }
         .main-menu-block ul.nice-menu > li ul li.link_staff {
-          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_002.jpg"); }
         .main-menu-block ul.nice-menu > li ul li.link_education {
-          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_003.jpg"); }
         .main-menu-block ul.nice-menu > li ul li.link_calendar {
-          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_004.jpg"); }
         .main-menu-block ul.nice-menu > li ul li.link_events {
-          background-image: url("/sites/default/files/menu-images/menu_image_001.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_005.jpg"); }
         .main-menu-block ul.nice-menu > li ul li.link_membership {
-          background-image: url("/sites/default/files/menu-images/menu_image_002.jpg"); }
+          background-image: url("/sites/default/files/menu-images/dd_006.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_images {
+          background-image: url("/sites/default/files/menu-images/dd_007.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_videos {
+          background-image: url("/sites/default/files/menu-images/dd_008.jpg"); }
+        .main-menu-block ul.nice-menu > li ul li.link_sounds {
+          background-image: url("/sites/default/files/menu-images/dd_009.jpg"); }
 
 footer.section-footer {
   background: #47206e;
