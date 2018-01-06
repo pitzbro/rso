@@ -85,3 +85,29 @@
         justify-content: flex-end;
     }
 }
+
+// Responsive Menu
+
+.mean-container {
+    .mean-bar, .mean-nav {
+       background: $highlite-color-1;
+       z-index: 99;
+    }
+    .mean-nav ul li a {
+        text-align: right;
+        &.mean-expand {
+            right: auto;
+            left: 0;
+            height: 27px;
+            background: transparent;
+            border: none !important;
+            padding: 18px 12px !important;
+            &:hover {
+                background: transparent;
+            }
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+}
