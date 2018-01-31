@@ -1771,7 +1771,7 @@ header .subscription-signup button {
   background: transparent;
   color: inherit; }
 
-.main-calendar a.fc-event[href$="/node/"] {
+.main-calendar a.fc-event[href*="nolink"] {
   visibility: hidden; }
 
 .main-calendar .no-link-event {

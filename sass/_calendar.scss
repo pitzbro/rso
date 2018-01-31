@@ -99,7 +99,7 @@
     color: inherit;
   }
 
-  a.fc-event[href$="/node/"] {
+  a.fc-event[href*="nolink"] {
     visibility: hidden;
   }
 
