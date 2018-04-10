@@ -23,9 +23,9 @@
     }
 
     li:not(.expanded) a.active {
-            background: url(../images/arrow-left.svg);
+            background: url(../images/arrow-right.svg);
             background-repeat: no-repeat;
-            background-position: left center;
+            background-position: right center;
             background-size: 10px;
     }
 

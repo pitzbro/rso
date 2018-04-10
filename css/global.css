@@ -660,7 +660,7 @@ body {
     flex: 0 0 100%; }
   .sidebar-layout .region-content-inner .sidebar {
     flex: 0 0 200px;
-    margin-left: 30px; }
+    margin: 0 30px 0 0; }
   .sidebar-layout .region-content-inner .region-blockgroup-main-content-group {
     flex: 1;
     overflow: hidden; }
@@ -1327,9 +1327,9 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     padding: 5px 0;
     color: #0097d7; }
   .side-menu .menu-block-wrapper li:not(.expanded) a.active {
-    background: url(../images/arrow-left.svg);
+    background: url(../images/arrow-right.svg);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
     background-size: 10px; }
   .side-menu .menu-block-wrapper > ul > li {
     font-size: 1.25rem;
@@ -1521,7 +1521,7 @@ footer.section-footer {
   footer.section-footer .footer-small {
     flex: 0 0 210px; }
     footer.section-footer .footer-small .block-inner {
-      padding: 0 0 0 40px; }
+      padding: 0 40px 0 0; }
   footer.section-footer .footer-large {
     flex: 1; }
   footer.section-footer a {
@@ -1539,7 +1539,7 @@ footer.section-footer {
       margin: 0;
       padding: 0; }
       footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
-        padding-left: 15px; }
+        padding: 0 15px 0 0; }
       footer.section-footer .footer-menu .content > ul.menu li ul ul {
         display: none; }
     footer.section-footer .footer-menu .content > ul.menu > li > a {
@@ -1760,7 +1760,7 @@ header .subscription-signup button {
       margin: 0;
       border-top: 2px solid #fff;
       border-right: 2px solid #fff;
-      transform: rotate(45deg);
+      transform: rotate(225deg);
       overflow: hidden;
       text-indent: 9999px; }
 
@@ -1886,7 +1886,7 @@ header .subscription-signup button {
     padding: 0;
     transition: all 0.3s; }
     .mini-calendar .fc-header .fc-button.fc-button-next .fc-text-arrow {
-      transform: rotate(225deg); }
+      transform: rotate(45deg); }
     .mini-calendar .fc-header .fc-button:hover {
       background: #0097d7; }
     .mini-calendar .fc-header .fc-button .fc-text-arrow {
@@ -1896,7 +1896,7 @@ header .subscription-signup button {
       margin: 0;
       border-top: 1px solid #fff;
       border-right: 1px solid #fff;
-      transform: rotate(45deg);
+      transform: rotate(225deg);
       overflow: hidden;
       text-indent: 9999px; }
 
@@ -2002,7 +2002,7 @@ header .subscription-signup button {
 /* Pages */
 /*------ Contact Zone -------*/
 .home-contact h2.block-title {
-  padding-right: calc( (100% - 940px) / 2 ); }
+  padding: 0 calc( (100% - 940px) / 2 ); }
 
 .home-contact .content {
   display: flex;
@@ -2011,7 +2011,7 @@ header .subscription-signup button {
   .home-contact .content > * {
     flex: 0 0 50%; }
   .home-contact .content .content-home-text {
-    padding: 40px calc( (100% - 940px) / 2 ) 40px 0; }
+    padding: 40px 0 40px calc( (100% - 940px) / 2 ); }
 
 /*------ Contact Page -------*/
 .context-contact .section-content {

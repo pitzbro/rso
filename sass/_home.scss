@@ -2,7 +2,7 @@
 
 .home-contact {
     h2.block-title {
-        padding-right: #{$container-padding};
+        padding: 0 #{$container-padding};
     }
     .content {
         display: flex;
@@ -14,7 +14,7 @@
         }
 
         .content-home-text {
-            padding: 40px #{$container-padding} 40px 0;
+            padding: 40px 0 40px #{$container-padding};
         }
     }
 }

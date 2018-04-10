@@ -16,6 +16,22 @@
 
 /*--------------------Global---------------------*/
 /*--------------------Layout------------------*/
+.home-contact .content .content-home-text {
+  padding: 40px calc( (100% - 940px) / 2 ) 40px 0; }
+
+.sidebar-layout .region-content-inner .sidebar {
+  margin: 0 0 0 30px; }
+
+.side-menu .menu-block-wrapper li:not(.expanded) a.active {
+  background-image: url(../images/arrow-left.svg);
+  background-position: left center; }
+
+footer.section-footer .footer-small .block-inner {
+  padding: 0 0 0 40px; }
+
+footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
+  padding: 0 0 0 15px; }
+
 /*--------------------Calendar------------------*/
 .fc-header {
   direction: rtl; }
@@ -25,3 +41,9 @@
 
 .fc-header-right {
   text-align: left; }
+
+.mini-calendar .fc-header .fc-button .fc-text-arrow {
+  transform: rotate(45deg); }
+
+.mini-calendar .fc-header .fc-button.fc-button-next .fc-text-arrow {
+  transform: rotate(225deg); }

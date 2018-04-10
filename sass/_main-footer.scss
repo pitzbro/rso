@@ -16,7 +16,7 @@ footer.section-footer {
     .footer-small {
         flex: 0 0 210px;
         .block-inner {
-            padding: 0 0 0 40px;
+            padding: 0 40px 0 0;
         }
     }
 
@@ -44,7 +44,7 @@ footer.section-footer {
             margin: 0;
             padding: 0; 
             &:not(:last-child) {
-                padding-left: 15px;           
+                padding: 0 15px 0 0;          
             }
             ul ul {
                 display: none;
