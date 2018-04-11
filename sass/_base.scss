@@ -65,9 +65,9 @@ a, a:link, a:visited {
     color: $main-text-color;
     background-image: url(../images/down-arrow.svg);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
     background-size: 17px;
-    padding-left: 29px;
+    padding: 0 29px 0 0;
   }
 }
 

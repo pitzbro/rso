@@ -43,7 +43,7 @@
             margin-bottom: 2px;
         }
         > *:not(:last-child) {
-            margin-left: 2px;
+            margin: 0 2px 2px 0;
         }
     }
     .price-a td { background: $highlite-color-1; }

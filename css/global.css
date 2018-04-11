@@ -67,7 +67,7 @@
   z-index: 1;
   line-height: 46px;
   top: 0;
-  left: 0; }
+  right: 0; }
 
 .sub-title {
   font-family: "Miriam_Bold";
@@ -80,6 +80,9 @@
   font-size: 2.5rem;
   font-family: "Miriam";
   margin-bottom: 0; }
+
+.concert-num::before {
+  content: "Concert number "; }
 
 .font-primary {
   font-family: "Miriam"; }
@@ -268,7 +271,7 @@
     cursor: default; }
     .download-btn a.active:hover {
       background: #c0c1c2; }
-  .download-btn a::after {
+  .download-btn a::before {
     content: "";
     display: block;
     position: absolute;
@@ -280,6 +283,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center; }
+
+.download-btn.program-download a::after {
+  content: "Download Program"; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
@@ -782,9 +788,9 @@ a, a:link, a:visited {
     color: #545555;
     background-image: url(../images/down-arrow.svg);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
     background-size: 17px;
-    padding-left: 29px; }
+    padding: 0 29px 0 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Miriam_Bold";
@@ -1023,7 +1029,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     flex: 1;
     margin-bottom: 2px; }
   .season-prices tr > *:not(:last-child) {
-    margin-left: 2px; }
+    margin: 0 2px 2px 0; }
 
 .season-prices .price-a td {
   background: #47206e; }
@@ -1603,6 +1609,17 @@ header .subscription-signup button {
     background-size: cover; }
   .page-header-image-block .main-title, .page-header-image-block h1 {
     margin-bottom: 0; }
+
+.block-locale-language {
+  padding: 0 20px;
+  font-weight: bold; }
+  .block-locale-language ul {
+    list-style: none; }
+  .block-locale-language li.active {
+    display: none; }
+  .block-locale-language a {
+    text-decoration: none;
+    color: #545555; }
 
 .main-search {
   position: fixed;

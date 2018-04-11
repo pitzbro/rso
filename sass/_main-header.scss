@@ -81,3 +81,23 @@ header {
         margin-bottom: 0;
     }
 }
+
+.block-locale-language {
+    padding: 0 20px;
+    // font-size: rem(20px);
+    font-weight: bold;
+    ul {
+        list-style: none;
+    }
+
+    li {
+        &.active {
+            display: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary-text-color;
+    }
+}

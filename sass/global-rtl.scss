@@ -12,6 +12,28 @@
 
 /*--------------------Global---------------------*/
 
+.concert-num::before {
+    content: "קונצרט מס' ";
+}
+
+.block-title-side {
+    right: auto;
+    left: 0;
+}
+
+a.download-link, a:link.download-link, a:visited.download-link {
+    background-position: left center;
+    padding: 0 0 0 29px;    
+}
+
+.season-prices tr > *:not(:last-child) {
+    margin: 0 0 2px 2px;
+}
+
+.download-btn.program-download a::after {
+    content: "הורד/י את התכניה";
+}
+
 /*--------------------Layout------------------*/
 
 .home-contact .content .content-home-text {

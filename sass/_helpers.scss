@@ -35,13 +35,17 @@
   z-index: 1;
   line-height: 46px;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .sub-title {
   @include main-title;
   font-family: $font-primary;
   margin-bottom: 0;
+}
+
+.concert-num::before {
+  content: "Concert number ";
 }
 
 .font-primary {
@@ -140,7 +144,7 @@
     max-width: 230px;
     position: relative;
     text-align: right;
-    &::after {
+    &::before {
       content: "";
       display: block;
       position: absolute;
@@ -153,6 +157,9 @@
       background-size: contain;
       background-position: center center;
     }
+  }
+  &.program-download a::after {
+    content: "Download Program";
   }
 }
 
