@@ -49,6 +49,11 @@ a.download-link, a:link.download-link, a:visited.download-link {
     background-position: left center;
 }
 
+.title-menu {
+    right: auto;
+    left: 0;
+}
+
 //Footer
 
 footer.section-footer .footer-small .block-inner {
@@ -61,6 +66,18 @@ footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
 
 /*--------------------Calendar------------------*/
 
+.no-link-event {
+    text-align: right;
+    direction: rtl;
+}
+
+.mini-calendar .fc-content thead th {
+    direction: rtl;
+}
+
+.mini-calendar thead th.ui-widget-header {
+    direction: rtl;
+}
 
 .fc-header {
   direction: rtl;
@@ -80,4 +97,41 @@ footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
 
 .mini-calendar .fc-header .fc-button.fc-button-next .fc-text-arrow {
     transform: rotate(225deg);
+}
+
+.main-calendar .fc-grid .fc-day-number {
+    float: right;
+}
+
+.flyout-container .flyout-date > div {
+    border-left: 2px solid #eeebe6;
+}
+
+// Main Calendar
+
+
+.main-calendar .fc-header .fc-button .fc-icon-wrap {
+    transform: rotate(45deg);
+}
+
+.main-calendar .fc-header .fc-button.fc-button-next .fc-icon-wrap {
+    transform: rotate(225deg);
+}
+
+
+// Teasers
+
+.teaser .teaser-date > div {
+    border-left: 2px solid #eeebe6;
+}
+
+// Galleries
+
+.main-slider .item-info {
+    left: auto;
+    right: 0;
+}
+
+.btn.limited-width:not(:last-child), a.btn.limited-width:not(:last-child) {
+    margin: 0 0 0 $form-item-padding;
 }

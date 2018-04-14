@@ -107,7 +107,7 @@
   &.limited-width {
     max-width: 230px;
     &:not(:last-child) {
-      margin-left: $form-item-padding
+      margin: 0 $form-item-padding 0 0;
     }
   }
 
@@ -509,6 +509,10 @@ textarea {
 }
 
 .view-filters {
+  clear: both;
+}
+
+.view-footer {
   clear: both;
 }
 

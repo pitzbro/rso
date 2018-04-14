@@ -128,7 +128,7 @@
   .btn.limited-width, a.btn.limited-width {
     max-width: 230px; }
     .btn.limited-width:not(:last-child), a.btn.limited-width:not(:last-child) {
-      margin-left: 10px; }
+      margin: 0 10px 0 0; }
   .btn.active, a.btn.active {
     background: #c0c1c2;
     cursor: default; }
@@ -154,7 +154,7 @@
     .btn.second.limited-width, a.btn.second.limited-width {
       max-width: 230px; }
       .btn.second.limited-width:not(:last-child), a.btn.second.limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .btn.second.active, a.btn.second.active {
       background: #c0c1c2;
       cursor: default; }
@@ -180,7 +180,7 @@
     .btn.third.limited-width, a.btn.third.limited-width {
       max-width: 230px; }
       .btn.third.limited-width:not(:last-child), a.btn.third.limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .btn.third.active, a.btn.third.active {
       background: #c0c1c2;
       cursor: default; }
@@ -206,7 +206,7 @@
     .btn.fourth.limited-width, a.btn.fourth.limited-width {
       max-width: 230px; }
       .btn.fourth.limited-width:not(:last-child), a.btn.fourth.limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .btn.fourth.active, a.btn.fourth.active {
       background: #c0c1c2;
       cursor: default; }
@@ -232,7 +232,7 @@
     .btn.fifth.limited-width, a.btn.fifth.limited-width {
       max-width: 230px; }
       .btn.fifth.limited-width:not(:last-child), a.btn.fifth.limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .btn.fifth.active, a.btn.fifth.active {
       background: #c0c1c2;
       cursor: default; }
@@ -265,7 +265,7 @@
   .download-btn a.limited-width {
     max-width: 230px; }
     .download-btn a.limited-width:not(:last-child) {
-      margin-left: 10px; }
+      margin: 0 10px 0 0; }
   .download-btn a.active {
     background: #c0c1c2;
     cursor: default; }
@@ -511,6 +511,9 @@ textarea {
 .view-filters {
   clear: both; }
 
+.view-footer {
+  clear: both; }
+
 a.more-link {
   margin: 0 5px; }
 
@@ -630,6 +633,8 @@ h3.group-title {
 
 .tabs {
   margin-bottom: 25px; }
+  .tabs a {
+    color: inherit !important; }
 
 /*-------------Frame---------------------*/
 body:before, body:after {
@@ -936,7 +941,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
   input[type="reset"].limited-width, input[type="submit"].limited-width, input[type="button"].limited-width {
     max-width: 230px; }
     input[type="reset"].limited-width:not(:last-child), input[type="submit"].limited-width:not(:last-child), input[type="button"].limited-width:not(:last-child) {
-      margin-left: 10px; }
+      margin: 0 10px 0 0; }
   input[type="reset"].active, input[type="submit"].active, input[type="button"].active {
     background: #c0c1c2;
     cursor: default; }
@@ -1060,7 +1065,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
       max-width: 680px; }
   .main-slider .item-info {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 1;
     max-width: 550px;
@@ -1105,7 +1110,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     border-bottom: 3px solid #eeebe6; }
     .teaser .teaser-date > div {
       flex: 1;
-      border-left: 2px solid #eeebe6; }
+      border-right: 2px solid #eeebe6; }
       .teaser .teaser-date > div:last-child {
         border: none; }
   .teaser .teaser-info {
@@ -1231,7 +1236,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     .views-exposed-form .views-exposed-widget input[type="submit"].limited-width {
       max-width: 230px; }
       .views-exposed-form .views-exposed-widget input[type="submit"].limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .views-exposed-form .views-exposed-widget input[type="submit"].active {
       background: #c0c1c2;
       cursor: default; }
@@ -1257,7 +1262,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width {
         max-width: 230px; }
         .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].limited-width:not(:last-child) {
-          margin-left: 10px; }
+          margin: 0 10px 0 0; }
       .views-exposed-form .views-exposed-widget input[type="submit"][name="op"].active {
         background: #c0c1c2;
         cursor: default; }
@@ -1381,7 +1386,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
       .button-menu ul.menu li a.limited-width {
         max-width: 230px; }
         .button-menu ul.menu li a.limited-width:not(:last-child) {
-          margin-left: 10px; }
+          margin: 0 10px 0 0; }
       .button-menu ul.menu li a.active {
         background: #c0c1c2;
         cursor: default; }
@@ -1391,7 +1396,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
 .title-menu {
   position: absolute;
   top: 8px;
-  left: 0; }
+  right: 0; }
   .title-menu ul.menu {
     justify-content: flex-end; }
 
@@ -1719,7 +1724,7 @@ header .subscription-signup button {
     .main-search .closeBtn.limited-width {
       max-width: 230px; }
       .main-search .closeBtn.limited-width:not(:last-child) {
-        margin-left: 10px; }
+        margin: 0 10px 0 0; }
     .main-search .closeBtn.active {
       background: #c0c1c2;
       cursor: default; }
@@ -1766,7 +1771,7 @@ header .subscription-signup button {
     .main-calendar .fc-header .fc-button .ui-icon {
       display: none; }
     .main-calendar .fc-header .fc-button.fc-button-next .fc-icon-wrap {
-      transform: rotate(225deg); }
+      transform: rotate(45deg); }
     .main-calendar .fc-header .fc-button:hover {
       background: #ff6600; }
     .main-calendar .fc-header .fc-button .fc-icon-wrap {
@@ -1783,7 +1788,6 @@ header .subscription-signup button {
 
 .main-calendar thead th.ui-widget-header {
   background: #d8d8d8;
-  direction: rtl;
   line-height: 65px;
   height: 65px;
   color: inherit;
@@ -1796,45 +1800,44 @@ header .subscription-signup button {
 .main-calendar a.fc-event[href*="nolink"] {
   visibility: hidden; }
 
-.main-calendar .no-link-event {
-  text-align: right;
-  direction: rtl; }
-
 .main-calendar .fc-grid .fc-day-content {
   padding: 0 0 1px 2px; }
 
-.main-calendar .fc-rtl .fc-grid .fc-day-number {
-  font-size: 2.0625rem;
-  float: right;
-  padding: 5px 15px; }
+.main-calendar .fc-rtl .fc-grid {
+  float: right; }
 
-.main-calendar .fc-rtl .fc-grid .ui-state-highlight {
+.main-calendar .fc-grid .fc-day-number {
+  font-size: 2.0625rem;
+  padding: 5px 15px;
+  float: left; }
+
+.main-calendar .fc-grid .ui-state-highlight {
   border-color: 1px solid #c0c0c0;
   border-left: 1px solid #c0c0c0;
   border-top: 1px solid #c0c0c0; }
-  .main-calendar .fc-rtl .fc-grid .ui-state-highlight .fc-day-number {
+  .main-calendar .fc-grid .ui-state-highlight .fc-day-number {
     color: #ff6600; }
 
-.main-calendar .fc-rtl .fc-grid .fc-event-default, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin, .main-calendar .fc-rtl .fc-grid .fc-event-default a {
+.main-calendar .fc-grid .fc-event-default, .main-calendar .fc-grid .fc-event-default .fc-event-skin, .main-calendar .fc-grid .fc-event-default a {
   color: inherit;
   background: transparent;
   border-color: transparent; }
-  .main-calendar .fc-rtl .fc-grid .fc-event-default.no-link-event, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin.no-link-event, .main-calendar .fc-rtl .fc-grid .fc-event-default a.no-link-event {
+  .main-calendar .fc-grid .fc-event-default.no-link-event, .main-calendar .fc-grid .fc-event-default .fc-event-skin.no-link-event, .main-calendar .fc-grid .fc-event-default a.no-link-event {
     color: #a4a4a4; }
-    .main-calendar .fc-rtl .fc-grid .fc-event-default.no-link-event .fc-event-time, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin.no-link-event .fc-event-time, .main-calendar .fc-rtl .fc-grid .fc-event-default a.no-link-event .fc-event-time {
+    .main-calendar .fc-grid .fc-event-default.no-link-event .fc-event-time, .main-calendar .fc-grid .fc-event-default .fc-event-skin.no-link-event .fc-event-time, .main-calendar .fc-grid .fc-event-default a.no-link-event .fc-event-time {
       color: #a4a4a4; }
-      .main-calendar .fc-rtl .fc-grid .fc-event-default.no-link-event .fc-event-time::after, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin.no-link-event .fc-event-time::after, .main-calendar .fc-rtl .fc-grid .fc-event-default a.no-link-event .fc-event-time::after {
+      .main-calendar .fc-grid .fc-event-default.no-link-event .fc-event-time::after, .main-calendar .fc-grid .fc-event-default .fc-event-skin.no-link-event .fc-event-time::after, .main-calendar .fc-grid .fc-event-default a.no-link-event .fc-event-time::after {
         display: none; }
-  .main-calendar .fc-rtl .fc-grid .fc-event-default:not(.no-link-event):hover .fc-event-time::after, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin:not(.no-link-event):hover .fc-event-time::after, .main-calendar .fc-rtl .fc-grid .fc-event-default a:not(.no-link-event):hover .fc-event-time::after {
+  .main-calendar .fc-grid .fc-event-default:not(.no-link-event):hover .fc-event-time::after, .main-calendar .fc-grid .fc-event-default .fc-event-skin:not(.no-link-event):hover .fc-event-time::after, .main-calendar .fc-grid .fc-event-default a:not(.no-link-event):hover .fc-event-time::after {
     width: 100%; }
-  .main-calendar .fc-rtl .fc-grid .fc-event-default:not(.no-link-event):hover .fc-event-title, .main-calendar .fc-rtl .fc-grid .fc-event-default .fc-event-skin:not(.no-link-event):hover .fc-event-title, .main-calendar .fc-rtl .fc-grid .fc-event-default a:not(.no-link-event):hover .fc-event-title {
+  .main-calendar .fc-grid .fc-event-default:not(.no-link-event):hover .fc-event-title, .main-calendar .fc-grid .fc-event-default .fc-event-skin:not(.no-link-event):hover .fc-event-title, .main-calendar .fc-grid .fc-event-default a:not(.no-link-event):hover .fc-event-title {
     color: #ff6600; }
 
-.main-calendar .fc-rtl .fc-grid .fc-event-inner {
+.main-calendar .fc-grid .fc-event-inner {
   padding: 5px 15px 20px;
   font-family: "Miriam"; }
 
-.main-calendar .fc-rtl .fc-grid .fc-event-time {
+.main-calendar .fc-grid .fc-event-time {
   display: block;
   position: relative;
   background: transparent;
@@ -1842,7 +1845,7 @@ header .subscription-signup button {
   color: #ff6600;
   font-size: 1.25rem;
   margin-bottom: 3px; }
-  .main-calendar .fc-rtl .fc-grid .fc-event-time::after {
+  .main-calendar .fc-grid .fc-event-time::after {
     content: "";
     display: block;
     position: absolute;
@@ -1853,7 +1856,7 @@ header .subscription-signup button {
     width: 0;
     transition: width .3s; }
 
-.main-calendar .fc-rtl .fc-grid .fc-event-title {
+.main-calendar .fc-grid .fc-event-title {
   display: block;
   clear: both;
   margin-bottom: 20px; }
@@ -1920,8 +1923,6 @@ header .subscription-signup button {
 .mini-calendar .fc-content thead {
   height: 30px;
   line-height: 30px; }
-  .mini-calendar .fc-content thead th {
-    direction: rtl; }
 
 .mini-calendar .fc-content tbody {
   color: #a4a4a4;
@@ -2008,7 +2009,7 @@ header .subscription-signup button {
     border-bottom: 3px solid #eeebe6; }
     .flyout-container .flyout-date > div {
       flex: 1;
-      border-left: 2px solid #eeebe6; }
+      border-right: 2px solid #eeebe6; }
       .flyout-container .flyout-date > div:last-child {
         border: none; }
   .flyout-container .flyout_info {

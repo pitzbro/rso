@@ -56,7 +56,7 @@
       
       &.fc-button-next {
         .fc-icon-wrap {
-          transform: rotate(225deg);
+          transform: rotate(45deg);
         }
       }
       
@@ -84,7 +84,7 @@
   thead {
     th.ui-widget-header {
       background: $background-color-002;
-      direction: rtl;
+      // direction: rtl;
       line-height: 65px;
       height: 65px;
       color: inherit;
@@ -103,21 +103,25 @@
     visibility: hidden;
   }
 
-  .no-link-event {
-    text-align: right;
-    direction: rtl;
-  }
+  // .no-link-event {
+  //   text-align: right;
+  //   direction: rtl;
+  // }
 
   .fc-grid .fc-day-content {
     padding: 0 0 1px 2px;
   }
 
   .fc-rtl .fc-grid {
+    float: right;
+  }
+
+  .fc-grid {
 
     .fc-day-number {
       font-size: rem(33px);
-      float: right;
       padding: 5px 15px;
+      float: left;
     }
 
     .ui-state-highlight {
@@ -282,7 +286,7 @@
   .fc-content {
     thead {
       th {
-        direction: rtl;
+        // direction: rtl;
       }
       height: 30px;
       line-height: 30px;
@@ -403,7 +407,7 @@
 
     > div {
       flex: 1;
-      border-left: 2px solid $light-text-color-2;
+      border-right: 2px solid $light-text-color-2;
       &:last-child {
         border: none;
       }
