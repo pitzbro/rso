@@ -295,6 +295,14 @@ a.full-link, a:link.full-link, a:visited.full-link {
   top: 0;
   left: 0; }
 
+.edit-link {
+  position: absolute; }
+  .edit-link a {
+    display: block;
+    background: #ff6600;
+    color: #fff;
+    padding: 0 10px; }
+
 .default-image {
   background-image: url("../images/default-square.jpg");
   background-size: cover;

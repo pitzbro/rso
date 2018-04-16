@@ -96,7 +96,8 @@ footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
   transform: rotate(225deg); }
 
 .teaser .teaser-date > div {
-  border-left: 2px solid #eeebe6; }
+  border-left: 2px solid #eeebe6;
+  border-right: 0; }
 
 .main-slider .item-info {
   left: auto;

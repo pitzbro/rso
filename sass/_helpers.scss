@@ -175,6 +175,17 @@ a, a:link, a:visited {
   }
 }
 
+.edit-link {
+  position: absolute;
+
+  a {
+    display: block;
+    background: $highlite-color-2;
+    color: #fff;
+    padding: 0 10px;
+  }
+}
+
 // ------------- Images Helpers ------------- //
 
 .default-image {
