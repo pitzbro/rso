@@ -1430,9 +1430,9 @@ input[type="reset"], input[type="submit"], input[type="button"] {
       width: 30px; }
     .main-menu-block ul.nice-menu > li:hover {
       background: transparent; }
-    .main-menu-block ul.nice-menu > li.menu-3082 ul li {
+    .main-menu-block ul.nice-menu > li.menu-3082 ul li, .main-menu-block ul.nice-menu > li.menu-5016 ul li {
       background-color: #40c389; }
-    .main-menu-block ul.nice-menu > li.menu-3082 > a:before {
+    .main-menu-block ul.nice-menu > li.menu-3082 > a:before, .main-menu-block ul.nice-menu > li.menu-5016 > a:before {
       background: #40c389; }
     .main-menu-block ul.nice-menu > li > a {
       padding: 0 0 0 40px;
@@ -1812,7 +1812,7 @@ header .subscription-signup button {
   float: left; }
 
 .main-calendar .fc-grid .ui-state-highlight {
-  border-color: 1px solid #c0c0c0;
+  border-color: #c0c0c0;
   border-left: 1px solid #c0c0c0;
   border-top: 1px solid #c0c0c0; }
   .main-calendar .fc-grid .ui-state-highlight .fc-day-number {

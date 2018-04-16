@@ -62,6 +62,9 @@ footer.section-footer .footer-menu .content > ul.menu li:not(:last-child) {
 .mini-calendar .fc-content thead th {
   direction: rtl; }
 
+.main-calendar thead th.ui-widget-header {
+  direction: rtl; }
+
 .mini-calendar thead th.ui-widget-header {
   direction: rtl; }
 
