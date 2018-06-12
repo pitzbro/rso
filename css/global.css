@@ -287,6 +287,9 @@
 .download-btn.program-download a::after {
   content: "Download Program"; }
 
+.download-btn.subscription-download a::after {
+  content: "Download Registration Form"; }
+
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;
   position: absolute;

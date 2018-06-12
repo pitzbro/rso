@@ -33,6 +33,9 @@ a.download-link, a:link.download-link, a:visited.download-link {
 .download-btn.program-download a::after {
   content: "הורד/י את התכניה"; }
 
+.download-btn.subscription-download a::after {
+  content: "הורד/י טופס הרשמה"; }
+
 /*--------------------Layout------------------*/
 .home-contact .content .content-home-text {
   padding: 40px calc( (100% - 940px) / 2 ) 40px 0; }

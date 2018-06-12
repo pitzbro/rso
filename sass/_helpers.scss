@@ -161,6 +161,9 @@
   &.program-download a::after {
     content: "Download Program";
   }
+  &.subscription-download a::after {
+    content: "Download Registration Form";
+  }
 }
 
 a, a:link, a:visited {

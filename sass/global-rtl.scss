@@ -34,6 +34,10 @@ a.download-link, a:link.download-link, a:visited.download-link {
     content: "הורד/י את התכניה";
 }
 
+.download-btn.subscription-download a::after {
+    content: "הורד/י טופס הרשמה";
+}
+
 /*--------------------Layout------------------*/
 
 .home-contact .content .content-home-text {
