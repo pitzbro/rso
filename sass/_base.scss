@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+// Overlay
+#overlay-container, .overlay-modal-background, .overlay-element {
+  position: fixed;
+}
+
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none;
 }
