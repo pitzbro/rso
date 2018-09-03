@@ -141,7 +141,8 @@
   img, .file-size { display: none }
   a {
     @include button($highlite-color-2, $highlite-color-1);
-    max-width: 230px;
+    width: fit-content;
+    padding: 0 35px 0 15px;
     position: relative;
     text-align: right;
     &::before {
@@ -163,6 +164,9 @@
   }
   &.subscription-download a::after {
     content: "Download Registration Form";
+  }
+  &.subscription-download-french a::after {
+    content: "Télécharger le programme";
   }
 }
 

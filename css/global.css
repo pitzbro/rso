@@ -257,7 +257,8 @@
   color: #fff;
   text-decoration: none;
   transition: all .3s;
-  max-width: 230px;
+  width: fit-content;
+  padding: 0 35px 0 15px;
   position: relative;
   text-align: right; }
   .download-btn a:hover {
@@ -289,6 +290,9 @@
 
 .download-btn.subscription-download a::after {
   content: "Download Registration Form"; }
+
+.download-btn.subscription-download-french a::after {
+  content: "Télécharger le programme"; }
 
 a.full-link, a:link.full-link, a:visited.full-link {
   display: block;

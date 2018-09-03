@@ -30,6 +30,10 @@ a.download-link, a:link.download-link, a:visited.download-link {
     margin: 0 0 2px 2px;
 }
 
+.download-btn a {
+    padding: 0 15px 0 35px;
+}
+
 .download-btn.program-download a::after {
     content: "הורד/י את התכניה";
 }

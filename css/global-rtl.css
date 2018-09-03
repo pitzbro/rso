@@ -30,6 +30,9 @@ a.download-link, a:link.download-link, a:visited.download-link {
 .season-prices tr > *:not(:last-child) {
   margin: 0 0 2px 2px; }
 
+.download-btn a {
+  padding: 0 15px 0 35px; }
+
 .download-btn.program-download a::after {
   content: "הורד/י את התכניה"; }
 
