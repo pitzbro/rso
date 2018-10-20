@@ -206,8 +206,13 @@
   display: flex;
   justify-content: space-between;
 
+  @include for-mobile-layout {
+    flex-direction: column;
+  }
+
   section {
       flex: 0 0 calc(50% - 20px);
+      margin-bottom: 20px;
 
       h2.block-title {
         color: inherit;

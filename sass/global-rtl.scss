@@ -45,7 +45,10 @@ a.download-link, a:link.download-link, a:visited.download-link {
 /*--------------------Layout------------------*/
 
 .home-contact .content .content-home-text {
-            padding: 40px #{$container-padding} 40px 0;
+    padding: 40px #{$container-padding} 40px 0;
+    @include for-narrow-layout {
+        padding: 40px 20px;
+    }
 }
 
 .sidebar-layout .region-content-inner .sidebar {

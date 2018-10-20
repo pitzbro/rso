@@ -14,9 +14,12 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 html { 
   height: 100%;
   background: $highlite-color-1;
-  // @include for-narrow-layout {
-  //   font-size: 14px;
-  // }
+  @include for-narrow-layout {
+    font-size: 14px;
+  }
+  @include for-mobile-layout {
+    font-size: 12px;
+  }
 }
 
 body {

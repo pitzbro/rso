@@ -42,6 +42,9 @@ a.download-link, a:link.download-link, a:visited.download-link {
 /*--------------------Layout------------------*/
 .home-contact .content .content-home-text {
   padding: 40px calc( (100% - 940px) / 2 ) 40px 0; }
+  @media (max-width: 980px) {
+    .home-contact .content .content-home-text {
+      padding: 40px 20px; } }
 
 .sidebar-layout .region-content-inner .sidebar {
   margin: 0 0 0 30px; }

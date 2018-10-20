@@ -3,6 +3,9 @@
 .home-contact {
     h2.block-title {
         padding: 0 #{$container-padding};
+        @include for-narrow-layout {
+            padding: 0 $layout-padding;
+        }
     }
     .content {
         display: flex;
@@ -11,10 +14,18 @@
 
         > * {
             flex: 0 0 50%;
+            min-height: 260px;
         }
 
         .content-home-text {
             padding: 40px 0 40px #{$container-padding};
+            @include for-narrow-layout {
+                padding: 40px $layout-padding;
+            }
+        }
+
+        @include for-mobile-layout {
+            flex-direction: column;
         }
     }
 }
