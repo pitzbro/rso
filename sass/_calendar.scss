@@ -200,8 +200,14 @@
 
 .mini-calendar {
 
+  flex-wrap: wrap;
+
   .view-content, .attachment-after {
     flex: 0 0 455px;
+    @include for-narrow-layout {
+      flex: 0 0 100%;
+      margin-bottom: rem(40px);
+    }
   }
 
   .attachment-after {
@@ -314,6 +320,7 @@
 
   td.fc-day {
     height: 60px;
+    width: 14.285%;
     overflow: hidden;
     padding: 5px;
     > div {

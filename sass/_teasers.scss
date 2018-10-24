@@ -171,9 +171,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   
-    .teaser-item {
+  .teaser-item {
+      position: relative;
       flex: 0 0 445px;
       background: #fff;
+      margin-bottom: rem(40px);
+
+      @include for-narrow-layout {
+        flex: 0 0 330px;
+      }
+
+      @include for-mobile-layout {
+        flex: 0 0 100%;
+      }
+
     }
 
     .teaser-info {
